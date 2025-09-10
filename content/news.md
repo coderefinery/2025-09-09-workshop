@@ -5,13 +5,17 @@
 
 **See all emails to participants on [Communication](@/communication/_index.md)**.
 
-- **News from Day 1**
-  - We covered what was in the schedule.
-  - **Day 2 moves to your local computer**. If today was too boring or easy for you, don't worry!  Day 2 gets to the way we really work.
-  - For day 2, If you plan to do the exercises please make sure you
-    have a **working git installation in your computer** (e.g. with VS
-    Code or with the shell terminal, see instructions at
-    https://coderefinery.github.io/installation/). (VSCode
-    recommended, but command line also works)
-- If you had/have issues with the installation, **we will provide a 1h
-  support zoom session tomorrow morning 9:00 CEST (Oslo/Rome)**. See email.
+- **News from day 2 / day 3 prep**
+  - We covered everything as covered in the schedule
+  - **Tomorrow, we show how projects with multiple people would work:**
+    both a small group like your own team (centralized), and bigger
+    projects (decentralized, not everyone has direct access). It's
+    probably the best day.
+  - Preparation for tomorrow:
+    - If yesterday and today worked, you are probably good for
+      tomorrow (Github connection is very important).  If not, please
+      look at the installation instructions
+    - But you need to request access in advance - this will give you
+      access to projects we work on tomorrow. Check your email for
+      instructions.
+    - It's also like extra practice for everything we have done today.
