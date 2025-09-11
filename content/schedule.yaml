@@ -105,7 +105,7 @@ schedule:
   - title: "Day 4"
     date: "2025-09-17"
     sessions:
-      - {starts: 8:50, ends: 9:00, title: "Icebreaker/connecting time"}
+      - {starts: 9:50, ends: 10:00, title: "Icebreaker/connecting time"}
       - starts: 10:00
         ends: 12:30
         title: Reproducible research
@@ -115,7 +115,7 @@ schedule:
   - title: "Day 5"
     date: "2025-09-24"
     sessions:
-      - {starts: 8:50, ends: 9:00, title: "Icebreaker/connecting time"}
+      - {starts: 9:50, ends: 10:00, title: "Icebreaker/connecting time"}
       - starts: 10:00
         ends: 12:30
         title: Social coding and open software
@@ -125,7 +125,7 @@ schedule:
   - title: "Day 6"
     date: "2025-10-01"
     sessions:
-      - {starts: 8:50, ends: 9:00, title: "Icebreaker/connecting time"}
+      - {starts: 9:50, ends: 10:00, title: "Icebreaker/connecting time"}
       - starts: 10:00
         ends: 12:30
         title: Documentation
@@ -135,7 +135,7 @@ schedule:
   - title: "Day 7"
     date: "2025-10-08"
     sessions:
-      - {starts: 8:50, ends: 9:00, title: "Icebreaker/connecting time"}
+      - {starts: 9:50, ends: 10:00, title: "Icebreaker/connecting time"}
       - starts: 10:00
         ends: 12:30
         title: Jupyter notebooks
@@ -145,7 +145,7 @@ schedule:
   - title: "Day 8"
     date: "2025-10-15"
     sessions:
-      - {starts: 8:50, ends: 9:00, title: "Icebreaker/connecting time"}
+      - {starts: 9:50, ends: 10:00, title: "Icebreaker/connecting time"}
       - starts: 10:00
         ends: 12:30
         title: Automated testing
@@ -155,7 +155,7 @@ schedule:
   - title: "Day 9"
     date: "2025-10-22"
     sessions:
-      - {starts: 8:50, ends: 9:00, title: "Icebreaker/connecting time"}
+      - {starts: 9:50, ends: 10:00, title: "Icebreaker/connecting time"}
       - starts: 10:00
         ends: 12:15
         title: Modular code development
