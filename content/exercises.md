@@ -30,7 +30,16 @@ This list is subject to changes until the week before the workshop.
 Coming soon!
 
 ### Day 6: 
-Coming soon!
+- Demo: [README Features](https://coderefinery.github.io/documentation/writing-readme-files/#exercise-have-fun-testing-some-readme-features)
+- Exercise session: either [Improve the README for your own project](https://coderefinery.github.io/documentation/writing-readme-files/#exercise-improve-the-readme-for-your-own-project) or, lacking that: [Discuss the README of a project that you use](https://coderefinery.github.io/documentation/writing-readme-files/#exercise-discuss-the-readme-of-a-project-that-you-use) 
+- Demo: [Sphinx Quickstart](https://coderefinery.github.io/documentation/sphinx/#exercise-sphinx-quickstart)
+- Exercise session: 
+  - [Adding more Sphinx Content](https://coderefinery.github.io/documentation/sphinx/#exercise-adding-more-sphinx-content) 
+  - [Sphinx and LaTeX](https://coderefinery.github.io/documentation/sphinx/#exercise-sphinx-and-latex) 
+  - [Create documentation from code comments with Autodoc](https://coderefinery.github.io/documentation/sphinx/#exercise-sphinx-autodoc)
+- Demo:
+  - [Deploy Sphinx documentation to GitHub Pages](https://coderefinery.github.io/documentation/gh_workflow/#exercise-deploy-sphinx-documentation-to-github-pages)
+  - [Hosting websites/homepages on GitHub Pages](https://coderefinery.github.io/documentation/gh-pages/#hosting-websites-homepages-on-github-pages)   
 
 ### Day 7: 
 Coming soon!
