@@ -6,16 +6,13 @@
     (individual) Day 3: git (collaborative) Day 4: reproducible
     research and social coding.  Day 5: documentation and Jupyter.
     Day 6: testing and modular code development.
-
     Playlist: 
-
     Workshop webpage: https://coderefinery.github.io/2025-09-09-workshop/
-
     CodeRefinery: https://coderefinery.org/
 
 ## This input will be used for all segments until redefined
 - input: raw/day1-obs.mkv
-#- schedule-sync: 00:17:24=9:00:00
+- schedule-sync: 00:20:09=11:00:00
 #
 #
 #### Preview icebreaker
@@ -35,7 +32,6 @@
   description: >
     The introduction to this workshop, explaining general mechanics
     and what CodeRefinery is.
-
     https://github.com/coderefinery/workshop-intro/blob/master/livestream.md
   time:
      - start: 00:20:09
@@ -61,7 +57,7 @@
 #    recording.  You can find the link to them in the table of contents
 #    below.
 #
-    https://coderefinery.github.io/git-intro/
+#   https://coderefinery.github.io/git-intro/
 
   time:
     - start: 00:37:22
@@ -69,15 +65,14 @@
     - 00:39:30: '§ Motivation to version control'
     - 01:06:32: '§ Browsing an existing project'
     - break: 01:13:50
-    - 01:23:10: Exercise introduction (Browsing)
+    - start: 01:23:10
+    - -: Exercise introduction (Browsing)
     - exercise: 01:29:05
     - start: 01:54:10
     - -: Exercise follow-up/going through it (Browsing)
     - 02:12:50: '§ Committing changes'
-# at 2:19:37 sabry gets subtitled as subway SAP
-#    - 01:56:15: 
+    # at 2:19:37 sabry gets subtitled as subway SAP
     - lunch: 02:20:02
-#    # lunch
     - start: 03:20:12
     # 03:25:30 ISH Emman (replace by [name] in subtitles)
     - -: Going over the first part of exercise (Creating branch + Committing)
@@ -85,8 +80,8 @@
     - exercise: 03:36:13
     - start: 03:55:08
     - -: Going over exercise again
-        - break: 04:21:29
-        - start: 04:31:20
+    - break: 04:21:29
+    - start: 04:31:20
       # 04:31:29 Imman -> [name]
     - -: '§ Merging changes'
     - 04:34:02: Exercise (Merging) walkthrough
@@ -100,7 +95,7 @@
 #
 # Day 2
 - input: raw/day2-obs.mkv
-#- schedule-sync: 00:16:47=9:00:00
+- schedule-sync: 00:18:55=11:00:00
 #
 ## Day 2 icebreaker
 #- output: out/day2-icebreaker.mkv
@@ -118,9 +113,9 @@
   description: >
     The introduction to day 2 recapping day 1 and giving background of
     day 2.
-  editlist:
+    
+  time:
     - start: 00:18:55
-#    #- : For newcomers
     - stop: 00:23:09
 
 # Git-intro day 2
@@ -138,16 +133,14 @@
     of the tracking, linking to the web repository (GitHub, GitLab,
     etc).  The day ends with lots of practical advice on various
     topics.
-
     https://coderefinery.github.io/git-intro/
-  editlist:
+
+  time:
     - start: 00:23:09
-#    #- -: Starting words
     - -: '§ Cloning a git repository and working locally'
-#    #- : Demonstration of cloning a repository locally
     - 00:27:21: Exercise introduction (cloning)
     - exercise: 00:35:12
-    - start: 00:59:00
+    - start: 00:59:01
     - -: Exercise demo (cloning) via command line
     - break: 01:18:38
     - start: 01:28:45 
@@ -156,24 +149,19 @@
     - 01:42:21: Exercise introduction (inspecting history)
     - exercise: 01:43:59
     - start: 02:03:47
-#    - -: Exercise Q&A (inspecting history)
     - -: git bisect exercise as demo
     - lunch: 02:15:50
     - start: 03:18:51
     - -: Brief recap of the bisect process
     - 03:22:02: '§ How to turn your project into a Git repo and share it'
     - -: Motivation and exercise introduction
-#    - 03:22:38: Demonstration of exercise (sharing) (with vscode)
-#    - 03:33:18: Exercise introduction (sharing)
     - exercise: 03:25:06
-     - start: 03:49:05
+    - start: 03:49:05
     - -: Exercise demo using VSCode and discussion of diffences for command line (sharing)
-#    - 04:05:39: Different types of remote repositories and thoughts on publishing work
     - break: 04:07:30
     - start: 04:17:25
     - -: '§ Practical advice: how much git is necessary? (general Q&A)'
     - 04:36:58: ' § What to avoid'
-#    - 04:40:23: General discussion and Q&A session
     - 04:47:22: Wrap-up and preparation for day 3
     - stop: 04:50:59
 #
