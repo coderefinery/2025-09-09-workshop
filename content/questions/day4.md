@@ -1,0 +1,325 @@
++++
+template = "page-with-toc.html"
+title = "Questions and notes from workshop day 4 (Reproducible Research)"
++++
+
+
+# Icebreaker questions
+Let's test the notes with some icebreakers! :icecream:
+
+## Have you heard the sentence "hmm... works on my computer"? What does this mean in practice? How do you solve this problem?
+- Just yesterday, a user wanted to have a (python) program working on their machine, which works on a couple of other machines, but threw errors on theirs.
+- All the time. I personally have this problem when I am trying to run files on other machines. Typically its a problem with the venv.
+- Generally it's the dependencies of the package that causes a lot of issues when I share my code with other folks.
+- I recently tried pip-tools for compiling package dependencies and that worked really well, but am not sure how to adjust it for the python version as well (which is usually the problem for me)
+
+## What are your experiences re-running or adjusting a script or a figure you created few months ago?
+- Generally good but I have had issues with some package updates and became a bit better at saving my working objects to avoid having to rerun the analysis and run into reproducibility problems. I am aware it will then only work for me and that's an issue. Sometimes packages are not updated and then it can't be ran anymore too.
+- I usually need 1 or 2 days just to get acquainted with my functions and data again +1
+- One of the "favorite" issues to run into. I completely forget what I was doing and my comments never help.
+- Trying to find the latest understandable version, and spend few days of getting into thinking mood from back then.
+- It might take a few hours or 1-2 days to align myself with my code
+- If I had a dollar for every time I got confused and fed up with revisiting my code I could finally afford therapy +1
+- Lately it's been easier but when I started coding it could take me days to adjust a script or figure created months before
+- It's really time-consuming because of the different programming styles and practices. Sometimes, it's been easier to re-do the script instead of refactoring the previous one.
+
+## Have you continued working from a previous student's script/code/plot/notebook? What were the biggest challenges?
+- So many errors from not being able to figure out what programs are needed, where in the folders to put different files etc.
+- Project scripts and protocols were last used in 2003 with documentation so horrible that even my supervisor who wrote the original protocol got mad at himself. Things had been compiled with older `C` versions and it was a mess to find exactly how to make the whole thing compatible and efficient with more modern tools.
+- Issues with their lack of documentation - pain in the rear.
+- Functions that are maybe too specific to reuse, a lot of printing of different stuff (to check for errors) and not really clean code so not possible to see where the main code is (I can recognize that I do the same ...)
+- Poor documentation. Hard to understand. Hard to find a starting point. Usually trying to avoid continuing others' work. +2
+- Poor documentation, no comments, spend a lot of time figuring out how to use it.
+- No documentation (just awful), function scripts all over the place with no explanation regarding the connections. I had to set up a few meetings with them because I just had so many questions. The library dependencies were quite confusing as well and they are only installable in Linux.
+- The real question is what weren't the challenges! Definitely documentation, everything goes down to dat. You don't know what packages were used, or which version, when the data was collected, or some functions were nowhere to be found (which package does this come from?)
+- Errros regrading documentation, programming and OS dependencies, required inputs, etc
+- A good thing I find nowadays is ChatGPT (LLM-s) to discuss its "thoughts" about code. Helps where comments are missing.
+    - Good tip! I'll try that next time!
+- Lack of documentation. I am trying to figure out why the previous user has created multiple dataframes for example but cannot due to lack of documentation. However the code works, so I am afraid to make any changes as this is a business critical code. 
+
+
+
+
+# Introduction - How it all connects
+https://coderefinery.github.io/reproducible-research/intro/
+
+1. If a scientific finding is so dependent on the specific version of libraries, is it then actually reproducible if with different libraries it cannot be repeated?
+    - That depends a bit. If it's about code not running due to changes, then yes, it is reproducible with the originals. If it's about numeric issues, then the results are questionalble.
+    - That's what you call "robust". If a phenomenon is reproducible in the sense that with different method (and same data) you find the same result, then it is robust. If you are able to reproduce the same phenomenon with different data and different methods, then it is generalisable (https://book.the-turing-way.org/reproducible-research/overview/overview-definitions). So the law of gravity is generalisable.
+    - Some studies adopt a "multi-verse" approach: different teams use the same data with their preferred methods, and then the "true result" is a consensus of all the teams' results.
+        - I never heard of this practice, but it sounds interesting.
+        - It can be combined with "blind analysis": those analysing the data did not collect it and do not know the hypothesis to test (e.g. a clinical trial, they do not know which group had the treatment). This is also used a lot in astrophysics.
+
+
+# Organizing your projects
+https://coderefinery.github.io/reproducible-research/organizing-projects/
+
+2. How do you feel about changing the project structure on the fly?
+    - If the original structure was good, this isn't too big of an issue. If you have it git controlled, you will most likely have a git commit, that actually tells how the project changed, but in general I would try to avoid it, if there aren't compelling reasons to do it.
+
+3. When/how often do you update readme files? I tend to be great at it only in the beginning.. 
+    - I know the feeling. I try to update when I change relevant functionality that's referenced in the README, but sometimes it takes a specific session to update/rewrite the README to fit to a new way how the code looks. 
+
+4. How can we use AI for documentation or preparing documentation webpages?
+    - In the case of code (e.g. uncommented code), AI could add comments and even generate documentation pages. This frees some time to the busy developer, but that time should be invested to verify what the AI has written (so one should do the math and see if in the end it is actually time saved).
+    - There are specific tools for doing that, but I cannot recommend one in particular (they might have certain terms of service conditions that I did not read). A simple alternative is to paste some (non-sensitive) code to some ai chatbot (e.g. duckAI in duckduckgo.com - a little bit more privacy than usual bots) and ask to add comments and explanations to the code. Then there are documentation generation tools that based on the project structure and comments, can generate documentation pages. 
+
+5. Would you recommend to use a different tool (e.g., DVC -https://dvc.org/) than Git for data version control?
+    - Indeed "standard" git is not efficient for large files or binary files. DVC is a good alternative, there is also git-annex, git lfs, datalad (uses git annex under the hood), xet (not sure if the last one is huggingface specific, but huggingface decided to drop git lfs to switch to xet) 
+
+6. I am not an officially educated programmer (nor a beginner), but I am often afraid something will crash so I tend to save even tiny changes in code when it is already quite long enough. Are there tips for that, and thus avoid naming version_1.py, version_2.py, version_2_final.py, FinalNow.py, etc
+    - "git commit" would be the same approach without keeping all the versions, but there is nothing wrong to store intermediate scripts if they are useful and you need to access them. Maybe the issue is to have scripts that are too long, making things more modular improve readability and version controlling (see last episode of coderefinery about modular code).
+        - I agree. I make commits with small changes, but in general I have several scripts instead of one big monster. I for example, separate the data tidying and processing on its own script, and the Exploratory Data Analysis in another. Then the models, etc.
+
+7. I have a comment regarding use of AI for manuscript writing. Most of the journals, funding bodies (writing research proposals as well) allow the use of AI services for writing but it should be limited, preferably to refining the language or readability, not to prapare figures. At the end of the day, people should review the final manuscript and the authors are responsible for the content. Also, they usually require a declaration section as well.  
+    - Yes this is a big issue right now. Some academics have signed a letter for a ban of such uses of AI https://openletter.earth/open-letter-stop-the-uncritical-adoption-of-ai-technologies-in-academia-b65bba1e
+    - The problem is moral and will divide people in 3 categories: 1) those against AI; 2) those transparent about their AI use; 3) those using AI and saying that they do not use it.
+    - This letter talks about use of AI in pedagogical settings. European Food Safety Authority, for example had a rule on banning use of commercial LLMs for writing funding proposals but they have changed their position now. In Denmark, all the funding bodies, public and private, just require a declaration on use of AI in proposal writing. But at the end of the day the rules are uniform across most of the fundings agencies and publishers: The authors are responsible for the work they produce. Possibly, there is a realization that, in certain cases, people will use AI technology anyway. So regulating the use would be better than trying to ban it.
+        - I agree. There are many uses (in learning and research) that are minimal risk and actually useful. However, some of the concerns of those proposing for bans are specific for the unethical tools we *have* to use (openai/meta/google, all built on unethical practices)
+        - Absolutely. This is a complex topic at the end of the day. And I completely agree that unfettered use of AI in pedagogical settings does a lot of harm (we have seen that in person at DTU where students are unable to critically defend the reports that they write). And we cannot forget the carbon footprint of AI use as well, apart from the ethical concerns.
+            - we are hosting a discussion session at Aalto open to anyone, join if you can :) When? https://www.aalto.fi/en/events/artificial-intelligence-and-responsible-conduct-of-research-oct-29-2025 (it will be on zoom)
+            - Registered :)
+    
+8. Are you aware about initiaitives to introduce version control in the peer-review process?
+    - Some journals have tools to track changes and discussions into a single page. The majority however are just "manual" (you manually highlight what has changed in the manuscript).
+        - OpenResearchEurope is one of these examples (open access journal supported by the EU commission), however it is still a manual process to check different versions of the manuscript.
+    - I do not know any, I would like to know more!
+
+## Questions to listeners:
+### How do you collaborate on writing academic papers?
+  - Draft on Google docs, final version/submission putting text into latex +1+1
+  - Overleaf: different tex files for different parts of the paper
+  - Sharing files on Microsoft OneDrive or Overleaf (latex)
+     - if I remember correctly Overleaf is not very good at linking to git 
+        - Overleaf provides history and versioning, but the free plan is limited to changes within the last 24h.
+  - Microsoft Office OneDrive (unwillingly)
+      - +1 (supervisors refused/were unable to figure out latex :())
+      - +1 it is just easier when you are in a interdisciplinary research field (and there are better formatting options than Google Docs).
+  - Draft on google docs or sending via email versions of Word documents tracking changes 
+  - I off course use the ISO 8601 standard (date format) for version naming ;-)
+  - I prefer Overleaf but I also have older collegues who are proficient at Word only. It is definetely a challenge.
+  - Google doc (unwillingly) from draft to final submission. The good part is the zoter integration, and that all my coworker don't have an excuse to use google doc. If I write something with (younger) students, I teach them to use Quarto in RStudio, and we integrate text and code. So far this is my favorite option.
+
+### How do you handle collaborative issues e.g. conflicting changes?
+  - Trying to use tools that don't allow conflicts / allow simultaneous modification
+  - Talking to each other :) +1+1
+  - (share your experience)
+  - keep a low number of collaborators +1
+  - With great difficulty - especially where reference managers and track changes/suggestions are involved +1
+
+
+:::	success
+
+## Break untill XX:55
+
+:::
+
+# Recording computational steps
+https://coderefinery.github.io/reproducible-research/workflow-management/
+
+9. . The screenshare looks slightly strange to me, is this a problem for someone else?
+    - Try setting video quality to (source). Otherwise twitch reduce it sometimes
+    - looks ok on this side of the planet
+    - thanks better now (changed quality of source)
+
+10. Can you repeat talk on Snakemake (I didn't understand the purpose and the difference why to use it. What is snakemake afterall) and do the workflow? Sorry, tnx.
+    - Snakemake is a workflow manager, and by defining the flow as in the snakefile, it will automatically look for all files in data, so if we add another file in there, the results will be generated, when we re-run snakemake
+    - In contrast to the script run_all.bash snakemake would only re-run steps that have not yet been run or repeat steps if something changes. If you have a computing step that takes a long time, workflow managers can just help you to re-execute only the time-intensive steps that are necessary to re-do, but not all the other steps
+        - But we could also just run 2 lines from run_all.bash for newly added data?
+        - In this simple example, you could, but workflow management tools become more relevant when you have lots of computational steps in a row. Let's say you have not two lines, but maybe 15 downstream steps and a few books changing - right now, wish run_all.bash, you need to keep track of what has changed and execute every step manually, which can be error prone. A workflow manager would keep track of this for you and 'know' that it needs to execute the 15 steps for exactly those five books.
+        - Sure, so it would run only what is needed (due to changes), not everyhing form scratch as run_all.bash would do, right?
+        - Exactly! Not very impressive for this small example, but I think you start to see that and when this might be more useful compared to a script. Like we said in the beginning though - a lot of the tools we discuss might not make sense for every project, but we try to show things that might become useful at a later point too, just to show what's out there =)
+        - Great, tnx.
+        
+11. Can you provide link for more info about Snakemake usage with SLURM?
+    - Maybe this would be useful: https://snakemake.github.io/snakemake-plugin-catalog/plugins/executor/slurm.html
+
+::: success
+## Exercise till XX:23
+https://coderefinery.github.io/reproducible-research/workflow-management/#a-demo
+Yes, this is the exercise ( even if it's called A demo :)  ) 
+:::
+
+Progress report - add 'o' to the relevant option. You are:
+    - done: oooooooo
+    - stuck: o
+    - not trying: o
+    - working on it:
+
+11. I don't really know what I'm doing! I'm using mac terminal and have done step 1 but how am I meant to inspect the file?
+    - e.g. with any editor (e.g. vscode, but I think `cat` is also available on mac or just `less snakefile`)
+    - If you are unsure, try what you can during the break and then our instructors will demo the steps
+    - Ok, I feel like there's been a bit of a jump from what we were talking about before the break to now. I'm not really following as a (R studio using) novice... 
+        - It's totally fine :) I think the main thing to understand is the importance of documenting the orders of the steps your code performs. And when things scale up (many files to process run by multiple scripts) workflow tools (like snakemake) help with the goal.
+        - You could also try running this on binder, which would make getting to the commands easier.
+        
+12.  How the snakefile knows the final result file is different than it should be?
+     - It essentially looks at the creation date of the inputs, if those are newer, it needs to re-run the rule for this file. if they are older, they file is up to date.
+         - Very interesting. Easy but smart.
+
+13.  Would you recommend snakemake and general managers of this nature for automatic checking code? Meaning, if I want my code to pass 5 steps, and it gets stuck on the 3rd, could I use snakemake to control this, and potentially pick up from the 3rd step, or is it better to generally do all the steps from scratch when trying to check code before release?
+     - I would usually rerun all the steps, but if they are long you can use something like snakemake.
+     - You can also separate the steps. Each step can start from an existing data file and see if it produces correct next steps.
+
+14.  Does SnakeMake only work if I code in Python?
+     - You can write the commands in many different languages. In the script in exercise 1, the commands are actually shell commands. They start with shell: '...' There you could replace "python" with another command.
+  
+15.  How does this tie in with the version control/git stuff we did last week?
+     - You can version control the Snakefile. Version control is one of the ways to make your code reproducible.
+     - If you consider time/space scales: we are moving from the version control of a single line of code (last week), to how many scripts are called and in which order (snake make), to the version control of the libraries along with your script, to the version control of your operating system
+
+16.  What is the category that you would put SnakeMake into? Workflow manager?
+     - Yes, I'd say so.
+
+17. Do you think that nextflow is taking over snakemake to manage workflows, especially bioinformatics? or is it just my personal impression?
+    - I guess some tools are preferred in some fields, I personally find snakemake "lighter" than nextflow, so it is easier to manage for not-too-large projects. Nextflow allows to share very complex pipelines for others to reuse on their data, snakemake: I have never seen it shared (unless specific repositories).
+
+# Recording dependencies
+
+18. I am (also) a system administrator. I despise the environments you have to make to run this tool or that tool. While I do understand the reasons behind special environments, then it fills up the hard disk with all those envs, and it also frees people from the responsibility of maintaining their code across versions of whatever python or library they used. I wish there was some other way, but envs are an evil mandated by a) lazyness,  b) fast and independent development time across the world, c) people are acutally leaving projects for good reasons (like death, new job). 
+    - It depends :) Python/R Libraries are updated at a speed faster than the project, so if reesarchers would upgrade constantly, things would continously break. So the environment files help us "freeze" versions for one project. Ideally one environment per project so in the end it is not too many files. It would be different if each research team had a dedicated software developer that could update the code to the latest version of all the 100+ external libraries that are used in a project. So the "lazyness" is very necessary. Fast and independent development time is just impossible even for big commercial players. People leave jobs constantly in academia since the permanent positions are a small %.
+    - I'm trying to think how this could be better in a perfect world. Something like a single yearly release of all libraries? Everybody just needs to stay up to date with the latest version? Actually maybe a single yearly update to everything would be nice :)
+
+19. How would I know e.g. what version of numpy that I need for my python project? Just by trial and error?
+    - Typically you'd want the latest version. If you want to reproduce an older result, than you'd want an older one. Also, some features are only available in certain versions. Also, you might have addional dependencies in your environment that are only compatible with certain version of numpy. No answer to fit all cases, but that is what makes environmnents useful. 
+        - Ok, thanks. I see how you can figure out a configuration that works, but finding out its precise limits (in terms of version numbers) seems a lot more difficult. 
+            - Indeed, I'd add that the first time you create the environmnet, it's best, in my opinion, to list all dependencies needed in a environment.yml / requirements.txt and let conda / mamba solve the version numbers. If you then want to reproduce this later on, you can see with `conda list` which are the versions of the dependencies that were actually installed and update the environment.yml / requirements.txt with the version numbers.
+                - Ok, thanks!
+
+20. When I create new environment while being in coderefinery environment, does is switch me to the new one? Or can I have environment within environment?
+     - It switches you to the new one.
+     - Not if you just create the new one, you also need to activate the new environment, then it switches.
+
+21. Should one create myenv.yml once all the work is completed, or during mid-steps as well? What is the general practice?
+    - When you start a new project you create a new environment. Hopefully it will stay more or less constant, but it might be that during the work you need to upgrade it. At the end you can track back everything you ended up with with conda env export.
+
+22. Can you also automatically see the order of installing packages (I think that also influences dependencies)?
+    - While installing the environment, yes. Conda/mamba will try to resolve all dependencies listed in the environment.yml and then install the packages with their resolved version. If you want to enforce a certain order, you should install them one by one, or a few at the time, but this may cause some version conflicts and some packages may be reinstalled, so better, in my opinion, to use an environment.yml that contains all dependencies.
+
+23. What are your thoughs about UV? Is it really that efficient as people claim?
+    - In my experince, it is much faster compared to `pip`.
+
+24. What is the diffeence of using mamba vs conda? How does mamba improves conda?
+    - Mamba has a solver that resolves dependencies faster. This may not be so noticeable on a laptop, but if you're on a shared file system, e.g. a supercomputer, the difference may be very noticeable.
+    - Hasn't at least recent miniconda switched to the mamba solver?
+        - Conda can be configured to use libmamba as solver, but I am not sure if it is the default, checking... So, `conda config --show solver` outputs `solver: libmamba` in my case, recent version of conda, so you're right. 
+
+25. How would you do to use Snakemake inside a Julia software/package development? 
+    - Snakemake is language agnostic, so you can call julia scripts as part of your workflow. Not necessarily inside a Julia package maybe?
+
+27. How to choose what container framework to use (Docker vs Apptainer vs Singularity)?
+    - If you want to move between operating systems like mac/windows then docker is better than Apptainer/Singularity.
+    - Apptainer/Singularity are (mostly?) linux based solution. Apptainer is actually derived from Singularity, apptainer is the standard on HPC systems these days.
+
+28. Is it recommended to use an environment manager like conda inside a container, or this is not necessary, and just using a requirements.txt file is enough in a container?
+    - Inside a container the container recipe is a way to manage the dependencies. Conda or pip+requirements are both fine.
+
+::: success
+## Exercise till XX:55
+Dependencies-1: Time-capsule of dependencies
+https://coderefinery.github.io/reproducible-research/dependencies/#exercise-demo
+:::
+
+Progress report - add 'o' to the relevant option. You are:
+    - done: ooooooooo
+    - stuck: 
+    - not trying: o
+    - working on it: 
+
+
+## Participant Comments
+- A: 
+     - This one would be very hard to run, must look for all libraries in code and install, you don't know versions or if they are all the libraries needed.
+- B: 
+     - .
+
+- C: 
+     - This one is better than A and B because it has an environment file but it doesn't mention versions so code might not work.
+
+- D: 
+    - I would say the version D has prepared is easiest to run. This records the version of the library used as well as GitHub links. (Sorry. I was confused by the structure of this document.) +1
+     - This one is easy to run but if github repositories were deleted one wouldn't be able to install the last two dependencies.{-Ahh I see the point. I presumed the GitHub repo was the students' repo. I did not realise they were dependencies as well.} 
+
+- E: 
+     - This one is preferable because you can just run `pip install -r requirements.txt` in a new environment
+     - This one will be easiest to run,  installing all repositories with pip install, with the correct versions.
+
+
+27. Kind of irrelevant, but I listed my packages in my conda env for this course and one of them is called beautifulsoup4 and that is an adorable name
+    - It's a package for reading websites as text, I think
+    - They also have beautiful documentation pages :) https://www.crummy.com/software/BeautifulSoup/bs4/doc/
+
+28. If somebody wants to try that and for savekeeping: The no_builds export mentioned: `conda env export --no-builds > environment_nobuilds.yml`
+
+# Recording environments (aka Containers)
+29. Containers are great. I use them on regular basis. Docker is popular, but is really not good for HPC environment. Apptainer/Singularity is the goat.
+    - +1! Learning containers is also something that can be useful outside academia (they are used a lot when things need to scale up quickly)
+    
+31. Docker masterclass when? :( +1
+    - If you are in Finland, CSC is organising this at the end of November: https://csc.fi/en/training-calendar/online-using-containers-in-supercomputing-environment/
+    - Others (not in Finalnd)?
+       - You can (probably) join from outside Finland. Try registering and let us know :)
+       - I was able to sign up (from Denmark).
+           - You might need an account on an HPC system, and some details could be different. But Docker at least is the same.
+           - Thanks for the heads up. I have access to our HPC system here at DTU.
+
+32. How likely is it that it doesn't work on a new machine after shipping to a container?
+    - Personal experience: I had (almost) never had issues in porting existing containers to new systems, but sometimes the container themselves might assume certain files (outside of the container), so yeah it is not a 100% safe solution.
+
+
+::: success
+## Exercise till XX:22
+https://coderefinery.github.io/reproducible-research/environments/#exercises
+:::
+
+
+33. Is there a container program you can recommend for mac m-chips that does not require setting up a linux vm?
+    - Docker does the job (assuming you are the admin of that machine). Watchout for lots of disk space use and clean cached files and unused containers.
+
+34. This was a bit too fast for first timers with containers, Docker, etc. Can you recommend some other YT or other tutorial?
+    - Not YT, but 'Resources for further learning' at the bottom of the Container part of the lesson has some great material to learn more.
+
+
+
+
+## Feedback, day 4
+
+:::	success
+### News for day 4
+- We covered everything as scheduled
+- The format continues with self-contained episodes every wednesday
+- Next week we talk about licensing and collaborating with others, more conceptual and discussion based rather than running scripts.
+:::
+
+Today was (vote for all that apply):
+- too fast: o
+- too slow: 
+- right speed: oooooooooo
+- too slow sometimes, too fast other times: oo
+- too advanced:
+- too basic:
+- right level: ooooo
+- I will use what I learned today: ooooooooooo
+- I would recommend today to others: oooooooooo
+- I would not recommend today to others: o
+
+
+One good thing about today:
+- Very well-structured lesson and many useful tips that are easy to follow
+- I appreciate the emphasis on small steps! Very overwhelming to think about implementing all of this to my project, but I can already see how I can do 2 things this week to improve :)
+- There were a number of practical tips shared that can usually be learnt through experience of working in real life. I liked that a lot. x 3
+- Good to listen and get experience of other people about same problems. Not feeling alone anymore
+- I understood thing about dependencies and containers that I've been hearing for years but never quite got the hand of. +1
+
+One thing to improve for next time:
+- In the "Today was" voting section you could also include a section called "Sometimes too advanced sometimes too basic". It felt kinda like that for this presentation for me at least
+    - Could you specify what was too advanced and what too basic ?
+    - Containers and their philosophy went a bit too fast and was a bit packed up in my eyes. Also some exercises were a bit too easy, but I guess that is not a problem. The main one was how fast and advanced the docker discussion seemed to me +2
+- Excerises seemed pointless, it would have been better if there were only talks. (+1)
+
+Any other feedback?
+- ..
+
+General questions continued:
+- ..
+
