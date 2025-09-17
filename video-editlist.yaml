@@ -65,7 +65,8 @@
     - 00:39:30: '§ Motivation to version control'
     - 01:06:32: '§ Browsing an existing project'
     - break: 01:13:50
-    - 01:23:10: Exercise introduction (Browsing)
+    - start: 01:23:10
+    - -: Exercise introduction (Browsing)
     - exercise: 01:29:05
     - start: 01:54:10
     - -: Exercise follow-up/going through it (Browsing)
