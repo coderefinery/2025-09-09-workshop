@@ -6,8 +6,11 @@
     (individual) Day 3: git (collaborative) Day 4: reproducible
     research and social coding.  Day 5: documentation and Jupyter.
     Day 6: testing and modular code development.
-    Playlist: 
+
+    Playlist: https://www.youtube.com/playlist?list=PLpLblYHCzJAAqSSVAwHUuipB5hhW6GobY
+
     Workshop webpage: https://coderefinery.github.io/2025-09-09-workshop/
+
     CodeRefinery: https://coderefinery.org/
 
 ## This input will be used for all segments until redefined
@@ -32,6 +35,7 @@
   description: >
     The introduction to this workshop, explaining general mechanics
     and what CodeRefinery is.
+
     https://github.com/coderefinery/workshop-intro/blob/master/livestream.md
   time:
      - start: 00:20:09
@@ -53,11 +57,7 @@
     Multi-user work and remotes is the next lesson, git-collaborative,
     on day 3.
 
-#    There are two external videos which are excluded from this
-#    recording.  You can find the link to them in the table of contents
-#    below.
-#
-#   https://coderefinery.github.io/git-intro/
+    https://coderefinery.github.io/git-intro/
 
   time:
     - start: 00:37:22
@@ -71,10 +71,8 @@
     - start: 01:54:10
     - -: Exercise follow-up/going through it (Browsing)
     - 02:12:50: '§ Committing changes'
-    # at 2:19:37 sabry gets subtitled as subway SAP
     - lunch: 02:20:02
     - start: 03:20:12
-    # 03:25:30 ISH Emman (replace by [name] in subtitles)
     - -: Going over the first part of exercise (Creating branch + Committing)
     - 03:31:30:  Exercise introduction (Committing)
     - exercise: 03:36:13
@@ -82,7 +80,6 @@
     - -: Going over exercise again
     - break: 04:21:29
     - start: 04:31:20
-      # 04:31:29 Imman -> [name]
     - -: '§ Merging changes'
     - 04:34:02: Exercise (Merging) walkthrough
     - 04:39:08: Discussion of conflicts in a pull request
@@ -113,7 +110,7 @@
   description: >
     The introduction to day 2 recapping day 1 and giving background of
     day 2.
-    
+
   time:
     - start: 00:18:55
     - stop: 00:23:09
@@ -122,7 +119,7 @@
 - output: out/day2-git-intro-2.mkv
   title: 2.2 Git Intro day 2
   description: >
-    Part 2 of the previous video: https://www.youtube.com/watch?v=0u2K7KJBL-U&list=PLpLblYHCzJACpOmIzO8TywjtfYD7_d93H&index=2
+    Part 2 of the previous day's video: 
 
     We continue where we left off from day 1.  We advance by working
     locally: first, cloning a repository and doing some of the same
@@ -133,6 +130,7 @@
     of the tracking, linking to the web repository (GitHub, GitLab,
     etc).  The day ends with lots of practical advice on various
     topics.
+
     https://coderefinery.github.io/git-intro/
 
   time:
@@ -189,7 +187,7 @@
     picture of the course and re-introduce things for any new people.
   time:
     - start: 00:11:50
-    - 00:23:46: "Central message: code review"
+    #- 00:23:46: "Central message: code review"
     - stop: 00:17:18
 
 
