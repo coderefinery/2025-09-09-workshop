@@ -179,85 +179,85 @@
 #
 #
 #
-### Day 3
-#- input: raw/day3-obs.mkv
-#- schedule-sync: 00:21:31=9:00:00
-#
-###- output: out/day3-icebreaker.mkv
-###  title: 3.1 Day 3 icebreaker
-###  description: >
-###    The icebreaker of day 3.  We have a guest who prepares for us by
-###    discussing about their experience with the MNE project and how has
-###    collaboration with many people using the things we will learn
-###    about today.
-###  time:
-###    - start: 00:14:15
-###    - stop: 00:21:56
-#
-#- output: out/day3-intro.mkv
-#  title: 3.1 Day 3 intro
-#  description: >
-#    The intro of day 3, where we position the day in the bigger
-#    picture of the course and re-introduce things for any new people.
-#  time:
-#    - start: 00:22:15
-#    - 00:23:46: "Central message: code review"
-#    - stop: 00:24:53
-#
-#
-#
-#
-#- output: out/day3-git-collab.mkv
-#  title: 3.2 Git collaborative
-#  description: >
-#      Today, we expand from using git by yourself to using it in a
-#      team.  We use Github, centralized workflows, forking on Github,
-#      pull requests, code review, commenting on pull requests,
-#      practical advice on using Git and version control in real projects,
-#      contributing to other projects, and more.  This really puts the
-#      previous two days together and lets you know how things work in
-#      bigger projects.
-#
-#      https://coderefinery.org/git-collaborative/
-#  time:
-#    - start: 00:24:53
-#    - -: Some initial discussion, requesting access
-#    - 00:25:34: "§ Concepts around collaboration"
-#    - 00:37:18: "§ Collaborating within the same repository"
-#    - 00:41:24: Exercise preparation
-#    - 00:50:26: Exercise introduction (same repository)
-#    - exercise: 00:57:28
-#    - start: 01:22:55
-#    - -: Break intro
-#    - break: 01:23:37
-#    - start: 01:32:55 
-#    - -: Exercise discussion
-#    - 01:45:08: '§ Practicing code review'
-#    - 01:49:47: Exercise introduction (code review)
-#    - exercise: 01:52:39
-#    - start: 02:16:50
-#    - -: Exercise discussion
-#    - lunch: 02:19:15
-#    - start: 03:18:02
-#    - -: Exercise discussion continued
-#    - 03:28:19: "§ Contributing changes to others' repositories"
-#    - 03:30:47: Exercise setup (alone vs team)
-#    - 03:33:47: Demo of main exercise steps
-#    - 03:42:30: Exercise introduction (someone else's project)
-#    - exercise: 03:47:27
-#    - start: 04:12:57
-#    - -: After exercise commentary
-#    - break: 04:19:25
-#    - start: 04:28:07
-#    - -: Q&A and misc topics
-#    #- stop: 04:17:47
-#    #- start: 04:26:48
-#    #- -: "More general Q&A and recommendations (bottom of
-#    #'contributing changes')"
-#    - 04:42:08: Feedback of the day and preparation for day 4
-#    - stop: 04:47:30
-#
-#
+## Day 3
+- input: raw/day3-obs.mkv
+- schedule-sync: 00:08:37=11:50:00
+
+##- output: out/day3-icebreaker.mkv
+##  title: 3.1 Day 3 icebreaker
+##  description: >
+##    The icebreaker of day 3.  We have a guest who prepares for us by
+##    discussing about their experience with the MNE project and how has
+##    collaboration with many people using the things we will learn
+##    about today.
+##  time:
+##    - start: 00:14:15
+##    - stop: 00:21:56
+
+- output: out/day3-intro.mkv
+  title: 3.1 Day 3 intro
+  description: >
+    The intro of day 3, where we position the day in the bigger
+    picture of the course and re-introduce things for any new people.
+  time:
+    - start: 00:11:50
+    - 00:23:46: "Central message: code review"
+    - stop: 00:17:18
+
+
+
+
+- output: out/day3-git-collab.mkv
+  title: 3.2 Git collaborative
+  description: >
+      Today, we expand from using git by yourself to using it in a
+      team.  We use Github, centralized workflows, forking on Github,
+      pull requests, code review, commenting on pull requests,
+      practical advice on using Git and version control in real projects,
+      contributing to other projects, and more.  This really puts the
+      previous two days together and lets you know how things work in
+      bigger projects.
+
+      https://coderefinery.org/git-collaborative/
+  time:
+    - start: 00:18:21
+    - -: Some initial discussion, requesting access
+    - 00:24:58: "§ Concepts around collaboration"
+    - 00:30:25: "§ Collaborating within the same repository"
+    - 00:31:30: Exercise preparation
+    - 00:36:24: Exercise introduction (same repository)
+    - exercise: 00:38:39
+    - start: 01:08:21
+    - -: Break intro
+    - break: 01:09:26
+    - start: 01:19:38 
+    - -: Exercise discussion
+    - 01:50:34: '§ Practicing code review'
+    - 01:50:48: Exercise introduction (code review)
+    - exercise: 01:52:21
+    - start: 02:16:21
+    - -: Exercise discussion
+    - lunch: 02:21:45
+    - start: 03:18:20
+    - -: Exercise discussion continued
+    - 03:20:25: "§ Contributing changes to others' repositories"
+    - 03:22:43: Exercise setup (alone vs team)
+    - 03:27:02: Demo of main exercise steps
+    - 03:44:07: Exercise introduction (someone else's project)
+    - exercise: 03:44:42
+    - start: 04:08:20
+    - -: After exercise commentary
+    - break: 04:11:27
+    - start: 04:20:20
+    - -: Q&A and misc topics
+    #- stop: 04:17:47
+    #- start: 04:26:48
+    #- -: "More general Q&A and recommendations (bottom of
+    #'contributing changes')"
+    - 04:26:11: Feedback of the day and preparation for day 4
+    - stop: 04:35:06
+
+
 #### Day 4
 #- input: raw/day4-obs.mkv
 #- schedule-sync: 18:29=9:00:00
