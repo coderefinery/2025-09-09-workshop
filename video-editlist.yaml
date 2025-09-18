@@ -119,7 +119,7 @@
 - output: out/day2-git-intro-2.mkv
   title: 2.2 Git Intro day 2
   description: >
-    Part 2 of the previous day's video: 
+    Part 2 of the previous day's video: https://www.youtube.com/watch?v=4fwmkB2A6Vs
 
     We continue where we left off from day 1.  We advance by working
     locally: first, cloning a repository and doing some of the same
