@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Questions and notes from workshop day 2 - CodeRefinery workshop September&#x2F;October 2025</title>
+    <link rel="shortcut icon" href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;/img/favicon.ico">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- uikit -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.23.4/dist/css/uikit.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.4/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.4/dist/js/uikit-icons.min.js"></script>
+
+    <!-- time zone localization -->
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.7/dayjs.min.js" integrity="sha256-EfJOqCcshFS/2TxhArURu3Wn8b/XDA4fbPWKSwZ+1B8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.7/plugin/utc.js" integrity="sha256-qDfIIxqpRhYWa543p6AHZ323xT3B8O6iLZFUAWtEQJw=" crossorigin="anonymous"></script>
+
+    
+      <link rel="alternate" type="application/atom+xml" title="CodeRefinery" href="https://coderefinery.github.io/2025-09-09-workshop/atom.xml" />
+    
+
+        
+      <title>CodeRefinery - Questions and notes from workshop day 2</title>
+      <meta name="twitter:title" content="Questions and notes from workshop day 2" />
+      <meta property="og:title" content="Questions and notes from workshop day 2" />
+      <meta property="og:site_name" content="CodeRefinery workshop September&#x2F;October 2025" />
+    
+
+    
+      <meta name="description" content="Free workshop on git, testing, documentation, and more in a workshop - for researchers and scientists." />
+      <meta name="twitter:description" content="Free workshop on git, testing, documentation, and more in a workshop - for researchers and scientists." />
+      <meta property="og:description" content="Free workshop on git, testing, documentation, and more in a workshop - for researchers and scientists." />
+    
+
+    
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:image" content="https://raw.githubusercontent.com/coderefinery/coderefinery-artwork/main/socialshare/socialshare-workshop.png" />
+      <meta property="og:image" content="https://raw.githubusercontent.com/coderefinery/coderefinery-artwork/main/socialshare/socialshare-workshop.png" />
+    
+
+
+    
+
+    <link href="https://coderefinery.github.io/2025-09-09-workshop/style.css" rel="stylesheet">
+
+    
+    <script defer data-domain="coderefinery.github.io" src="https://plausible.cs.aalto.fi/js/script.js"></script>
+    
+
+
+  </head>
+
+  <body>
+    <div class="uk-container uk-margin-large-bottom">
+
+      <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+  <div class="uk-navbar-right">
+    <ul class="uk-navbar-nav uk-visible@s">
+      
+      
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop">
+      About
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;exercises">
+      List of exercises
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;audience">
+      Audience
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;certificates">
+      Certificates
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;join">
+      How to join
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;requirements">
+      Requirements
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;questions">
+      Q&amp;A
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;code-of-conduct">
+      Code of conduct
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;communication">
+      Communication
+      
+    </a>
+
+    
+
+  </li>
+
+
+    </ul>
+    <a href="#" class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon uk-toggle="target: #sidenav"></a>
+  </div>
+</nav>
+
+<div id="sidenav" uk-offcanvas="flip: true" class="uk-offcanvas">
+  <div class="uk-offcanvas-bar">
+    <ul class="uk-nav">
+      
+      
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop">
+      About
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;exercises">
+      List of exercises
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;audience">
+      Audience
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;certificates">
+      Certificates
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;join">
+      How to join
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;requirements">
+      Requirements
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;questions">
+      Q&amp;A
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;code-of-conduct">
+      Code of conduct
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;communication">
+      Communication
+      
+    </a>
+
+    
+
+  </li>
+
+
+    </ul>
+  </div>
+</div>
+
+
+      <div class="markdown">
+        
+  <h1>Questions and notes from workshop day 2</h1>
+
+  <ul>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day2/#icebreakers">Icebreakers</a>
+      
+        <ul>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day2/#what-was-the-last-animal-you-saw">What was the last animal you saw?</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day2/#what-do-you-want-to-be-when-you-grow-up">What do you want to be when you grow up?</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day2/#poll-which-path-did-you-use-yesterday-to-interact-with-git">Poll: Which path did you use yesterday to interact with Git?</a>
+              
+            </li>
+          
+        </ul>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day2/#questions">Questions</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day2/#git-intro-day-2">git-intro day 2</a>
+      
+        <ul>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day2/#local-workflow">Local workflow</a>
+              
+            </li>
+          
+        </ul>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day2/#exercise-until-xx-40">Exercise until xx:40</a>
+      
+        <ul>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day2/#break-until-xx-10">Break until xx:10</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day2/#inspecting-history">Inspecting history</a>
+              
+                <ul>
+                  
+                    <li>
+                      <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day2/#exercise-until-xx-45">Exercise until xx:45</a>
+                    </li>
+                  
+                </ul>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day2/#sharing-your-work">Sharing your work</a>
+              
+                <ul>
+                  
+                    <li>
+                      <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day2/#exercise-until-xx-30">Exercise until XX:30</a>
+                    </li>
+                  
+                    <li>
+                      <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day2/#break-until-xx-58">Break until xx:58</a>
+                    </li>
+                  
+                </ul>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day2/#practical-advice">Practical advice</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day2/#what-to-avoid">What to avoid</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day2/#feedback-day-2">Feedback, day 2</a>
+              
+                <ul>
+                  
+                    <li>
+                      <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day2/#news-for-day-2-preparation-for-day-3">News for day 2 &#x2F; preparation for day 3</a>
+                    </li>
+                  
+                </ul>
+              
+            </li>
+          
+        </ul>
+      
+    </li>
+  
+</ul>
+
+
+  
+  
+    <h2 id="icebreakers">Icebreakers</h2>
+<p>Let's test the notes with some icebreakers! :icecream:</p>
+<h3 id="what-was-the-last-animal-you-saw">What was the last animal you saw?</h3>
+<ul>
+<li>Otaniemi geese (aka angry birds)</li>
+<li>Squirrel :+1:</li>
+<li>A bird that tried to steal my sandwich :angry:</li>
+<li>Pigeon</li>
+<li>Spider</li>
+<li>Two hyper happy kids of mine</li>
+<li>Our office dog. Collecting pets and treats</li>
+<li>... isn't it human for most of us?  before that CATS.</li>
+<li>Cat +3</li>
+<li>fly</li>
+<li>bee 🐝</li>
+<li>some small fly</li>
+<li>.</li>
+<li>human +1</li>
+<li>Dog</li>
+<li>Red vented Bulbul</li>
+<li>Duo (bird in Duolingo)</li>
+</ul>
+<h3 id="what-do-you-want-to-be-when-you-grow-up">What do you want to be when you grow up?</h3>
+<ul>
+<li>A research software engineer! +2</li>
+<li>A Scientist</li>
+<li>Time traveller</li>
+<li>financially independent (and a computational chemist, hopefully)</li>
+<li>A kid +1</li>
+<li>I work in a university now but wouldn't mind going to a company someday, if it's doing something useful.</li>
+<li>A magician.</li>
+<li>sheep farmer</li>
+<li>electical engineer,  but later computer scientist</li>
+</ul>
+<h3 id="poll-which-path-did-you-use-yesterday-to-interact-with-git">Poll: Which path did you use yesterday to interact with Git?</h3>
+<ul>
+<li>GitHub: oooooooooooooooooo</li>
+<li>VSCode: oo</li>
+<li>Command line: oo</li>
+<li>I was not here yesterday (no problem): o</li>
+<li>I wished you offered a path for a different tool (which one?):
+<ul>
+<li>Jupyter</li>
+<li>VScodium</li>
+<li>...</li>
+</ul>
+</li>
+</ul>
+<h2 id="questions">Questions</h2>
+<ol>
+<li>questions here
+<ul>
+<li>answer</li>
+</ul>
+</li>
+<li>Can I do today's exercises with just a Github account?
+<ul>
+<li>In theory yes, we support that.  Some parts are similar to yesterday, some are new.  Some bits may not be fully possible.</li>
+</ul>
+</li>
+<li>The video quality at our end is a bit mixed, sometimes good, sometimes very low. Do others have the same? Perhaps it is our wifi (DTU Lyngby)
+<ul>
+<li>Try to set it to "quality: Source" in the settings (gear button) to force it to be high.  If it still happens, let us know and we can see if we can do anything better. (Somehow it's the browser thinking to save bandwidth)</li>
+<li>THanks trying that now. Seems maybe wifi here is the issue, so trying to find a LAN cable...</li>
+</ul>
+</li>
+</ol>
+<h2 id="git-intro-day-2">git-intro day 2</h2>
+<h3 id="local-workflow">Local workflow</h3>
+<p>https://coderefinery.github.io/git-intro/local-workflow/</p>
+<ol start="4">
+<li>
+<p>I have a meeting at 12 I wanted to ask when the break will be. I just want to know if I will miss anything if I go a bit before time?</p>
+<ul>
+<li>The (1hr) break should start about 2hr from now and a 10-min break starting in 40-50 min.</li>
+<li>If you have to leave early though, you can watch the parts you missed on Twitch, or later on YouTube, so don't worry :)</li>
+</ul>
+</li>
+<li>
+<p>Could you put your videofeed of your faces to the lower part of the screen. As it is you hide the url you are using . Thanks</p>
+<ul>
+<li>the url is https://coderefinery.github.io/git-intro/local-workflow/</li>
+<li>but we will try to find a more convenient place for the faces (it's hard!)</li>
+</ul>
+</li>
+<li>
+<p>When working in command line, how to make sure the new file is in the right directory, eg. soups? (in point 4 of the excercise)</p>
+<ul>
+<li>(on linux/mac) you can use pwd and ls to check in which directory you are, and what files are in it. git status shows changes to the repository.</li>
+<li>The git repository is a normal directory/folder on your computer, so everything you use for moving or locating files will work normally</li>
+<li>But yes, this is a very good point!  From command line you need to make sure you are in the right place.</li>
+</ul>
+</li>
+<li>
+<p>Should I be worried by the message "warning: in the working copy of 'pasta/cacio.md', LF will be replaced by CRLF the next time Git touches it"?</p>
+<ul>
+<li>This tells you that there is a missmatch between the type of linefeed (or newline) character your system uses and the one on the repository. If it is your own fork, I would not worry about it.</li>
+<li>Yeah, won't affect the course for now.  You can figure it out later if it becomes a problem.</li>
+</ul>
+</li>
+<li>
+<p>How to exit the graph in command line? I have [END] message but enter, ctr+c nor ctr+x works?</p>
+<ul>
+<li>:q should work
+Thanks, was it vim? or less?</li>
+</ul>
+</li>
+</ol>
+<p>:::success</p>
+<h1 id="exercise-until-xx-40">Exercise until xx:40</h1>
+<p>You can find the exercise here:
+https://coderefionery.github.io/git-intro/local-workflow/#exercise</p>
+<p><em>(don't forget about the zooom help room if you need help and you're alone)</em></p>
+<p>Progress report - add 'o' to the relevant option. You are:</p>
+<ul>
+<li>done: oooooooooo0oooo</li>
+<li>stuck: o</li>
+<li>not trying:</li>
+<li>working on it:</li>
+</ul>
+<p>What tool are you using?</p>
+<ul>
+<li>command line: oooooooooooo</li>
+<li>vscode(ium): ooooooooooo</li>
+<li>github</li>
+<li>VS code but ultimately want to use Rstudio so trying that too!
+<ul>
+<li>Can the same thing be done directly in Rstudio?</li>
+</ul>
+</li>
+<li>command line, but want to learn with VS code (ubuntu user)</li>
+<li>vim</li>
+<li></li>
+</ul>
+<p>:::
+9. Should we keep the branches we have created and then merged to the main one for our exercises to serve as proof for the certification test, or is it ok if we delete them and simly show our graph and history tree as proof that we did what was expected in each exercise?
+- didn't we just need to proof that we followed Exercise 3 for today?
+- As long as you are learning and doing and there are "digital traces" that you have practiced/tried, the "proof" is not too strict in this sense.
+- Yes, i guess you are right. this was more of a general question for the previous day too.</p>
+<ol start="10">
+<li>At step 7 I used the terminal in VScode to view the graph, but at the end of it it just said END and I can't seem to exit the command (tried ESC etc).</li>
+</ol>
+<ul>
+<li>try pressing q &lt;- worked thank you :) &lt;- you are most welcome :)</li>
+</ul>
+<ol start="11">
+<li>
+<p>Maybe it is just us, but it would be easier to watch if your screen was normal size (not long format).+2</p>
+<ul>
+<li>This is done for those who need screen space for other things (notes, or their own following along activities)</li>
+<li>Also, you could put the notes (if you are interested) on the other side of the screen
+<ul>
+<li>I understand, but it makes it difficult to follow. I'm sure it would be easy to move between notes and your screen even if it is full size. Maybe it is possible to ask how many need the screen to be long like now? Sorry for being difficult!</li>
+</ul>
+</li>
+<li>In past workshops the portrait screenshare has been very appeciated.  We know it can be a bit cramped, but it forces us to keep the screen clean and provides learners with lots of space for your own work.  With a full-screen screenshare, everyone has very little room to work.
+<ul>
+<li>Ok!</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Your broadcast goes in and out of focus - am I the only one having this prolem?</p>
+<ul>
+<li>Try using the gear icon for settings to switch to "Source" quality - this will force it to use the highest quality.  Sometimes the browser tries to save bandwidth.</li>
+</ul>
+</li>
+<li>
+<p>What is the difference between fork and clone ? again.</p>
+<ul>
+<li>fork: creates a copy of the repo, but on the GitHub servers. You own the copy and you can do (almost) everything with it. Your copy of the repository "remembers" the repository it was forked from</li>
+<li>clone: creates a copy of the repo, but not on the github servers: typically on the computer you are using. The repository on the computer you're using (the <em>local</em> repository) will 'remember' its connection to where it was cloned <em>from</em>.</li>
+<li>technically, a fork is a clone, but a fork is on github/gitlab/whatever</li>
+</ul>
+</li>
+<li>
+<p>Can we have a video or demo with R also ?</p>
+<ul>
+<li>Hopefully someday, but for this workshop we probably don't have time.  If you know the concepts and words, you can probably read and adapt to RStudio (or whatever) quickly.  At least that's our goal!</li>
+<li>+2 would love a short R/R studio specific workshop/demo. A lot of colleagues would be interested ;)</li>
+</ul>
+</li>
+<li>
+<p>When I enter commit it says make sure you configure your user.name and user.email</p>
+<ul>
+<li>You can set this like this: https://coderefinery.github.io/git-intro/configuration/#name-and-email-address-for-git-commit-metadata</li>
+<li>From the command line (the vscode terminal should also work), run:</li>
+<li><pre style="background-color:#f5f5f5;color:#1f1f1f;"><code><span>git config --global user.name &quot;Your Name&quot;
+</span><span>git config --global user.email yourname@example.com
+</span></code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>Will all the walk-through be carried out in VS? It's hard to follow when I was doing the excercise in command line.</p>
+<ul>
+<li>The next one will be with command line</li>
+<li>Later also another demo with VS code</li>
+</ul>
+</li>
+</ol>
+<p>:::info</p>
+<h3 id="break-until-xx-10">Break until xx:10</h3>
+<p>We've just done the same as yesterday, but now on our local computer.  Something we can actually use!</p>
+<p>We'll continue with this by looking at more of the history after the break: really dig deep to understand what we can get from it.
+:::</p>
+<h2 id="inspecting-history">Inspecting history</h2>
+<p>Lesson material for now: https://coderefinery.github.io/git-intro/archaeology/</p>
+<ol start="17">
+<li>
+<p>How to get networkx in command line? I don't have it in my cloned local repository</p>
+<ul>
+<li>
+<p>it is a different repository that needs to be cloned separately</p>
+<ul>
+<li>https://github.com/networkx/networkx/</li>
+</ul>
+</li>
+<li>
+<p>you would typically do something like
+``
+cd # without arguments to get to your home dir, outside of any existing repository
+git clone https://github.com/networkx/networkx.git</p>
+<pre style="background-color:#f5f5f5;color:#1f1f1f;"><code><span>
+</span></code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>But it it like a general repository, with some methods? Not like our recipes?.</p>
+<ul>
+<li>The networkx repository is a repository containing code from a real project (which in this case is python code).</li>
+<li>The recipes repository is a toy repository that contains only text (maybe this is not true, the recipes there might be true ones, and I believe that recipes still deserve to be under version control, even if my grandma did not do it)</li>
+</ul>
+</li>
+<li>
+<p>for whatever reason i cannot copy paste into my terminal. Is there a setting i can change to fix this?</p>
+<ul>
+<li>you might need to do right-click to open a context menu and then select "paste" or "copy"
+<ul>
+<li>okay thank you</li>
+</ul>
+</li>
+<li>in other cases, you might have to use "CTRL+SHIFT+C"  to copy from the trminal (you should still be able to use CTRL+C to copy from all other windows) and "CTRL+SHIFT+V" to paste in your terminal (still use CTRL+V in all other windows)</li>
+<li>this is also be</li>
+</ul>
+</li>
+<li>
+<p>Can you copy the link of page with exercise here which is being shown in live?</p>
+<ul>
+<li>https://coderefinery.github.io/git-intro/archaeology/#exercise Does this answer your question? (See also the box just below this)</li>
+</ul>
+</li>
+</ol>
+<h3 id="exercise-until-xx-45">Exercise until xx:45</h3>
+<p>https://coderefinery.github.io/git-intro/archaeology/#exercise</p>
+<ol start="21">
+<li>I cannot type "/Logic Error" while the<pre style="background-color:#f5f5f5;color:#1f1f1f;"><code><span>git annotate networkx/algorithms/threshold.py
+</span></code></pre>
+is in use. Is that normal?
+<ul>
+<li>When you type the first '/' you should see it appearing at the bottom of the screen, and then the following "Logic Error" should appear (if you type it) following that.
+<ul>
+<li>It works, but then shows no pattern found?</li>
+<li>It means that, in the version of the repository you are looking at, that file does not contain that sentence... Perhaps you need to "checkout" a specific version first?</li>
+<li>the exercise suggests you do<pre style="background-color:#f5f5f5;color:#1f1f1f;"><code><span>git switch --create exercise networkx-2.6.3
+</span></code></pre>
+</li>
+<li>And, <strong>be careful with capitalization! It's "Logic error", not "Logic Error"</strong></li>
+<li>i was using "" but it didn't need them, just Logic error. my fault</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<p>I use the command: git grep "degree_correlation"
+That should
+surely find the line, but it does not. It
+finds 5-6 other lines with the wordser inspection the file I shold find does not exists, so maybe there is an explanation. The cloning was wrong. NO that was not it, the file is there. The line is NOT in the file. Yeah, I did not follow the recipe entirely by the book, as I need not learn - not to copy. But that is likely the reason.
+I will change my question: In git switch --create exercise networkx-2.6.3, how do I find that I should use networkx-2.6.3. I get that you say it, but how to find the alternatives?
+Ahh, "git tag"
+- you can use git status to check what the current state of the repo is
+- at the beginning you should be on the version that is tagged networkx-2.6.3</p>
+<ol start="22">
+<li>
+<p>. How do I fix the error - Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings &gt; Apps &gt; Advanced app settings &gt; App execution aliases.</p>
+<ul>
+<li>that looks like you are trying to execute python, which is not installed on your machine. You can install it, but it's not required for this exercise.</li>
+</ul>
+</li>
+<li>
+<p>When using vscode on Windows, it looks like the terminal does not have a pager available: doing <code>git annotate -p</code> still prints the full content to stdout. How can I get a pager? Is this related to the selected terminal option in vscode, which one would be preferred?</p>
+<ul>
+<li>If the output of git commands does not get through a pager, you can still do<pre style="background-color:#f5f5f5;color:#1f1f1f;"><code><span>git &lt;git-subcommand and options&gt; | less
+</span></code></pre>
+that is , add a <code>| less</code> at the end of your command. <code>less</code> is a standard pager, and <code>|</code> is a way to connect the output of the previous command (the git command) to the input of the next command (here, <code>less</code>)
+<ul>
+<li>That didn't worked for me on Windows. I used the following code and then it worked:<pre style="background-color:#f5f5f5;color:#1f1f1f;"><code><span>git &lt;git-subcommand and options&gt; | code - --wait
+</span></code></pre>
+</li>
+<li>On windows, if you use Git Bash, the trick with <code>| less</code> should work. But if you are using Powershell, a different approach might be required as PS uses a different syntax than bash.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>When trying to switch to a new branch with given hash with "git switch --create just-before 90544b4fa~1" i get a lot of messages like "Deletion of directory '.circleci' failed. Should I try again? (y/n)". Is this normal behaviour in vs code?</p>
+<ul>
+<li>It shouldn't be normal, but I'll be hard for us to figure out the problem.  It seems to think that a directory can't be deleted (this would happen when switching to another commit: it will delete anything that doesn't appear in the older commit).  And somehow, it gives an error here.</li>
+<li>If it doesn't let you go further, it might be something to ask a local person to look at.</li>
+<li>Is there anything interesting about your setup?  Shared computer?  Network drive?  Multi-user accounts?</li>
+<li>I think it is because I am using Onedrive... Sorry for that:)</li>
+</ul>
+</li>
+<li>
+<p>Explaining bisect is going tooooooo fast!!! Please make sure to speak what you are typing. Not speak about one thing and write different things in shell. It's confusing and hard to follow! +1+1+1+1+1</p>
+<ul>
+<li>Sorry, this was not intended to 'spoil' the exercise but as a quick overview that you did not need to follow in detail.</li>
+<li>Do you need more detail on anything?
+<ul>
+<li>No worries. Maybe then you could just briefly repeat the biscet in 5 senteces, without examples.
+<ul>
+<li>sure</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>If I understood correctly when creating a branch pointing to a specific commit (via HASH) the whole code in the branch goes back to the specific date the commit pointed was created. Is that right?</p>
+<ul>
+<li>If I understand the questions correctly: yes.</li>
+</ul>
+</li>
+</ol>
+<p>First briefly going over bisection a bit more:</p>
+<h2 id="sharing-your-work">Sharing your work</h2>
+<p>Currently displaying/discussing: https://coderefinery.github.io/git-intro/sharing/</p>
+<h3 id="exercise-until-xx-30">Exercise until XX:30</h3>
+<p>https://coderefinery.github.io/git-intro/sharing/#exercise</p>
+<ol start="27">
+<li>
+<p>I get the message "A Git repository was found in the parent folders of the workspace or the open file(s)." I'm working in VSCode, can I do this in the terminal?</p>
+<ul>
+<li>In the terminal: you can check if you are currently inside of a git repo with <code>git status</code> before you <code>git init</code>.</li>
+<li>well, that means that your folder is already in a git repository
+<ul>
+<li>I made a new folder on my desktop...
+<ul>
+<li>if you want a graphical way: use a file browser (e.g. windows explorer on windows), go to your desktop folder and check if there is a .git folder in there. If so, and there is not a VERY good reason why you need it that way, delete that .git folder and start over (don't delete your desktop folder though ^^)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Can I configure both github and gitlab in VScode ?</p>
+<ul>
+<li>yes, where you push to and pull from is called a remote. You can configure pretty much arbitrarily many remotes. To add an additional remote, you can ctrl+shift+p and type <code>remote</code>, then you</li>
+<li>in the terminal it's <code>git remote add &lt;name&gt; &lt;url&gt;</code></li>
+<li>in VSCode, if you want to add another remote to the repository, you need to click the three dots beside repositories on the source control tab, then select remotes--&gt; add remote, this will give you a pop-up where you can enter the remote address, after it should ask for a name
+- Will try</li>
+</ul>
+</li>
+<li>
+<p>In VS Code, when adding a new file to a new branch, just before merging to the main, appears the "Sync Changes" button. When is the right time to click that button? For example, in the Local work lesson notes, in the solution at (6) Merging branches locally screenshot appears that button, what to do then?</p>
+<ul>
+<li>You should see that button if your local repository is connected to a remote repository (e.g., on GitHub) that might have changes that you do not have locally. If you were working with a remote repository that you are the owner of and you did not make any changes  to, then you should not see that message. If you connected VSCode to a remote repository that was changed by someone else, then you should see that button.</li>
+<li>You should sync changes as often as possible, but make sure your work is committed first. Conflicts might appear.</li>
+<li>(asking if someone else has more experience with VSCode)
+<ul>
+<li>It makes sense, thanks!, it was a repository clonned fro GitHub, I made changes locally (new branch, new file) just before merging the button appeared.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>. I am using command line. At the step: git push -u origin main
+I get asked for my username and password. When I fill these in I get "remote: Invalid username or token. Password authentication is not supported for Git operations."</p>
+<ul>
+<li>It looks like an authentication issue. Are you using  https or ssh?</li>
+<li>I am using ssh. But I needed to create an Personal Access Code. Sorted now.</li>
+<li>ssh should not work with Personal access codes, but with SSH keys. You can see how you configured your repository with the command<pre style="background-color:#f5f5f5;color:#1f1f1f;"><code><span>git remote -v
+</span></code></pre>
+if the output contains <code>git@github.com</code>, then your repository was set to use SSH and you need to set up ssh keys on github for that to work; if instead the output contains <code>https://</code> then it was using HHTPS and you should be able to use access tokens for that
+<ul>
+<li>Yes 'git remote -v' says I am using https. Is there a way to edit it to ssh?</li>
+<li>Yes, you can use<pre style="background-color:#f5f5f5;color:#1f1f1f;"><code><span> git remote set-url &lt;remote&gt; &lt;the &quot;ssh&quot; url you get from the &quot;green code button&quot; on the front page of your repo&gt;
+</span></code></pre>
+where <code>&lt;remote&gt;</code> is typically just <code>origin</code>.
+-Thanks!</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Will we get haunted by Linus Torvalds if we use a GUI-based version of git?</p>
+<ul>
+<li>Heh.  We should be beyond that, everyone needs git these days and you don't have to be an expert.  Do what is useful to you (for each particular problem) &lt;= That is good to know :)</li>
+<li>Most of us mix different UIs depending on the need.</li>
+</ul>
+</li>
+<li>
+<p>How did people do version control before git?</p>
+<ul>
+<li>There were various other similar programs.  cvs (very old), subversion, mercurial, bazaar, many more.  In some ways it's nice to have one common tool now (if only the user interface was a bit nicer...)</li>
+</ul>
+</li>
+<li>
+<p>What about other IDEs, I am using R Studio (using R :) and am a bit hesitant to switch to VS Code. I'm sure Git also works in R Studio, do you have any comments about differences or even suggestions where should I go?</p>
+<ul>
+<li>For "does X work with git" the answer is usually yes.  I don't know details but I checked and it has the main operations.  I'd either look in the menus (now you know the terms so you can understand what to use), or a web search.</li>
+<li>For all these, if the UI can do most, you can always drop to command line for very advanced things.</li>
+<li>And +1 for using what you already use.</li>
+</ul>
+</li>
+<li>
+<p>If you're using several computers, you should probably put the home directory for your local Git repositories on a local folder and NOT on some kind of synced network drive like OneDrive?</p>
+<ul>
+<li>Yeah, probably best not to use a cloud-drive type of syncing.  Many small files there may not work too well</li>
+<li>A high-performance network drive like used for workstations or HPC clusters is probably OK.</li>
+<li>Important is to be very careful if it can be edited from multiple places at once in the cloud drive.  I coud imagine some stuff could go wrong there.  (of course Github/Gitlab/etc is the syncing mechanism for multiple people working, we'll see that tomorrow).</li>
+</ul>
+</li>
+<li>
+<p>There is software herritage - which is archiviing all github projects - https://www.softwareheritage.org/, you recive there also PID (similar as from Zenodo).</p>
+</li>
+</ol>
+<p>:::info</p>
+<h3 id="break-until-xx-58">Break until xx:58</h3>
+<p>Then a session of practical advice: you can hear what us instructors actually do on a daily basis, what tools we use, how we treat small projects different than bigger ones, etc.
+:::</p>
+<ol start="36">
+<li>One of the presenters was able to see in which branch he was on his command line interface (it was in a parenthesis next to his username). How can i do the same for my command line interface?
+<ul>
+<li>
+<p>different shells can be configured to do that. If you use zsh as your shell instead of bash, it comes out of the box (and it is further configurable). In Bash I am not sure you can do it (there is a way but it is a little cumbersome)</p>
+<ul>
+<li>If you really want to do that in bash: you need to change an environment variable called "PS1", which is a pattern that dictates how your prompt looks like.</li>
+<li>This is an example: https://askubuntu.com/questions/730754/how-do-i-show-the-git-branch-with-colours-in-bash-prompt , it requires changing your bash configuration files so that the PS1 variable is modified.</li>
+</ul>
+</li>
+<li>
+<p>I think Git Bash for Windows offers this also out of the box</p>
+<ul>
+<li>true</li>
+</ul>
+</li>
+<li>
+<p>thanks guys, i will look into it then : )</p>
+<ul>
+<li>before you change your .bashrc (and so your bash settings), you can try copy-pasting this in your terminal (the effect will vanish when you close it):<pre data-lang="bash" style="background-color:#f5f5f5;color:#1f1f1f;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c23f31;">parse_git_branch</span><span>(){
+</span><span style="color:#5597d6;">git</span><span> branch </span><span style="color:#b3933a;">2</span><span style="color:#72ab00;">&gt;</span><span> /dev/null </span><span style="color:#72ab00;">| </span><span style="color:#5597d6;">sed -e </span><span style="color:#d07711;">&#39;/^[^*]/d&#39;</span><span style="color:#5597d6;"> -e </span><span style="color:#d07711;">&#39;s/* \(.*\)/ (\1)/&#39;
+</span><span>}
+</span><span style="color:#668f14;">export </span><span style="color:#5597d6;">PS1</span><span style="color:#72ab00;">=</span><span style="color:#d07711;">&quot;\u@\h \[\033[32m\]\w\[\033[33m\]</span><span style="color:#aeb52b;">\$</span><span style="color:#d07711;">(parse_git_branch)\[\033[00m\] $ &quot;
+</span></code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>I sourced this in my bash and it works perfectly. thank youuuu</p>
+<ul>
+<li>Happy to help. But be careful about running code found on a remote corner of the internet on your terminal :-) &lt;= but people can always be trusted, no :(</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="practical-advice">Practical advice</h2>
+<p>Practical advice: How much Git is necessary?
+https://coderefinery.github.io/git-intro/level/</p>
+<ol start="37">
+<li>
+<p>What about using AI to write commit messages?</p>
+<ul>
+<li>Personally, if the person who presses enter for that commit message has reviewed and read the AI message, I am fine with it. (double work?)</li>
+<li>I'd usually say, if it's long, why get AI to write it now if a better AI can later tell me about it?  Maybe for a one-line summary, but that's short enough I can do it.  If I don't care, I'll just say "changes" or something.</li>
+<li>The point "why it changed" being more important than what changes is probably better here.</li>
+</ul>
+</li>
+<li>
+<p>I would add: commit messages can be changed afterwards! (though, this practice should not be abused...)</p>
+<ul>
+<li>Changing commit messages would change the history.  Changing the latest commit  before it's pushed is something I do all the time, but it shouldn't be a thing for old commits.</li>
+</ul>
+</li>
+<li>
+<p>To edit code is it better to make a branch and do edits there, or directly on Main?</p>
+<ul>
+<li>choose the simplest workflow that satisfy all the requirements of your organization/team.  +1</li>
+<li>Often, if you are modifying a complex software you do not want to commit directly to main, because you want to have the pull request/review mechanism to have feedback on your work (that can be automatic feedback -e.g., a suite of automated tests - or feedback given to you by humans). But ideally you should try to merge often (that's what Continuous integration is about)</li>
+<li>Yes, start simple</li>
+</ul>
+</li>
+<li>
+<p>"A GitHub private repository is just a public one waiting to happen." Enrico Glerean :)</p>
+</li>
+</ol>
+<h2 id="what-to-avoid">What to avoid</h2>
+<p>https://coderefinery.github.io/git-intro/what-to-avoid/</p>
+<ol start="41">
+<li>In https://coderefinery.github.io/2025-09-09-workshop/certificates/ in question 3, at the end it says that we should reflect on the content of the 6 days. Okay i stop writing you got the better of me :)
+<ul>
+<li>Oh yes this time they are 9 days :) (I will fix it. We used to have longer day 4 which now becomes shorter day 4 + shorter day 5, and so on)</li>
+</ul>
+</li>
+</ol>
+<h2 id="feedback-day-2">Feedback, day 2</h2>
+<p>:::info</p>
+<h3 id="news-for-day-2-preparation-for-day-3">News for day 2 / preparation for day 3</h3>
+<ul>
+<li>We covered everything as covered in the schedule</li>
+<li>Tomorrow, we show how projects with multiple people would work: both a small group like your own team (centralized), and bigger projects (decentralized, not everyone has direct access).  It's probably the best day.</li>
+<li>Preparation for tomorrow:
+<ul>
+<li>If yesterday and today worked, you are probably good for tomorrow (Github connection is very important)</li>
+<li>But <strong>you need to request access in advance</strong> - this will give you access to projects we work on tomorrow.  Check your email for instructions.</li>
+<li>It's also like extra practice for everything we have done today.
+:::</li>
+</ul>
+</li>
+</ul>
+<p>Today was (vote for all that apply):</p>
+<ul>
+<li>too fast:</li>
+<li>too slow: o</li>
+<li>right speed:</li>
+<li>too slow sometimes, too fast other times: ooooo</li>
+<li>too advanced:</li>
+<li>too basic:</li>
+<li>right level: oo</li>
+<li>I will use what I learned today: oooooooo</li>
+<li>I would recommend today to others: oooooo</li>
+<li>I would not recommend today to others:</li>
+</ul>
+<p>One good thing about today:</p>
+<ul>
+<li>No "too small font" issue today, thanks for fixing this :)</li>
+<li>Conceptually everything was clear to me and I understood the relevance of what we were doing</li>
+<li>I like the discussion and good to know there are multiple ways to do stuff</li>
+<li>Yes discussion helpful, when you respond to questions</li>
+<li>After yesterday and today I feel good about it and ready to use Git.</li>
+</ul>
+<p>One thing to improve for next time:</p>
+<ul>
+<li>Maybe it would've been helpful to sprinkle the practical tips in between the exercises, as an anchor to make the context clearer and improve pacing +1</li>
+<li>it would have been useful with a proper explanation of all the terms being used such as staging etc as it was not covered yesterday. +1
+<ul>
+<li>Does this help?:  Maybe we should show it more. https://coderefinery.github.io/git-intro/reference/</li>
+<li>Yes! but would also help if the instructors explain it quickly when they go through so you understand the context</li>
+</ul>
+</li>
+<li>Make sure presenters speak loud and clear (it was rather good) but avoid ocassional fast mumbling words (as if speaking for themselves).</li>
+</ul>
+<p>Any other feedback?</p>
+<ul>
+<li>I was able to follow along with the 'how to turn your project to a Git repo and share it' following the VScode instructions fine, but got lost with the Rstudio version. I think there may be a step missing linking the github account with Rstudio or I've missed.
+<ul>
+<li>Update on this - i needed to use the SSH key on the branch step (i was trying to use the https)</li>
+</ul>
+</li>
+<li>It would be good to have some cheetsheet at the end with most important commands and explanations, easy to remember or visaulise. +1
+<ul>
+<li>We have! Cheatsheets are here: https://aaltoscicomp.github.io/cheatsheets/git-the-way-you-need-it-cheatsheet.pdf</li>
+<li>More cheatsheets at https://aaltoscicomp.github.io/cheatsheets/</li>
+</ul>
+</li>
+<li>hey. XXXXXXX here. Thank you so much for engagement. I really appreciate it ;) im learning a lot.  P-S Why my font color doesn't change??? heheh :)</li>
+</ul>
+<p>General questions continued:</p>
+<ul>
+<li>I don't really understand the implications of using SSH vs HTTPS vs general URL. Why does it matter and what's the use cases?
+<ul>
+<li>the general URL does not provide an authentication mechanism, so you can perhaps pull/clone, but you might not be able to push. The HTTPS authentication (which does use a URL, which is very similar to the plain URL) might be simpler to use, and since access token can be used provide different security guarantees than SSH, which tends to be very convenient if one has SSH keys set up on their account on their machine.</li>
+</ul>
+</li>
+<li>Can I just use local version control for sensitive data?
+<ul>
+<li>you can also store encrypted data in a repository. If it is encrypted, you can also push it to a public repository and it will be safe.</li>
+<li>The 'remote' does not have to be github.com / microsoft / gitlab.com. You could have that the 'remote' is an ssh server at your university and when you push to remote you basically upload from your local computer, to the storage in the university server.</li>
+</ul>
+</li>
+<li>If I made changes in code already but not satisifed to commit it to main, can it be added to a branch?</li>
+<li>Forgot to git pull/fetch before making changes, ALL THE TIME!!!</li>
+<li>Want to know more about rebasing with some real use cases and examples.</li>
+<li>Will we learn more about gitignore in the future? +1+1 +1</li>
+<li>If I have accidentally been storing files (and converting files...) inside my repository folder, can I delete this change history? I now have too many changes for my push to Github to succeed... (The error message is: fatal: protocol error: bad line length 197)</li>
+</ul>
+
+  
+
+      </div>
+
+      <div class="uk-margin-large-top">
+        <hr>
+        <div class="uk-child-width-expand@s" uk-grid>
+
+  <div>
+    <h4>Funding</h4>
+    <p>
+      CodeRefinery is a project within the
+      <a href="https://neic.no" target="_blank">Nordic e-Infrastructure Collaboration</a> (NeIC).
+    </p>
+  </div>
+
+  <div>
+    <h4>Privacy</h4>
+    <p>
+      <a href="https://coderefinery.org/privacy-policy/" target="_blank">Privacy policy</a>
+    </p>
+  </div>
+
+  <div>
+    <h4>Follow us</h4>
+    <ul class="uk-iconnav">
+      <li>
+        <a href="https://github.com/coderefinery" target="_blank" uk-icon="icon: github">GitHub</a>
+      </li>
+      <li>
+        <a rel="me" href="https://fosstodon.org/@coderefinery" target="_blank" uk-icon="icon: social">Mastodon</a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/company/coderefinery-research-software-development/?viewAsMember=true" target="_blank" uk-icon="icon: linkedin">LinkedIn</a>
+      </li>
+    </ul>
+  </div>
+
+  <div>
+    <h4>Contact</h4>
+    <p>
+      <a href="mailto:support@coderefinery.org">support@coderefinery.org</a>
+    </p>
+  </div>
+
+  <div>
+    <h4>Improve this page</h4>
+    <p>
+      <a href="https:&#x2F;&#x2F;github.com&#x2F;coderefinery&#x2F;2025-09-09-workshop&#x2F;">Source code</a>
+    </p>
+  </div>
+
+</div>
+
+      </div>
+
+    </div>
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+  <script>
+    anchors.add();
+  </script>
+</html>
