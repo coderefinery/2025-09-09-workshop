@@ -7,7 +7,6 @@
 
 - **News**
   - We covered everything as covered in the schedule
-  - **Wednesday 23rd/Sept, we show how to work with others and open your code:**
-    social coding is the vital part of open source software projects, a fundamental part of the tools used in computational research.
-  - Preparation for episode 5:
-    - Exercises will not require any coding, they will be based on discussions and reflections.
+  - **Wednesday 1st/Oct, we show how to document your code for yourself and others in different ways, including different tools**
+  - Preparation for episode 6:
+    - You need a GitHub account and Sphinx installed, see [installation instructions](https://coderefinery.github.io/installation/conda/)
