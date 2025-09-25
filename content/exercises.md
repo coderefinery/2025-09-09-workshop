@@ -27,7 +27,7 @@ This list is subject to changes until the week before the workshop.
 - [DEMO - Using docker to run a local service without installing the software](https://coderefinery.github.io/reproducible-research/environments/#exercises)
 
 ### Day 5:
-Coming soon!
+ - Only discussions in notes document.
 
 ### Day 6: 
 - Demo: [README Features](https://coderefinery.github.io/documentation/writing-readme-files/#exercise-have-fun-testing-some-readme-features)
