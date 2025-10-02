@@ -42,8 +42,9 @@ This list is subject to changes until the week before the workshop.
   - [Hosting websites/homepages on GitHub Pages](https://coderefinery.github.io/documentation/gh-pages/#hosting-websites-homepages-on-github-pages)   
 
 ### Day 7: 
-Coming soon!
-
+ - Exercise session: [A first computational notebook](https://coderefinery.github.io/jupyter/first-notebook/#an-example-computational-notebook)
+ - Exercise session: [Sharing dynamic notebooks on Binder](https://coderefinery.github.io/jupyter/sharing/#sharing-dynamic-notebooks-on-binder)
+ 
 ### Day 8:
 Coming soon!
 
