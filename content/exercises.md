@@ -46,7 +46,8 @@ This list is subject to changes until the week before the workshop.
  - Exercise session: [Sharing dynamic notebooks on Binder](https://coderefinery.github.io/jupyter/sharing/#sharing-dynamic-notebooks-on-binder)
  
 ### Day 8:
-Coming soon!
+ - Exercise session: [Testing locally](https://coderefinery.github.io/testing/locally/#exercise)
+ - Exercise session: [Test design](https://coderefinery.github.io/testing/test-design/#test-design)
 
 ### Day 9:
 - Previously this was done as live coding based on input from the audience. We
