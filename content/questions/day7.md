@@ -87,7 +87,7 @@ Course material: https://coderefinery.github.io/jupyter/first-notebook/
 
 
 :::info
-## Exercise until: XX:00
+## Exercise
 https://coderefinery.github.io/jupyter/first-notebook/#an-example-computational-notebook
 
 
@@ -113,7 +113,7 @@ Lesson material: https://coderefinery.github.io/jupyter/sharing/
 
 :::info
 
-## Exercise until xx:55 
+## Exercise 
 
 Instructions: https://coderefinery.github.io/jupyter/sharing/#sharing-dynamic-notebooks-on-binder
 
