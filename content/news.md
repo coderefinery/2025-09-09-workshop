@@ -8,8 +8,6 @@ We had some technical hiccups with e-mails for day 8, and we are very sorry that
 
 
 - **News**
-  - Days 1-7 went according to schedule (see below)
-  - **Wednesday 15th/Oct, we will look at automated testing (day 8)**
-    
-  - Preparation for day 8:
-    - You need pytest installed to follow the exercises with Python, for example via our coderefinery Conda environment, see [installation instructions](https://coderefinery.github.io/installation/conda/).  
+  - Days 1-8 went according to schedule (see below)
+  - **Wednesday 22nd/Oct, we will look at modular code development (final session, day 9)**
+  - This session will tie together everything we have learned in the rest of the workshop.  
