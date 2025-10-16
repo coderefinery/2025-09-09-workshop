@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Questions and notes from workshop day 7 - CodeRefinery workshop September&#x2F;October 2025</title>
+    <link rel="shortcut icon" href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;/img/favicon.ico">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- uikit -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.23.4/dist/css/uikit.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.4/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.4/dist/js/uikit-icons.min.js"></script>
+
+    <!-- time zone localization -->
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.7/dayjs.min.js" integrity="sha256-EfJOqCcshFS/2TxhArURu3Wn8b/XDA4fbPWKSwZ+1B8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.7/plugin/utc.js" integrity="sha256-qDfIIxqpRhYWa543p6AHZ323xT3B8O6iLZFUAWtEQJw=" crossorigin="anonymous"></script>
+
+    
+      <link rel="alternate" type="application/atom+xml" title="CodeRefinery" href="https://coderefinery.github.io/2025-09-09-workshop/atom.xml" />
+    
+
+        
+      <title>CodeRefinery - Questions and notes from workshop day 7</title>
+      <meta name="twitter:title" content="Questions and notes from workshop day 7" />
+      <meta property="og:title" content="Questions and notes from workshop day 7" />
+      <meta property="og:site_name" content="CodeRefinery workshop September&#x2F;October 2025" />
+    
+
+    
+      <meta name="description" content="Free workshop on git, testing, documentation, and more in a workshop - for researchers and scientists." />
+      <meta name="twitter:description" content="Free workshop on git, testing, documentation, and more in a workshop - for researchers and scientists." />
+      <meta property="og:description" content="Free workshop on git, testing, documentation, and more in a workshop - for researchers and scientists." />
+    
+
+    
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:image" content="https://raw.githubusercontent.com/coderefinery/coderefinery-artwork/main/socialshare/socialshare-workshop.png" />
+      <meta property="og:image" content="https://raw.githubusercontent.com/coderefinery/coderefinery-artwork/main/socialshare/socialshare-workshop.png" />
+    
+
+
+    
+
+    <link href="https://coderefinery.github.io/2025-09-09-workshop/style.css" rel="stylesheet">
+
+    
+    <script defer data-domain="coderefinery.github.io" src="https://plausible.cs.aalto.fi/js/script.js"></script>
+    
+
+
+  </head>
+
+  <body>
+    <div class="uk-container uk-margin-large-bottom">
+
+      <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+  <div class="uk-navbar-right">
+    <ul class="uk-navbar-nav uk-visible@s">
+      
+      
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop">
+      About
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;exercises">
+      List of exercises
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;audience">
+      Audience
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;certificates">
+      Certificates
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;join">
+      How to join
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;requirements">
+      Requirements
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;questions">
+      Q&amp;A
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;code-of-conduct">
+      Code of conduct
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;communication">
+      Communication
+      
+    </a>
+
+    
+
+  </li>
+
+
+    </ul>
+    <a href="#" class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon uk-toggle="target: #sidenav"></a>
+  </div>
+</nav>
+
+<div id="sidenav" uk-offcanvas="flip: true" class="uk-offcanvas">
+  <div class="uk-offcanvas-bar">
+    <ul class="uk-nav">
+      
+      
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop">
+      About
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;exercises">
+      List of exercises
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;audience">
+      Audience
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;certificates">
+      Certificates
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;join">
+      How to join
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;requirements">
+      Requirements
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;questions">
+      Q&amp;A
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;code-of-conduct">
+      Code of conduct
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;communication">
+      Communication
+      
+    </a>
+
+    
+
+  </li>
+
+
+    </ul>
+  </div>
+</div>
+
+
+      <div class="markdown">
+        
+  <h1>Questions and notes from workshop day 7</h1>
+
+  <ul>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day7/#day-7-8-10-2025-jupyter-notebooks">Day 7 - 8&#x2F;10&#x2F;2025 - Jupyter Notebooks</a>
+      
+        <ul>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day7/#questions">Questions</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day7/#jupyter-notebooks">Jupyter notebooks</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day7/#the-user-interface">The user interface</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day7/#a-first-computational-notebook">A first computational notebook</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day7/#exercise">Exercise</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day7/#notebooks-and-version-control">Notebooks and version control</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day7/#sharing-notebooks">Sharing notebooks</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day7/#exercise-1">Exercise</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day7/#widgets">Widgets</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day7/#feedback">Feedback</a>
+              
+            </li>
+          
+        </ul>
+      
+    </li>
+  
+</ul>
+
+
+  
+  
+    <h1 id="day-7-8-10-2025-jupyter-notebooks">Day 7 - 8/10/2025 - Jupyter Notebooks</h1>
+<p>https://coderefinery.github.io/jupyter/</p>
+<p>Let's have some <strong>icebreakers!</strong> :icecream:</p>
+<p>If you could have a fully paid holiday right now, we cover all your costs, what would you like to do? Where would you go?</p>
+<ul>
+<li>I would take my family to some warm place with sea/swimming pool and amazing fresh food like fruits, veggies, fish...</li>
+<li>Spend a week on one of the canary islands with my family and/or friends</li>
+<li>Visit my family in the Austrian alps</li>
+<li>I'd just stay home and enjoying doing nothing!</li>
+<li>I'd like to take my family to Swiss Alps</li>
+<li>...</li>
+</ul>
+<p>Do you have a paper notebook at hand?</p>
+<ul>
+<li>I love post-its with different colors for different things, but they are not the same thing</li>
+<li>For important things I like to have a physical place where to write things</li>
+<li>Always! ...</li>
+<li>I write my (mental) pipelines with pen and paper</li>
+<li>...</li>
+<li>...</li>
+</ul>
+<p>What is your way of working when it comes to writing code for your research projects?</p>
+<ul>
+<li>If I am not reusing previous version of scripts / pipelines, I first sketch things with Jupyter/R-studio interactively, then rewrite the jupyter bits into python scripts / RScripts, and run them from terminal for the final analysis (to avoid having results without being 100% sure on what the running order of cells / R lines was).</li>
+<li>do some analysis in IPython (a terminal version of jupyter notebooks), copy the code from IPython to python files (with %save), glue together those python files with a bash script &lt;- should replace this with a proper workflow manager I think</li>
+<li>I am a total beginner, happy to hear what works for others. +1</li>
+<li>..</li>
+<li>..</li>
+</ul>
+<h2 id="questions">Questions</h2>
+<p><em>Please remember to set the TwitcTV stream quality to "source"</em></p>
+<ol>
+<li>Can you please increase the volume?
+<ul>
+<li>You should be able to increase the volume in the Twitch video to your likings. Does that make it loud enough?</li>
+<li>Is it better now?</li>
+<li>Yes, Thank you.</li>
+</ul>
+</li>
+<li>Seems some difference in audio volume between different speakers - XXXXXXXX fairly quiet compared to the rest
+<ul>
+<li>Thanks. We can fix it. (I won't talk at all basically)</li>
+<li>LOL</li>
+</ul>
+</li>
+</ol>
+<blockquote>
+<p>Forgot to mention about breaks: There will be one break (in about an hour) and <a rel="noopener" target="_blank" href="https://coderefinery.github.io/2025-09-09-workshop/exercises/#day-7">two exercise sessions</a> today (one before and one after the break).</p>
+</blockquote>
+<h2 id="jupyter-notebooks">Jupyter notebooks</h2>
+<p>Course material: https://coderefinery.github.io/jupyter/motivation/</p>
+<p>Your questions here:
+3. What is the differene between Jupyter Notebook and Jupyter Lab? Is it ok to use Jupyter Lab just not using all the features if not needed?
+- We will get to that in a bit
+- For today it is OK to work with either
+- For the record and future readers:
+- Jupyter Notebook: the core system that interprets the notebook files (json) and via web browser allows communication with the kernel which runs the python bits that are on each cell
+- Jupyter Lab: a development tool that also includes ways to start terminals, work with git, browse file system. It is basically a fully working IDE that runs inside your web-browser
+- Bonus (for more confusion): Jupyter HUB: a large scale web application that allows multiple users to start their instances of jupyter lab. Most likely your university is running jupyter-hub, to let you start jupyter-lab sessions, and in those sessions you will run a jupyter-notebook :)
+4. How does this compare to R Markdown? (Thank you so much for all these answers, guys! :D )</p>
+<ul>
+<li>R markdown is written in plain text almost as code, while a jupyter notebook is something more in the "what you see is what you get". Also R markdown is mostly for R (although you can use other languages there...)</li>
+<li>Also, jupyter notebooks are developed in a browser, while R-markdown notebooks are mostly written in RStudio (correct me if I am wrong)
+<ul>
+<li>jupyter notebooks can be also edited using vscode (with a plugin), possibly offering a more similar experience to RStudio/RMarkdown?</li>
+</ul>
+</li>
+<li>Maybe what I feel as the biggest difference is that Jupyter notebooks have a more interactive element, Rmarkdown is more about writing a reproducible document with text and code (and results) all in one place.</li>
+<li>Maybe Quarto combines both world of Rmarkdown "papers with code" and Jupyter "interactivity". See examples https://quarto.org/docs/interactive/</li>
+<li>Tooling: there is quite some tooling developed for jupyter notebooks: difftools, validation tools, converters to/from various other formats and ways to include those in documentation corpora. I am not sure about RMarkdown</li>
+</ul>
+<h2 id="the-user-interface">The user interface</h2>
+<p>Course material: https://coderefinery.github.io/jupyter/interface/</p>
+<ol start="5">
+<li>
+<p>Actually there seems to be one icon fewer in my Jupyter notebook UI.</p>
+<ul>
+<li>out of curiosity, which one is missing? (I doubt it will affect your work)</li>
+<li>It looks like the version control icon is missing, am I right?
+<ul>
+<li>I think so</li>
+<li>Do you have the version control button on the side? Above the table of contents?
+<ul>
+<li>No</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>What fancy terminal app and plug-ins does the presenter use? They look fine as heck. (not the vs code one, the previous one where he was in his mac terminal)</p>
+<ul>
+<li>ok, we can ask him to fill this info during the break :) (thanks!)</li>
+<li>The terminal is called Warp: https://www.warp.dev/, I also use <code>zsh</code> instead of bash.  The downside of warp is you have to create an account and login... But it's a great terminal! (thank you, i will take a look at it because it seems really helpful with the autocompletion and suggestions : ) )</li>
+</ul>
+</li>
+<li>
+<p>What tool do you recommend for version control of a notebook? Now every time I rerun a book, there is some diff shown up. I don't want those to be in the git history.</p>
+<ul>
+<li>This will be discussed later. git has a filter mechanism that can be configured for that. ("nbdime" is the search word)</li>
+<li>The nbdime program can be set up to be used with git: see https://coderefinery.github.io/jupyter/version-control/#using-nbdime-on-the-command-line</li>
+</ul>
+</li>
+</ol>
+<h2 id="a-first-computational-notebook">A first computational notebook</h2>
+<p>Course material: https://coderefinery.github.io/jupyter/first-notebook/</p>
+<p>:::info</p>
+<h2 id="exercise">Exercise</h2>
+<p>https://coderefinery.github.io/jupyter/first-notebook/#an-example-computational-notebook</p>
+<p>What to do?</p>
+<ul>
+<li>Create a notebook with markdown and code cells and copy and paste the content from the exercise materials</li>
+</ul>
+<p>:::</p>
+<p><em>If you have troubles, you can also ask for help in the help zoom room (link in the e-mail)</em></p>
+<p><em>If you have extra time, you can take a look at https://coderefinery.github.io/jupyter/examples/#cell-profiling (We will cover widgets if we have time, so don't do that one :smile:)</em></p>
+<h2 id="notebooks-and-version-control">Notebooks and version control</h2>
+<p>Lesson material: https://coderefinery.github.io/jupyter/version-control/</p>
+<h2 id="sharing-notebooks">Sharing notebooks</h2>
+<p>Lesson material: https://coderefinery.github.io/jupyter/sharing/</p>
+<p>:::info</p>
+<h2 id="exercise-1">Exercise</h2>
+<p>Instructions: https://coderefinery.github.io/jupyter/sharing/#sharing-dynamic-notebooks-on-binder</p>
+<p>What to do?</p>
+<ul>
+<li>Create a public repository with the pi calculate example and connect it to Binder</li>
+</ul>
+<p>Optional Exercise:</p>
+<ul>
+<li>https://coderefinery.github.io/jupyter/sharing/#importance-of-tracking-dependencies
+:::</li>
+</ul>
+<p>Your questions here:
+9. It took forever to launch it. Is this usual for a first time notebook? It didnt take that long with the other (oohhhh ok get it)
+- So yes, the first time means creating the environment as well.
+10. I used matplotlib==3.10.1 and it worked in case that helps
+- good to know :)
+12. Is the jupyter lab through binder running on our local machine or it is on a cloud?
+- in the cloud</p>
+<ol start="13">
+<li>So we didnt <strong>specified where</strong> is our <strong>dependency list</strong> when launching on <strong>Binder</strong>, it is preassummed on requirements.txt in the root of the repository?
+<ul>
+<li><del>if you are using the coderefinery conda environment, then the dependencies were installed in the conda env</del> (edit: irrelevant for binder)</li>
+<li>yes, for Binder the requirements.txt at the root of the repository defines the dependencies (see <a rel="noopener" target="_blank" href="https://mybinder.readthedocs.io/en/latest/examples/sample_repos.html#python-environment-with-a-requirements-txt">here</a>. An alternative is the <code>environment.yml</code> for a conda env (see <a rel="noopener" target="_blank" href="https://github.com/binder-examples/conda">here</a>)</li>
+<li>Also, if its a R notebook, you should have a runtime.txt</li>
+</ul>
+</li>
+</ol>
+<h2 id="widgets">Widgets</h2>
+<p>Instructions: https://coderefinery.github.io/jupyter/extra-features/#widgets
+14. I had trouble getting matplotlib to behave interactively with widgets when %inline is invoked. Maybe remove that? I think matplotlib has a quick way to invoke its widget with %widget as well
+- Thank you for sharing, this also worked for the instructor! &lt;3
+15. Can you please repeat how to enable rich git diff on GitHub website directly?
+- Click on you profile picture, and then feature preview, and then rich jupyter notebook diff.
+16. Can you send us last notebook with interactive function via widgets
+17. AttributeError: <code>np.Inf</code> was removed in the NumPy 2.0 release. Use <code>np.inf</code> instead. Kindly help</p>
+<h2 id="feedback">Feedback</h2>
+<p>:::info
+Today we looked into Jupyter notebook and you got to play around with it.
+Next week (same time same place) we will continue with a lesson on automated testing.
+You will get some hints on how you may prevent yourself and others from breaking your working code by running tests manually and automatically.</p>
+<p>Ask more questions in: https://coderefinery.zulipchat.com
+:::</p>
+<p>Today was ... (vote for all that apply):
+Speed:</p>
+<ul>
+<li>..too fast:</li>
+<li>..too slow: o</li>
+<li>..right speed: oo</li>
+<li>..too slow sometimes, too fast other times:ooo
+Level:</li>
+<li>..too advanced:</li>
+<li>..too basic: ooo</li>
+<li>..right level:oo
+Usage and recommendation:</li>
+<li>..I will use what I learned today: ooooo</li>
+<li>..I would recommend today to others: ooooo</li>
+<li>..I would not recommend today to others:</li>
+</ul>
+<p>One good thing about today:</p>
+<ul>
+<li>The content may have been basic but I get why it is super important to know how to handle these things and it was presented at an overall nice pace, so kudos for that</li>
+<li>..both speaker taught are same pace and level</li>
+<li>..</li>
+</ul>
+<p>One thing to improve for next time:</p>
+<ul>
+<li>Maybe add one more exercise or theme in this session where we connect to a cluster with a jupyter notebook and work in data analysis, using installed programs on the cluster, submitting SLURM and things like that. o
+<ul>
+<li>That would be great, but unfortunately not everyone has access to a cluster, or even the need to work on a cluster and learn how to deal with it.</li>
+<li>Understandable. I am looking forward for more specialised courses then offered from you with these things in mind in the future.</li>
+<li>Our friends at Aalto university have a HPC kickstart course, but I am unsure if Jupyter is a part of that: https://scicomp.aalto.fi/training/scip/kickstart-2025/ (it does not, I just learned, but anyway leaving the link here for review :) )</li>
+</ul>
+</li>
+<li>..</li>
+</ul>
+
+  
+
+      </div>
+
+      <div class="uk-margin-large-top">
+        <hr>
+        <div class="uk-child-width-expand@s" uk-grid>
+
+  <div>
+    <h4>Funding</h4>
+    <p>
+      CodeRefinery is a project within the
+      <a href="https://neic.no" target="_blank">Nordic e-Infrastructure Collaboration</a> (NeIC).
+    </p>
+  </div>
+
+  <div>
+    <h4>Privacy</h4>
+    <p>
+      <a href="https://coderefinery.org/privacy-policy/" target="_blank">Privacy policy</a>
+    </p>
+  </div>
+
+  <div>
+    <h4>Follow us</h4>
+    <ul class="uk-iconnav">
+      <li>
+        <a href="https://github.com/coderefinery" target="_blank" uk-icon="icon: github">GitHub</a>
+      </li>
+      <li>
+        <a rel="me" href="https://fosstodon.org/@coderefinery" target="_blank" uk-icon="icon: social">Mastodon</a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/company/coderefinery-research-software-development/?viewAsMember=true" target="_blank" uk-icon="icon: linkedin">LinkedIn</a>
+      </li>
+    </ul>
+  </div>
+
+  <div>
+    <h4>Contact</h4>
+    <p>
+      <a href="mailto:support@coderefinery.org">support@coderefinery.org</a>
+    </p>
+  </div>
+
+  <div>
+    <h4>Improve this page</h4>
+    <p>
+      <a href="https:&#x2F;&#x2F;github.com&#x2F;coderefinery&#x2F;2025-09-09-workshop&#x2F;">Source code</a>
+    </p>
+  </div>
+
+</div>
+
+      </div>
+
+    </div>
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+  <script>
+    anchors.add();
+  </script>
+</html>

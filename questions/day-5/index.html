@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Questions and notes from workshop day 5 (Social Coding) - CodeRefinery workshop September&#x2F;October 2025</title>
+    <link rel="shortcut icon" href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;/img/favicon.ico">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- uikit -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.23.4/dist/css/uikit.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.4/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.4/dist/js/uikit-icons.min.js"></script>
+
+    <!-- time zone localization -->
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.7/dayjs.min.js" integrity="sha256-EfJOqCcshFS/2TxhArURu3Wn8b/XDA4fbPWKSwZ+1B8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.7/plugin/utc.js" integrity="sha256-qDfIIxqpRhYWa543p6AHZ323xT3B8O6iLZFUAWtEQJw=" crossorigin="anonymous"></script>
+
+    
+      <link rel="alternate" type="application/atom+xml" title="CodeRefinery" href="https://coderefinery.github.io/2025-09-09-workshop/atom.xml" />
+    
+
+        
+      <title>CodeRefinery - Questions and notes from workshop day 5 (Social Coding)</title>
+      <meta name="twitter:title" content="Questions and notes from workshop day 5 (Social Coding)" />
+      <meta property="og:title" content="Questions and notes from workshop day 5 (Social Coding)" />
+      <meta property="og:site_name" content="CodeRefinery workshop September&#x2F;October 2025" />
+    
+
+    
+      <meta name="description" content="Free workshop on git, testing, documentation, and more in a workshop - for researchers and scientists." />
+      <meta name="twitter:description" content="Free workshop on git, testing, documentation, and more in a workshop - for researchers and scientists." />
+      <meta property="og:description" content="Free workshop on git, testing, documentation, and more in a workshop - for researchers and scientists." />
+    
+
+    
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:image" content="https://raw.githubusercontent.com/coderefinery/coderefinery-artwork/main/socialshare/socialshare-workshop.png" />
+      <meta property="og:image" content="https://raw.githubusercontent.com/coderefinery/coderefinery-artwork/main/socialshare/socialshare-workshop.png" />
+    
+
+
+    
+
+    <link href="https://coderefinery.github.io/2025-09-09-workshop/style.css" rel="stylesheet">
+
+    
+    <script defer data-domain="coderefinery.github.io" src="https://plausible.cs.aalto.fi/js/script.js"></script>
+    
+
+
+  </head>
+
+  <body>
+    <div class="uk-container uk-margin-large-bottom">
+
+      <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+  <div class="uk-navbar-right">
+    <ul class="uk-navbar-nav uk-visible@s">
+      
+      
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop">
+      About
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;exercises">
+      List of exercises
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;audience">
+      Audience
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;certificates">
+      Certificates
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;join">
+      How to join
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;requirements">
+      Requirements
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;questions">
+      Q&amp;A
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;code-of-conduct">
+      Code of conduct
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;communication">
+      Communication
+      
+    </a>
+
+    
+
+  </li>
+
+
+    </ul>
+    <a href="#" class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon uk-toggle="target: #sidenav"></a>
+  </div>
+</nav>
+
+<div id="sidenav" uk-offcanvas="flip: true" class="uk-offcanvas">
+  <div class="uk-offcanvas-bar">
+    <ul class="uk-nav">
+      
+      
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop">
+      About
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;exercises">
+      List of exercises
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;audience">
+      Audience
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;certificates">
+      Certificates
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;join">
+      How to join
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;requirements">
+      Requirements
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;questions">
+      Q&amp;A
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;code-of-conduct">
+      Code of conduct
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;communication">
+      Communication
+      
+    </a>
+
+    
+
+  </li>
+
+
+    </ul>
+  </div>
+</div>
+
+
+      <div class="markdown">
+        
+  <h1>Questions and notes from workshop day 5 (Social Coding)</h1>
+
+  <ul>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day-5/#social-coding">Social coding</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day-5/#question-1-why-would-i-want-to-share-my-scripts-code-data">Question 1: Why would I want to share my scripts&#x2F;code&#x2F;data?</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day-5/#question-2-the-most-concerning-thing-for-me-if-i-share-my-software-now">Question 2: The most concerning thing for me, If I share my software now</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day-5/#question-3-why-is-software-often-treated-differently-from-papers">Question 3: Why is software often treated differently from papers?</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day-5/#question-4-when-you-find-a-repository-with-code-library-you-would-like-to-reuse-what-are-the-things-you-look-at-to-decide-whether-you-use-it">Question 4: When you find a repository with code&#x2F;library you would like to reuse, what are the things you look at to decide whether you use it?</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day-5/#any-other-question-or-comments-related-to-social-coding">Any other question or comments related to social coding</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day-5/#software-licensing">Software Licensing</a>
+      
+        <ul>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day-5/#question-5-which-of-these-are-derivative-works">Question 5: Which of these are derivative works?</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day-5/#comments-on-llms-for-coding">Comments on LLMs for coding</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day-5/#questions-continued">Questions continued</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day-5/#exercise">Exercise</a>
+              
+            </li>
+          
+        </ul>
+      
+    </li>
+  
+</ul>
+
+
+  
+  
+    <p><strong>How is the weather today at your location?</strong></p>
+<ul>
+<li>Helsinki, sunny but chilly</li>
+<li>Trondheim, raining and grey - autumn weather</li>
+<li>Copenhagen, it is sunny (for now....)</li>
+<li>Eindhoven, bit downcast</li>
+<li>Tampere, blue sky for now...</li>
+<li>Copenhagen, chilly but the sun is out</li>
+<li>Delhi, sunny but HOT</li>
+<li>Belgrade, sunny</li>
+<li>Tübingen, raining and grey</li>
+<li>Kiel, chilly and surprisingly sunny</li>
+<li>Stockholm, sunny and cold</li>
+<li>Konstanz, cloudy and cold</li>
+<li>Karlsruhe, grey on grey</li>
+<li>Resistencia(AR), very sunny</li>
+</ul>
+<p><strong>Have you shared some of your code with colleagues? Or has a colleague shared code with you? How did they share it?</strong></p>
+<ul>
+<li>email +6</li>
+<li>GitHub +7</li>
+<li>OneDrive</li>
+<li>gitlab, gitub, code snippets in group internal chat platform</li>
+<li>Had written some analysis scripts stored in the group's cluster, so I just transferred them to a common access folder +2</li>
+<li>usb</li>
+<li>Slack</li>
+<li>Teams/email for sharing R scripts mostly</li>
+</ul>
+<h2 id="social-coding">Social coding</h2>
+<p>https://coderefinery.github.io/social-coding/social-coding/</p>
+<h2 id="question-1-why-would-i-want-to-share-my-scripts-code-data">Question 1: Why would I want to share my scripts/code/data?</h2>
+<p><strong>Choose many</strong>. Vote by adding an <code>o</code> character:</p>
+<ul>
+<li>
+<p>A: Easier to find and reproduce (scientific reproducibility)</p>
+<ul>
+<li>votes:o oooooooooooooooooooo
+0</li>
+</ul>
+</li>
+<li>
+<p>B: More trustworthy: others can verify correctness and find and report bugs</p>
+<ul>
+<li>votes:oooooooooooooooo0ooo</li>
+</ul>
+</li>
+<li>
+<p>C: Enables others to build on top of your code
+(derivative work, provided the license allows it)</p>
+<ul>
+<li>votes:ooooooooooo</li>
+</ul>
+</li>
+<li>
+<p>D: Others can submit features/improvements</p>
+<ul>
+<li>votes:oooooooo</li>
+</ul>
+</li>
+<li>
+<p>E: Others can help fixing bugs</p>
+<ul>
+<li>votes:ooooooo</li>
+</ul>
+</li>
+<li>
+<p>F: Many tools and apps are free for open source, so no financial cost for this
+(GitHub, GitLab, Appveyor, Read the Docs)</p>
+<ul>
+<li>votes:ooooooo</li>
+</ul>
+</li>
+<li>
+<p>G: Good for your CV: you can show what you have built</p>
+<ul>
+<li>votes:oooooooooooooooo</li>
+</ul>
+</li>
+<li>
+<p>H: Discourages competitors. If others can't build on your work,
+they will make competing work</p>
+<ul>
+<li>votes:o</li>
+</ul>
+</li>
+<li>
+<p>I: When publicly shared, usually we time-stamp or set a version,
+so it is easier to refer to a specific version</p>
+<ul>
+<li>votes: oooooo0ooo</li>
+</ul>
+</li>
+<li>
+<p>J: You can reuse your own code later after change of job or affiliation</p>
+<ul>
+<li>votes:ooooooooooo0ooooo</li>
+</ul>
+</li>
+<li>
+<p>K: It encourages me to code properly from the start</p>
+<ul>
+<li>votes:oooooooooooooooooooo</li>
+</ul>
+</li>
+</ul>
+<h2 id="question-2-the-most-concerning-thing-for-me-if-i-share-my-software-now">Question 2: The most concerning thing for me, If I share my software now</h2>
+<p><strong>Choose one</strong>. Vote by adding an <code>o</code> character:</p>
+<ul>
+<li>
+<p>A: It will be scooped (stolen) by someone else</p>
+<ul>
+<li>votes:ooo</li>
+</ul>
+</li>
+<li>
+<p>B: It will expose my "ugly code"</p>
+<ul>
+<li>votes:oooooooooooooooooo</li>
+</ul>
+</li>
+<li>
+<p>C: Others may find bugs and mistakes. What if the algorithm is wrong?</p>
+<ul>
+<li>votes:ooooooo</li>
+</ul>
+</li>
+<li>
+<p>D: I will get too many questions, I do not have time for that</p>
+<ul>
+<li>votes:oooo</li>
+</ul>
+</li>
+<li>
+<p>E: Losing control over the direction of the project</p>
+<ul>
+<li>votes:oooooo</li>
+</ul>
+</li>
+<li>
+<p>F: Low quality copies will appear</p>
+<ul>
+<li>votes:o</li>
+</ul>
+</li>
+<li>
+<p>G: I won't be able to sell this later. Someone else will make money from it</p>
+<ul>
+<li>votes:oo</li>
+</ul>
+</li>
+<li>
+<p>H: It is too early, I am just prototyping, I will write version to distribute later</p>
+<ul>
+<li>votes:ooooooooooooooo</li>
+</ul>
+</li>
+<li>
+<p>I: Worried about licensing and legal matters, as they are very complicated</p>
+<ul>
+<li>votes:oooooooo</li>
+</ul>
+</li>
+</ul>
+<h2 id="question-3-why-is-software-often-treated-differently-from-papers">Question 3: Why is software often treated differently from papers?</h2>
+<p>Free-form answers:</p>
+<ul>
+<li>No idea, is it?</li>
+<li>Maybe because it doesn't work for all</li>
+<li>Because software can be constantly improved and modified whereas results in papers are usually a one-time publication :+2:</li>
+<li>(More related to code accompanying papers than software) - but there's no standard way to share (e.g. OSF or GitHub?), or journals don't have specific requirements?</li>
+<li>Because usually there are no reviewers for code.</li>
+<li>In my field, it seems like  nobody uses each other's code. Everyone develops a different method, haven't seen many cases where e.g. a GitHib repo is cited. Papers are "what counts"</li>
+<li>CBecause Reviewers in biology often don't have much coding knowledge and don't really ask questions on it besides general ones</li>
+<li>Some Code might be considered as reserach infrastructure, more than a reserach output</li>
+<li>Software usually require maintenance over periods of time and in most cases the maintence part of it doesn't get recognition/citations. Hence people sometimes abondon a code when they no longer have to use it anymore</li>
+<li>Not knowing how to do it properly (not having real coding education and being poor or rookie at organizing it, versions, etc.), publishing code is sometimes pain in the ass, or just publish something so it is there.</li>
+<li>Difficult to write variations as in case of producing text</li>
+<li>Software is like a recorded song: developers can "sample" existing code snippets and reuse them to create new applications, much like a DJ. Papers are like sheet music: you can't just copy the notes; you must create an original composition by building upon the ideas and citing the source. Just different ways we treat the format.
+<ul>
+<li>Hey, you think you can. But code is also copyright protected. ;-)</li>
+</ul>
+</li>
+<li>If data is sensitive, you can't make it available to use with the code. In papers you just publish the summary statistics or model outcomes.</li>
+<li>Funders don't care as much about it?</li>
+</ul>
+<h2 id="question-4-when-you-find-a-repository-with-code-library-you-would-like-to-reuse-what-are-the-things-you-look-at-to-decide-whether-you-use-it">Question 4: When you find a repository with code/library you would like to reuse, what are the things you look at to decide whether you use it?</h2>
+<p>Free-form answers:</p>
+<ul>
+<li>I usually go from a paper to the code, then I check whether I can understand the code and it matches what was described in the paper :+3:</li>
+<li>Kind of same, read a paper. Check if it has explanation, good documentation. Try to understand it, if I do i go for it, if not i quit.</li>
+<li>Read the paper, then the code and see if it is logical. Ideally, I also like to see test data samples where I can use the code on, to see if it really works as intended right out of the box before I proceed with my own stuff. (and also whether I can freely use it or there are licencing restrictions) +3</li>
+<li>Paper to code as well. Check documentation, applicability and licence. +2</li>
+<li>F...</li>
+<li>If there are available tutorials and the code is well explained</li>
+<li>If its maintained, when it was updated last etc: :+2:</li>
+<li>If the architecture is made so that I can take what I need, which might not be the whole code for example (the "I needed a banana, I got a gorilla and the whole jungle" problem)</li>
+<li>Good installation instruction, class structure, and assumption</li>
+<li>Ease of use, while still doing the job</li>
+<li>Tests! So I can trust it</li>
+</ul>
+<h2 id="any-other-question-or-comments-related-to-social-coding">Any other question or comments related to social coding</h2>
+<ol>
+<li>
+<p>Do reviewers ever check the code? Does anyone in academic have time to do that?</p>
+<ul>
+<li>As a reviewer I do check it. And there are even good tools to anonymise the code when peer review requires anonymity (I will post the link later)
+<ul>
+<li>How about others? Is it most of them do, or most of them don't?</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>I find it frustrating when someone has done part of the analysis in paid-for software and the remainder in open source, so the full analysis is not possible to replicate. +2</p>
+<ul>
+<li>Indeed. Some tools allow for a "runtime" tool to run code written in their proprietary language. But often it is just "private"</li>
+</ul>
+</li>
+<li>
+<p>Are the codes checked for plagiarism?</p>
+<ul>
+<li>We will get to that :)</li>
+</ul>
+</li>
+<li>
+<p>Are there tools that will review your code or suggest better formatting (e.g. markdown) aside from AI platforms</p>
+<ul>
+<li>There are for example <em>linters</em>, tool that review code violations etc, not exactly the type of refactoring that an AI model might suggest https://aaltoscicomp.github.io/python-for-scicomp/productivity/</li>
+</ul>
+</li>
+<li>
+<p>on the importance of licenses: IIRC, in order to finally publish this code https://www.4c-multiphysics.org/history/ the legal department of a universityr had to chase up every contributor since the beginning of time so that a license could be agreed on by everybody. Is this a common problem?</p>
+<ul>
+<li>I don't know how common it is, but some research groups have been developing code for years with multiple contributors, so I guess it would be a similar case if the code would suddenly need to become a product</li>
+</ul>
+</li>
+<li>
+<p>Are there ways to check that the code I am using from someone else (given the licenses allow) is original and not plagiarized from another source?</p>
+<ul>
+<li>There are some code plagiarism checkers, but as far as I know they are only proprietary like: https://codequiry.com/</li>
+</ul>
+</li>
+<li>
+<p>Are you devoted to explaining your old codes to newly interested people? For how long would you do it on aregular basis?</p>
+<ul>
+<li>I guess nobody should be required to explain their old code, it becomes more of an ethical rather than legal matter. As researchers we want to be transparent and if someone is doubting our implementation we should at least clarify their doubts.</li>
+</ul>
+</li>
+<li>
+<p>What if I find inspiration from someone's code but don't exactly use the same? +1</p>
+<ul>
+<li>It depends. :) In a way the "clean room" design can be that (getting inspiration on how a certain function takes some inputs and produces some outputs, but not necessarily writing the content in the same way)</li>
+</ul>
+</li>
+<li>
+<p>What's the difference, from the legal point of view, between taking someone's else code and using it (with 'using', 'import', 'include' or link time) and actually modifying it for your own purposes or copy/pasting it into your codebase?</p>
+<ul>
+<li>If I use an external code (proprietary or not) in my code, all I need to do <em>ethically</em> is to tell others how they can reproduce/import/link the external code (e.g. build a conda environment so that you can import the same dependencies I have). In the moment that somebody else's code becomes part of my code (in a subfolder or even with bits of code inside my own code) then I need to consider that their license is compatible with my license for such derivative work.</li>
+</ul>
+</li>
+<li>
+<p>Now that I've learned how to use GitHub from this course- If I've previously published a paper, how do I go about linking the paper to the newly available code (previously in supplemental info)? +1</p>
+<ul>
+<li>You should publish it in a repository (like zenodo or institutional). Many repositories have integration with Github. Then you can get a DOI and licence. The metadata in the repository can contain the link to the paper. If the paper is already published it's difficult to link from the paper if the publisher often wont allow modifications of the paper.</li>
+<li>I think it would be useful to have an overview of the different repositories? I thought GitHub was the repository... what's the difference between using that vs zenodo vs OSF (and probably many more).</li>
+<li>overview of repositories: https://www.re3data.org/ but I think very code-specific repositories exist. A data repository like Zenodo will provide a DOI and mandatory metadata that makes your research output (more) FAIR. A repository should treat your published code with same value as paper. So you can't just delete it. If you change it, the DOI is versioned to be able to track individual versions.</li>
+<li>Ok thanks. It really feels like there are way too many options... quite overwhelming to look at that website as a notice and attempt to decide which is the best to use. There seems like theres always more layers!</li>
+<li>I totally understand. Ask your academic library for advice or try to find the repositories used in your discipline. If you have an institutional repository, use that one.</li>
+</ul>
+</li>
+<li>
+<p>I've seen citation options on OSF, for code that is linked to a paper. Is it better to cite the code directly rather than the paper?</p>
+<ul>
+<li>I think it's field dependent, but in general citations to papers are the "metric" for academic careers, so researchers tend to maximise those rather than citations to code (or to data).</li>
+</ul>
+</li>
+<li>
+<p>I am very nervous about people seeing my messy code. How do I find the sweet spot between sharing my code and hiding my mess?</p>
+<ul>
+<li>Start from day 1 with non-messy code by having lots of comments and structure. Pretend <em>they</em> are already reading your code.</li>
+</ul>
+</li>
+</ol>
+<h1 id="software-licensing">Software Licensing</h1>
+<p>Link to the material: https://coderefinery.github.io/social-coding/software-licensing/</p>
+<h2 id="question-5-which-of-these-are-derivative-works">Question 5: Which of these are derivative works?</h2>
+<p><strong>Choose many</strong>. Vote by adding an <code>o</code> character:</p>
+<ul>
+<li>
+<p>A. Download some code from a website and add on to it</p>
+<ul>
+<li>votes:ooooooooooooooooooooooo</li>
+</ul>
+</li>
+<li>
+<p>B. Download some code and use one of the functions in your code</p>
+<ul>
+<li>votes:oooooooooooooooo</li>
+</ul>
+</li>
+<li>
+<p>C. Changing code you got from somewhere</p>
+<ul>
+<li>votes:ooooooooooooooooooooo</li>
+</ul>
+</li>
+<li>
+<p>D. Extending code you got from somewhere</p>
+<ul>
+<li>votes:oooooooooooooooooooooooo</li>
+</ul>
+</li>
+<li>
+<p>E. Completely rewriting code you got from somewhere</p>
+<ul>
+<li>votes:ooo</li>
+</ul>
+</li>
+<li>
+<p>F. Rewriting code to a different programming language</p>
+<ul>
+<li>votes:o</li>
+</ul>
+</li>
+<li>
+<p>G. Linking to libraries (static or dynamic), plug-ins, and drivers</p>
+<ul>
+<li>votes:oo</li>
+</ul>
+</li>
+<li>
+<p>H. Clean room design (somebody explains you the code but you have never seen it)</p>
+<ul>
+<li>votes:oooo</li>
+</ul>
+</li>
+<li>
+<p>I. You read a paper, understand algorithm, write own code</p>
+<ul>
+<li>votes:ooooooo</li>
+</ul>
+</li>
+</ul>
+<ol start="13">
+<li>
+<p>Comment/question: It confuses me in the figure on licenses that the two horizontal arrows have different colours. Does the colour carry any meaning? I missed it if that was explained.</p>
+<ul>
+<li>Yes red is the proprietary licenses (basically copyright/IPR/patents) and the green the spectrum of open source licenses. Public domain (zero license) is at the bottom in grey.</li>
+<li>Hmm right I mean the arrows pointing across
+<ul>
+<li>Yes that the very permissive can become fully red (your changes to the library can stay private), while the weak copyleft allow you to use it, but if you change some bits of that library you need to "give back" to the community (green arrow, this is what Björn was mentioning about the mozzila license MPL). Sorry if this wasn't super clear :)</li>
+<li>OK I think I see the point, still struggling with the graphical illustration of it. An arrow into the red seems to suggest it becoming closed.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Are there cheat sheets for all these licences, explained in simple words "you can do this, you can't do that"?</p>
+<ul>
+<li>Good question! Nothing that I remember, but check for example https://fair-software.nl/</li>
+</ul>
+</li>
+<li>
+<p>Are there any licences restrictive exclusively towards Big Giants?</p>
+<ul>
+<li>They can do what they want. :) Look at all copyright materials they have been able to use for their AI models. :)</li>
+</ul>
+</li>
+<li>
+<p>Do you check licence for every single library you install/use in e.g. python?</p>
+<ul>
+<li>our university legal team will say "yes" to this question
+<ul>
+<li>They are not the ones using it and writing codes, are they? Are you consulting them for every single one? :)
+- of course they are not, but they need to handle the legal claims. I'm not a researcher, but we need to handle this when assisting researchers in publishing data and code. In the spirit of this course, try to document libraries etc that you reuse in your code from the beginning :-)</li>
+</ul>
+</li>
+<li>Open source license are based on common sense :) so if you do not plan to modity the software, you can just download and use. The issue is when some products supposedly open add a "by the way, if you are an organisation with more than 200 employees, you need to pay us for using our software" (this has happened with Anaconda https://www.cdotrends.com/story/4173/anaconda-threatens-legal-action-over-licensing-terms; they recently removed non-profit/public sector from their license).</li>
+</ul>
+</li>
+</ol>
+<h2 id="comments-on-llms-for-coding">Comments on LLMs for coding</h2>
+<ul>
+<li>I haven't used it to write code (LLMs), but im not a programmer per se. Mostly write bash/python scripts for post processing simulation data in vim.</li>
+<li>I have used LLMs to generate small snippets of code, but never ended up using them as is +1</li>
+</ul>
+<h2 id="questions-continued">Questions continued</h2>
+<ul>
+<li>
+<p>Why do we use LICENSE folder with many licenses? Wouldn't then licenses clas eachother?! One will allow something, while other would prohibit it? Up to now, I thought that we need to stick explicitly to single license?</p>
+<ul>
+<li>We stick to one license for our own work, but if we "remix" work of others we also add their licenses and we make sure that they do not clash with our license (e.g. strong copyleft)</li>
+</ul>
+</li>
+<li>
+<p>There are tools to do a quick check for plagiarism on a draft you have made. Is there something similar for code?</p>
+<ul>
+<li>Yes there is but it's proprietary https://codequiry.com/ . I don't know of any open source tool that can easiliy detect plagiarised code, unless one does searches of code snippets...</li>
+</ul>
+</li>
+</ul>
+<h2 id="exercise">Exercise</h2>
+<p><strong>Do you cite software that you use? How?</strong></p>
+<ul>
+<li>Usually for molecular simulation software, they tell you which papers you could cite in order to support the team that makes the software but also to be "proper" when it comes to citations. +2</li>
+<li>. i refer to a paper introducing the code or a GithubRep +1</li>
+<li>I mostly use R packages, I mention all analysis related ones in the methods with their version and put the library citation there. Same for databases. (Non analysis related ones like ggplot2 are loaded in the publicly available code)</li>
+<li>Usually not, since it is written in README please cite this paper, and I find it enough.</li>
+<li>Yes, with author names and versions</li>
+<li>Yes, I footnotes of papers. +1</li>
+<li>For example like this: Skar Christiansen, Asmus; Andersen, Sebastian; Nielsen, Julius (2020). Adaptive Layered Viscoelastic Analysis (ALVA). Technical University of Denmark. Software. https://doi.org/10.11583/DTU.12387305.v7  +1</li>
+</ul>
+<p><strong>If I wanted to cite your code/scripts, what would I need to do?</strong></p>
+<ul>
+<li>Cite the paper the code was part of.  +1+1+1</li>
+<li>Cite the paper and the code (as specified in README.md). +1</li>
+<li>Say that it was revealed to you in a dream :D</li>
+<li>.</li>
+<li>.That's the dream ;)</li>
+<li>.</li>
+</ul>
+<p>Feedback
+:::info</p>
+<p>Today was (vote for all that apply):</p>
+<ul>
+<li>too fast:</li>
+<li>too slow:</li>
+<li>right speed: oooooooo</li>
+<li>too slow sometimes, too fast other times: o</li>
+<li>too advanced:</li>
+<li>too basic:</li>
+<li>right level: ooooo</li>
+<li>I will use what I learned today: ooooooooo</li>
+<li>I would recommend today to others: ooooooooo</li>
+<li>I would not recommend today to others:</li>
+</ul>
+<p>One good thing about today:</p>
+<ul>
+<li>Always good to discuss this and listen to, because I feel like having no one, or at least no one being interested in this topic and being able to provide any feedback to discussion.</li>
+<li>Reading about licenses and ethics and what can and cannot be used is usually like a fever dream for me. This was helpful in making some sense in all of this chaos.</li>
+<li>Thank you for the tools to check licenses among different codes.</li>
+<li>Introduction to licences. It has always apeared a very time consuming concept to me.</li>
+<li>It was a great lesson, not only it were reviewing important concepts but also it were discussed about what is important to share the code and to use a properly license too!</li>
+</ul>
+<p>One thing to improve for next time:</p>
+<ul>
+<li>Precise explaining of licences, those mostly used. Like a table: this one means this, that one means that. +1 +1 +100</li>
+<li>Code plagiarism checker?</li>
+<li>Perhaps it would be useful to add some example of which license to choose in X use case</li>
+<li>.</li>
+</ul>
+<p>Any other feedback?</p>
+<ul>
+<li>I know this is not a lot but the volume/voice was really an issue making it difficult to follow and enjoy the conversations! +1</li>
+<li>.</li>
+</ul>
+<p>General questions continued:</p>
+<ul>
+<li>Can you make an starter introduction to HuggingFace, like we had for GitHub? +2 +1
+<ul>
+<li>We are actually planning something like that at Aalto. Stay tuned :)</li>
+</ul>
+</li>
+<li>How about adding another week on AI tools, how to use them, good enough practice, etc., for everything covered through CodeRefinery? +2
+<ul>
+<li>This was discussed yesterday internally :D</li>
+</ul>
+</li>
+<li>Is this series of Wednesdays workshops on youtube?
+<ul>
+<li>It will be, if it is not already there. https://www.youtube.com/@coderefinery/playlists I see only first three days for autmn workshop for now.</li>
+<li>Can you order the list of videos in the youtube playlist from first to last? Thanks!</li>
+</ul>
+</li>
+<li>Is there a SLACK community to coderefinery? It would be good to make one, and be able to ask questions there throughout the year. +1
+<ul>
+<li>We have a <a rel="noopener" target="_blank" href="https://coderefinery.org/join/chat/">Zulip chat</a></li>
+</ul>
+</li>
+</ul>
+
+  
+
+      </div>
+
+      <div class="uk-margin-large-top">
+        <hr>
+        <div class="uk-child-width-expand@s" uk-grid>
+
+  <div>
+    <h4>Funding</h4>
+    <p>
+      CodeRefinery is a project within the
+      <a href="https://neic.no" target="_blank">Nordic e-Infrastructure Collaboration</a> (NeIC).
+    </p>
+  </div>
+
+  <div>
+    <h4>Privacy</h4>
+    <p>
+      <a href="https://coderefinery.org/privacy-policy/" target="_blank">Privacy policy</a>
+    </p>
+  </div>
+
+  <div>
+    <h4>Follow us</h4>
+    <ul class="uk-iconnav">
+      <li>
+        <a href="https://github.com/coderefinery" target="_blank" uk-icon="icon: github">GitHub</a>
+      </li>
+      <li>
+        <a rel="me" href="https://fosstodon.org/@coderefinery" target="_blank" uk-icon="icon: social">Mastodon</a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/company/coderefinery-research-software-development/?viewAsMember=true" target="_blank" uk-icon="icon: linkedin">LinkedIn</a>
+      </li>
+    </ul>
+  </div>
+
+  <div>
+    <h4>Contact</h4>
+    <p>
+      <a href="mailto:support@coderefinery.org">support@coderefinery.org</a>
+    </p>
+  </div>
+
+  <div>
+    <h4>Improve this page</h4>
+    <p>
+      <a href="https:&#x2F;&#x2F;github.com&#x2F;coderefinery&#x2F;2025-09-09-workshop&#x2F;">Source code</a>
+    </p>
+  </div>
+
+</div>
+
+      </div>
+
+    </div>
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+  <script>
+    anchors.add();
+  </script>
+</html>
