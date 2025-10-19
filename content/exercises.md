@@ -50,8 +50,5 @@ This list is subject to changes until the week before the workshop.
  - Exercise session: [Test design](https://coderefinery.github.io/testing/test-design/#test-design)
 
 ### Day 9:
-- Previously this was done as live coding based on input from the audience. We
-  are thinking about changing this lesson slightly and allowing groups to
-  discuss and individuals to practice and possibly submit improvements via pull
-  requests during or after the workshop.
-- We will post more information here once we have finalized the lesson.
+- [Exercise session 1](https://coderefinery.github.io/modular-type-along/exercise1/) (we offer both a discussion track and a coding track)
+- [Exercise session 2](https://coderefinery.github.io/modular-type-along/exercise2/) (we offer both a discussion track and a coding track)
