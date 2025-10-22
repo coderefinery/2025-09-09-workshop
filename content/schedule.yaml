@@ -161,7 +161,7 @@ schedule:
         title: Modular code development
         subtitle: "How to make reusing parts of your code easier"
         url: https://coderefinery.github.io/modular-type-along/
-        presenters: Radovan, Yu
+        presenters: Richard, Yu
       - starts: 12:15
         ends: 12:30
         title: "Concluding remarks, general Q&A, and where to go from here"
