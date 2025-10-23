@@ -4,10 +4,10 @@
 ### News
 
 **See all emails to participants on [Communication](@/communication/_index.md)**.
-We had some technical hiccups with e-mails for day 8, and we are very sorry that some of you did not receive them or received them late. 
 
 
 - **News**
-  - Days 1-8 went according to schedule (see below)
-  - **Wednesday 22nd/Oct, we will look at modular code development (final session, day 9)**
-  - This session will tie together everything we have learned in the rest of the workshop.  
+  - This workshop has successfully concluded on October 22.
+  - Please see our wrapup materials at [workshop outro](https://github.com/coderefinery/workshop-outro/blob/master/README.md).
+  - Recordings are available on our [Youtube channel autumn '25 playlist](https://www.youtube.com/watch?v=cfAdliztE3k&list=PLpLblYHCzJAAqSSVAwHUuipB5hhW6GobY).
+  - [Materials will stay available via our website](https://coderefinery.org/lessons/#lessons-that-we-teach-in-our-tools-workshops)
