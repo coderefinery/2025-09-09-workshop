@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Questions and notes from workshop day 1 - CodeRefinery workshop September&#x2F;October 2025</title>
+    <link rel="shortcut icon" href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;/img/favicon.ico">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- uikit -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.23.4/dist/css/uikit.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.4/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.4/dist/js/uikit-icons.min.js"></script>
+
+    <!-- time zone localization -->
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.7/dayjs.min.js" integrity="sha256-EfJOqCcshFS/2TxhArURu3Wn8b/XDA4fbPWKSwZ+1B8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.7/plugin/utc.js" integrity="sha256-qDfIIxqpRhYWa543p6AHZ323xT3B8O6iLZFUAWtEQJw=" crossorigin="anonymous"></script>
+
+    
+      <link rel="alternate" type="application/atom+xml" title="CodeRefinery" href="https://coderefinery.github.io/2025-09-09-workshop/atom.xml" />
+    
+
+        
+      <title>CodeRefinery - Questions and notes from workshop day 1</title>
+      <meta name="twitter:title" content="Questions and notes from workshop day 1" />
+      <meta property="og:title" content="Questions and notes from workshop day 1" />
+      <meta property="og:site_name" content="CodeRefinery workshop September&#x2F;October 2025" />
+    
+
+    
+      <meta name="description" content="Free workshop on git, testing, documentation, and more in a workshop - for researchers and scientists." />
+      <meta name="twitter:description" content="Free workshop on git, testing, documentation, and more in a workshop - for researchers and scientists." />
+      <meta property="og:description" content="Free workshop on git, testing, documentation, and more in a workshop - for researchers and scientists." />
+    
+
+    
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:image" content="https://raw.githubusercontent.com/coderefinery/coderefinery-artwork/main/socialshare/socialshare-workshop.png" />
+      <meta property="og:image" content="https://raw.githubusercontent.com/coderefinery/coderefinery-artwork/main/socialshare/socialshare-workshop.png" />
+    
+
+
+    
+
+    <link href="https://coderefinery.github.io/2025-09-09-workshop/style.css" rel="stylesheet">
+
+    
+    <script defer data-domain="coderefinery.github.io" src="https://plausible.cs.aalto.fi/js/script.js"></script>
+    
+
+
+  </head>
+
+  <body>
+    <div class="uk-container uk-margin-large-bottom">
+
+      <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+  <div class="uk-navbar-right">
+    <ul class="uk-navbar-nav uk-visible@s">
+      
+      
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop">
+      About
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;exercises">
+      List of exercises
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;audience">
+      Audience
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;certificates">
+      Certificates
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;join">
+      How to join
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;requirements">
+      Requirements
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;questions">
+      Q&amp;A
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;code-of-conduct">
+      Code of conduct
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;communication">
+      Communication
+      
+    </a>
+
+    
+
+  </li>
+
+
+    </ul>
+    <a href="#" class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon uk-toggle="target: #sidenav"></a>
+  </div>
+</nav>
+
+<div id="sidenav" uk-offcanvas="flip: true" class="uk-offcanvas">
+  <div class="uk-offcanvas-bar">
+    <ul class="uk-nav">
+      
+      
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop">
+      About
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;exercises">
+      List of exercises
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;audience">
+      Audience
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;certificates">
+      Certificates
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;join">
+      How to join
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;requirements">
+      Requirements
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;questions">
+      Q&amp;A
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;code-of-conduct">
+      Code of conduct
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;communication">
+      Communication
+      
+    </a>
+
+    
+
+  </li>
+
+
+    </ul>
+  </div>
+</div>
+
+
+      <div class="markdown">
+        
+  <h1>Questions and notes from workshop day 1</h1>
+
+  <ul>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day1/#icebreakers">Icebreakers</a>
+      
+        <ul>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day1/#where-are-you-connecting-from-how-is-the-weather-there">Where are you connecting from? How is the weather there?</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day1/#have-you-ever-wished-you-had-a-code-time-machine-to-travel-back-in-time">Have you ever wished you had a &quot;code&quot; time-machine to travel back in time?</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day1/#test-and-ask-any-question-you-want">Test and ask any question you want!</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day1/#introduction-to-version-control-with-git">Introduction to version control with git</a>
+              
+            </li>
+          
+        </ul>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day1/#break-until-xx-03">Break until xx:03</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day1/#exercise-until-xx-34">Exercise until xx:34</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day1/#break-until-xx-00">Break until xx:00</a>
+      
+        <ul>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day1/#introduction-to-version-control-with-git-part-2">Introduction to version control with Git - Part 2</a>
+              
+            </li>
+          
+        </ul>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day1/#exercise-until-xx-35">Exercise Until xx:35</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day1/#break-until-xx-11">Break until xx:11</a>
+      
+        <ul>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day1/#feedback">Feedback</a>
+              
+                <ul>
+                  
+                    <li>
+                      <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day1/#news-for-day-1-preparation-for-day-2">News for day 1 &#x2F; preparation for day 2</a>
+                    </li>
+                  
+                </ul>
+              
+            </li>
+          
+        </ul>
+      
+    </li>
+  
+</ul>
+
+
+  
+  
+    <h1 id="icebreakers">Icebreakers</h1>
+<p>Let's test the notes with some icebreakers! :icecream:</p>
+<h2 id="where-are-you-connecting-from-how-is-the-weather-there">Where are you connecting from? How is the weather there?</h2>
+<ul>
+<li>Helsinki - sunny? 19 degrees? (confirm!) +1</li>
+<li>Reykjavik - rainy and 8 degrees :)</li>
+<li>Karlsruhe - rainy (soon to be over) and 17 degrees</li>
+<li>Holar (Island) - cloudy, 10 degrees</li>
+<li>Lyngby (Denmark) - cloudy maybe going sunny, 20 degrees; 10 physical participants + three helpers (more in-coming).</li>
+<li>Prague (Czech) - sunny, 19 degrees</li>
+<li>Belgrade (Serbia) - sunny, 25 deegrees</li>
+<li>Tartu (Estonia) - Sunny!!(surprisingly)</li>
+<li>Freiburg (Germany) - Rainy and grey :( :+1:</li>
+<li>Sydhavnen (Denmark) - 20 degrees and grey</li>
+<li>Bergen, Norway - 14, Rainy, Standard</li>
+<li>Hämeenlinna, sunny +35 ;)</li>
+<li>Stockholm, Sweden - Sunny 17 degrees :^)</li>
+<li>Manchester, UK - 14oC but sunny</li>
+<li>Lund, Sweden - 20C and sunny</li>
+<li>Chiang Mai, Thailand 33C and cloudy</li>
+<li>San Sebastián (Spain) - 18 C, cloudy</li>
+<li>Tübingen (Germany) - 16 °C, raining</li>
+<li>Eindhoven (Netherlands) - 14C, raining</li>
+<li>Berlin (Germany) - 17C sunny (somewhat rare)</li>
+<li>Stockholm (Sweden), sunny and partly cloudy about 20 degrees :+1: :sun_with_face:</li>
+<li>Konstanz (Germany) - very cold (16) and cloudy!</li>
+<li>Taofeeq (United Kingdom) - 13 degree celcius and sunny here</li>
+<li>Gliwice (Poland) - sunny after the yesterday's storm</li>
+<li>Uppsala (Sweden) - 20 degrees, quite sunny :) +1</li>
+<li>Göttingen (Germany) - 17 degrees, cloudy :)</li>
+<li>Göttingen, like the minipig model? :D</li>
+<li>Mainz (Germany) - very rainy</li>
+<li>Oslo (Norway) - Cloudy and chilly, autumn is here!</li>
+<li>Madrid (Spain) - 20ºC sunny</li>
+<li>Quebec (Canada) - Cold and 5am</li>
+<li>Kiel (Germany) - 38 °C &lt;-- are you sure? I wish -- pls no</li>
+<li>Joensuu (Finland) - 19ºC degrees</li>
+<li>Copenhagen (Denmark) - 19 degrees Celsius</li>
+<li>Stockholm - 20 degrees</li>
+<li>Lausanne - 18 degrees</li>
+<li>Karlsruhe - 18 degrees, rain, =/</li>
+<li>Oslo (Norway) - Rainy and sad! ;) &lt;-- Don't be sad, drink a hot chocolate! &lt;- right!!!</li>
+<li>Espoo sunny :) H</li>
+<li>Eren (Germany) - rainy unfortunately</li>
+<li>Espoo- 21 degrees sunny!!</li>
+<li>Lund - warm and lovely today!</li>
+<li>Oslo - cloudy</li>
+<li>Copenhagen- windy</li>
+<li>Göttingen (Germany) - cloudy 20 degree Celsius</li>
+</ul>
+<h2 id="have-you-ever-wished-you-had-a-code-time-machine-to-travel-back-in-time">Have you ever wished you had a "code" time-machine to travel back in time?</h2>
+<p>Poll: Add an 'o' to the answer that applies to you</p>
+<ul>
+<li>Yes: oooooooooOOoooooooooooooo</li>
+<li>No: oooooOOO</li>
+<li>Not sure: ooo🤔o</li>
+<li>Yes when changes went wrong: o</li>
+<li>Yes: ooo</li>
+<li>what if you change something so you'll never get born?</li>
+<li>For code - no. For life - yes &lt;--😂</li>
+<li>I wish</li>
+<li>Yes</li>
+</ul>
+<h2 id="test-and-ask-any-question-you-want">Test and ask any question you want!</h2>
+<ol>
+<li>
+<p>Are you excited instructors ;) ?</p>
+</li>
+<li>
+<p>I didnt attend the prepration sessions (installation etc), is it ok? Will I be fine? I am not completely new to the topics but only have a basic familiarity.</p>
+<ul>
+<li>You can follow without installing any software. Today you probably don't need to install anything special.</li>
+<li>But do take a look at the installation instructions when you have time, especially if you are a bit familiar.
+<ul>
+<li>Great! thanks!</li>
+</ul>
+</li>
+<li>And if you have any problems, just ask here :)</li>
+</ul>
+</li>
+<li>
+<p>I am very exited about the workshop! I am an advanced user already, but I'd love to learn new approaches :D</p>
+<ul>
+<li>there can be something new also for advanced users (maybe just because the tools we use evolve over time, and new features appear that we are not aware of)</li>
+<li>Perfect to be a more active contributor ;)</li>
+</ul>
+</li>
+<li>
+<p>By set up of conda environment, do you mean any specific environment that needs to be set up with specific packages maybe or do you just mean downloading conda?</p>
+<ul>
+<li>https://coderefinery.github.io/installation/conda/, which means:</li>
+</ul>
+<ol>
+<li>downloading conda (best done with miniforge)</li>
+<li>install the coderefinery conda environment, which contains all the software that is needed to follow in the next days of the workshop.</li>
+</ol>
+<ul>
+<li>keep in mind though that we will not strictly need the  conda environment today, for today a gitHub account can be enough</li>
+</ul>
+</li>
+<li>
+<p>Is it possible to make the screen bigger? A bit</p>
+<ul>
+<li>Working on it</li>
+</ul>
+</li>
+<li>
+<p>How the changed are marked? There is some colour code?</p>
+<ul>
+<li>typically a red background means that the line was removed, a green background means add (possibly cumbersome for colorblind people, unfortunately?) (referring to https://github.com/bast/runtest/commit/ff48b1222315b45f8b0717d7bf51b671bf737bbc)</li>
+</ul>
+</li>
+<li>
+<p>Where is this repo? will we be working with this repo or recipe-book repo?</p>
+<ul>
+<li>we are talking about an example repository. Later we will be working on an example you can actively follow</li>
+</ul>
+</li>
+</ol>
+<h2 id="introduction-to-version-control-with-git">Introduction to version control with git</h2>
+<p>https://coderefinery.github.io/git-intro/</p>
+<ol start="8">
+<li>
+<p>Is there a limit to how much you can store on free GitHub?</p>
+<ul>
+<li>There are different limits for different things. Typically, for code only, it is <em>very</em> difficult to hit a "size" limit (personally, I have never encountered that limit)</li>
+<li>The recommended repository size is below 1 GB, and keeping a repo under 5 GB is “strongly recommended”; exceeding 5 GB may trigger a review or contact from GitHub support but is not automatically blocked</li>
+<li>https://docs.github.com/en/repositories/creating-and-managing-repositories/repository-limits</li>
+<li>https://docs.github.com/en/get-started/learning-about-github/githubs-plans, see GitHub Free for personal accounts</li>
+<li>https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github, see Repository Size Limits</li>
+<li>Storing code on GitHub is ok, storing <em>data</em> might mean that you hit the limit. There are other services where you can store/archive research data which might be more suitable than github.</li>
+</ul>
+</li>
+<li>
+<p>Are the permalinks a unique concept in github/git?</p>
+<ul>
+<li>These are a github feature, but also gitLab for example has them (also bitbucket, forgejo/codeberg)...</li>
+<li>it is a pretty standard feature that any service that display code on the web needs to have to be useful</li>
+</ul>
+</li>
+<li>
+<p>Please, do zoom in. It is impossible to read the materials. We have a room with two big screens, but everyone is forced to follow on laptops.</p>
+<ul>
+<li>we will be more careful, thank you!</li>
+</ul>
+</li>
+<li>
+<p>Can you use Git for version control in excel and word files?</p>
+<ul>
+<li>while you theoretically could, the tooling associated with git works best with plain text files.</li>
+<li>docx and xlsx are compressed file formats (basically a zip of a folder with a few documents inside), so it is impossible to quickly compare two versions without "unpacking" (fun terminal side quest: rename with the terminal a .docx file into a .zip extension, and unzip it)</li>
+</ul>
+</li>
+<li>
+<p>Can you connect easily google g-drive, colab and GIT?</p>
+<ul>
+<li>google drive is an <em>alternative</em> to git, but only as a fileshare, with different focus (e.g., not version control). Colab files can be added to a git repository on GitHub, directly from Colab, once Colab is allowed to access your github account</li>
+<li>Short answer: there is currently no direct integration between GitHub and Google drive (or any other cloud drive). But there're always "indirect ways", e.g. https://github.com/orgs/community/discussions/120530</li>
+<li>Can you rollback previous versions of code from GIT to Collab?
+<ul>
+<li>I see that one can open a notebook in colab from any GitHub repository it has access to, and on any branch (which could point at past versions - see next lessons about branches). It does not seem you can do exactly what you could do with git from the Colab interface, though - git from the command line, or the github web interface seem to give more possibilities</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Is the font size large enough? Can you read it?</p>
+<ul>
+<li>It looks good in my tiny 12" laptop.</li>
+<li>Remember to set twitch tv video quality to "source" otherwise you will see big pixels</li>
+</ul>
+</li>
+<li>
+<p>How can I configure visual Studio to git(lab) from organization/University ?</p>
+<ul>
+<li>When you clone a repository (we will do this later), git will remember where you cloned it from. You probably need to set up SSH keys for the GitLab account (profile picture -&gt; preferences -&gt; SSH Keys). You need to create the SSH key in a terminal (<code>ssh-keygen</code>).</li>
+</ul>
+</li>
+</ol>
+<p>:::success</p>
+<h1 id="break-until-xx-03">Break until xx:03</h1>
+<p>Relax for 10 minutes, after that some exercise!
+:::</p>
+<ol start="17">
+<li>
+<p>I should not fork the -recorded repo, right?</p>
+<ul>
+<li>if you collaborate on the <code>-recorded</code> repo, glimpses of your activity might be streamed on twitch and recorded - just because that is the repository that we show on stream. If you want to be sure nothing of your activity will be shown on stream/recorded, then you should use the other repository.</li>
+</ul>
+</li>
+<li>
+<p>What the "verified" label mean?</p>
+<ul>
+<li>close to a commit, it means that GitHub had a way to verify that the author mentioned in a commit was, with reasonable certainty, the person that they claim to be (this is because in principle, you could configure git on your laptop to "impersonate" someone else)</li>
+</ul>
+</li>
+<li>
+<p>When looking at the network graph: Why does the main branch change (from black to purple) with one user’s branch but not another?</p>
+</li>
+<li>
+<p>Be aware that the "search" might take some time when you forked (indexing takes time for searching?)</p>
+</li>
+<li>
+<p>What is the difference between "changes" question 4 and commits?</p>
+<ul>
+<li>It is the same.</li>
+</ul>
+</li>
+<li>
+<p>Why do guacamole's "commit history" and "blame" differ regarding orderes? In blame one sees 6 changes in history 5?</p>
+<ul>
+<li>They show different things. Blame shows last valid version of code, and for each line in it it links the corresponding commit when that line was changed last time.</li>
+</ul>
+</li>
+<li>
+<p>My search for 'salt' results in 'This repository's code is being indexed right now. Try again in a few minutes'. What do I do wrong?</p>
+<ul>
+<li>Nothing, but seemingly github is internally indexing the repository for faster searches, and this hasn't finished yet. So probably you just have to wait for a bit.</li>
+</ul>
+</li>
+<li>
+<p>After I select some line(s), like when I want to copy link to them, I cannot deselect them. Is there convenient way to select them instead of reloading the page.</p>
+<ul>
+<li>Where? In this document?</li>
+<li>When I open any particular file source. I can select / mark yellow one or more lines, but cannot deselect them
+<ul>
+<li>I don't think there is a "deselect" unfortunately. Seems like this is something in the github UI. Good observation though. (Exit and enter again, and the selection is gone.)</li>
+<li>The selected line(s) are reflected in the URL bar of your browser: e.g. the <code>#L6</code> in https://github.com/cr-workshop-exercises/recipe-book/blob/main/desserts/pumpkin-pie.md?plain=1#L6. If you delete that from the url and reload, the highlight disappears</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<p>:::success</p>
+<h1 id="exercise-until-xx-34">Exercise until xx:34</h1>
+<p>https://coderefinery.github.io/git-intro/browsing/</p>
+<p>I am:</p>
+<p>done: oooooooooooooooooooooooooooooo
+not trying:
+had major problems:
+wish for more time:
+:::</p>
+<ol start="27">
+<li>
+<p>could you share the link to the excercise questions again</p>
+<ul>
+<li>it is on the page linked in the green box above</li>
+</ul>
+</li>
+<li>
+<p>i can see 103 forks in description, but if i want to listed - there are only 5. Why?</p>
+<ul>
+<li>https://github.com/cr-workshop-exercises/recipe-book/forks here you can see, by default, 6. But that is because of the visualization filters (activity, for example)</li>
+<li>the 2 repository are not identical so what you have in the recorded versin is not we have the fork version, so answers are different</li>
+</ul>
+</li>
+<li>
+<p>how your own forked repository and show us the Network graph?</p>
+<ul>
+<li>thanks - so here we see everybody's branches, i.e. of those who have forked from the original repository, right?</li>
+</ul>
+</li>
+<li>
+<p>Can I get access to recorded sessions of workshop? I will be out of city tomorrow.</p>
+<ul>
+<li>All streamed content will also be recorded and put on youtube. It will also stay on twitch for 2 weeks.</li>
+</ul>
+</li>
+<li>
+<p>I thought MIT license was the one to use for code, CC is more for other materials (documents, images) <a rel="noopener" target="_blank" href="https://opensource.guide/legal/#which-open-source-license-is-appropriate-for-my-project">See also</a></p>
+<ul>
+<li>That is correct. The difference is small, but CC is intended for other materials.</li>
+<li>We have a lesson about licenses on Sep 24th (https://coderefinery.github.io/social-coding/)</li>
+</ul>
+</li>
+<li>
+<p>I am not sure that my forked version of the repository has all the history of the original repository, e.g. pull requests...</p>
+<ul>
+<li>it definitely should have all the commits. The pull requests are specific to a repository, so the pull requests to the original repo will not be visible in your fork. Issues, as well do not transfer when you fork.</li>
+</ul>
+</li>
+<li>
+<p>How to see what change is proposed in the pull request?</p>
+<ul>
+<li>This will be discussed later in detail this week</li>
+</ul>
+</li>
+<li>
+<p>Now this example with license is for a very text based repository, but how about licenses for software? Creative Commons is not really recommended for code in general..</p>
+<ul>
+<li>There will be a lesson where licenses will be discussed in detail (social coding and open software, on Sep 24) (https://coderefinery.github.io/social-coding/)</li>
+</ul>
+</li>
+<li>
+<p>How should we add license to our github repo? why? and where should this license come from?</p>
+<ul>
+<li>Licenses are paramount when you start collaborating with others. Do not write your own license, choose one from existing templates. But it's a complex issue, we will discuss that on Sep 24 (unless someone wants to chime in now).</li>
+</ul>
+</li>
+<li>
+<p>If i delete a branch after i am done with a merge, will the network graph still show the branch that was deleted?</p>
+<ul>
+<li>The commit tree will still show the "branches", and the commit where the two "branches" (main and the other) were merged. The branch name might disappear from the network graph, but the commits will still exist</li>
+</ul>
+</li>
+<li>
+<p>Do we need to submit the solutions ? if so how?</p>
+<ul>
+<li>Some (all?) universities can give you credit (1 ECTS). See https://coderefinery.github.io/2025-09-09-workshop/certificates/</li>
+<li>If you are affilliated with a university, most likely you can convert the certificate to credit.</li>
+</ul>
+</li>
+<li>
+<p>If, when you forked the repository, you clicked 'Copy the main branch only' by mistake, how can you change that afterwards?</p>
+<ul>
+<li>you can still push other branches to your fork</li>
+</ul>
+</li>
+<li>
+<p>In which situations we will create branch vs when the pull request is used?</p>
+<ul>
+<li>when you cannot create branches on a repository because you were not given the permissions to do so, then you need to create your own fork (where you can do whatever you want) and make a pull request to the original repo</li>
+<li>if instead you have "write" access to the original repository, meaning that you can create new branches there, you can do so. But very often this is not the case.</li>
+</ul>
+</li>
+<li>
+<p>When we click fork, we basically get to save the "folder" as our  own to be able to do changes in it ? and the branch shows which did changes in the different "files" or created them ? i am not sure i understand the branch</p>
+<ul>
+<li>making a fork is basically making a copy of the repository that you own and can do everything you want about.</li>
+<li>"branches" are "chains of commits", (which each commit being a set of changes to a set of files), like the branch of a tree. BUT technically in git a <em>branch</em> is represented by the last commit on that "branch" (let's say, the "leaf" at the end of the "branch", in our forestry/gardening analogy, which is changing over time as the tree grows - i.e., we add more commits)</li>
+</ul>
+</li>
+</ol>
+<p>:::success</p>
+<h1 id="break-until-xx-00">Break until xx:00</h1>
+<p>Relax for 60 minutes
+:::</p>
+<h2 id="introduction-to-version-control-with-git-part-2">Introduction to version control with Git - Part 2</h2>
+<p>Continuing from here: https://coderefinery.github.io/git-intro/commits/</p>
+<ol start="49">
+<li>The demonstration was a little fast, so if we could slowdown the pace a little bit?
+<ul>
+<li>there will be time now to practice</li>
+</ul>
+</li>
+<li>We are having issues with the internet, the live session is not working now (Lyngby, Danmark).
+<ul>
+<li>The video will be on Twitch for a couple of days and we will upload to Youtube as soon as possible.</li>
+<li>It is back (Lyngby, Danmark)!</li>
+</ul>
+</li>
+<li>How can I rename my branch?
+<ul>
+<li>you select "view all branches"  in the branch switch, and in the page that comes you can click on "..." at the end of the row of the branch you want to rename, and click on "rename"</li>
+<li>Done. Thank you😊</li>
+</ul>
+</li>
+</ol>
+<p>:::success</p>
+<h1 id="exercise-until-xx-35">Exercise Until xx:35</h1>
+<p>https://coderefinery.github.io/git-intro/commits/</p>
+<p><em>If you have problems that cannot be solved easily here, please join the help zoom room - the address was communicated via mail</em></p>
+<p>I am:</p>
+<ul>
+<li>done: oooooooooo0o</li>
+<li>not trying:</li>
+<li>had major problems:</li>
+<li>wish for more time:
+:::</li>
+</ul>
+<ol start="52">
+<li>
+<p>Does DTU provide 1 ects point as well?</p>
+<ul>
+<li>The best is to confirm with your study coordinator / supervisor that the certificate we generate can be registered as 1 ECTS. The certificate explicitly mentions that the work you have done is equivalent to 1 ECTS, and so far we have never had any university to refuse the registration of the credit. If your study coordinator / supervisor has question, please let them be in touch with us at support@coderefinery.org.</li>
+<li>Yes (most likely). Please reach out to the DTU coordinators.</li>
+</ul>
+</li>
+<li>
+<p>When I go to look at Network for the main branch, I do not see my new branch. Are things the way they should be?</p>
+<ul>
+<li>It should be visible. Have you checked you are in the right repository? (Your username should be in the url)</li>
+</ul>
+</li>
+<li>
+<p>when i create a new branch it says for example  ""'name of the branch' had recent pushes". so even just creating a branch, as a pushing a commit?</p>
+<ul>
+<li>The new branch has the same last commit as the original branch. So the "recent push" is the same commit that the main branch has.</li>
+<li>wow cool!</li>
+</ul>
+</li>
+<li>
+<p>The network graph stays "loading", it hasnt finished after several minutes. Is this normal?</p>
+<ul>
+<li>Try reloading. It usually doesn't take that long but depends on traffic.</li>
+<li>have the same issue, guess its because there are so many forks?</li>
+</ul>
+</li>
+<li>
+<p>If in the insight-network I see my new branch but also few other new ones, does it mean someone edited the upstream repository instead of their copy?</p>
+<ul>
+<li>When you created the repository, did you include all branches or just main?
+All but initially, there was only one branch, now there are a few.</li>
+</ul>
+</li>
+</ol>
+<ul>
+<li>have the same "issue", never heard of the peoples names as well :D</li>
+</ul>
+<ol start="58">
+<li>
+<p>Network is taking forever to load.</p>
+<ul>
+<li>this is a known problem, sorry.</li>
+</ul>
+</li>
+<li>
+<p>I failed at the new tag excercise :/ What does it mean "for on of the commits"? Is the tag pinned somehow to the commit? How to do it?</p>
+<ul>
+<li>A tag is basically a name you give to one commit. For example, if you want to call a particular commit in your history "version 1.0", you could do that by adding a tag.</li>
+</ul>
+</li>
+<li>
+<p>Where did Sabry find the must-have content for the new file? Could my file lacking this content mean that I can't see my branch on Network for the repository?</p>
+<ul>
+<li>I think it came from a section below the exercise in the notes.</li>
+<li>The content should not affect the branches on the network. But maybe the commit did not happen correctly?
+<ul>
+<li>check the history of the branch you created to make sure that the commit did happen</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>When trying to make a tag and associate it with a commit, for some reason the newer commits are not available on the list that is provided by GitHub. Is there a fix around it? Do i have to wait for some time before they become available?</p>
+<ul>
+<li>GitHub is usually quick. Did you reload the page to make sure?</li>
+<li>i refreshed once or twice. the tag button is also bugged for me now and it will not allow me to create a new tag for some reason...</li>
+<li>Is this your repository? Can you check that the URL contains your username? Something like github.com/USERNAME/recipe-book</li>
+<li>yep i am on the url you just described, go figure...</li>
+<li>I actually cannot create a tag either right now... Let's see if Sabry can :)</li>
+<li>okie : ) Well it appears we found a work around : ) Yes i am doing the same steps as the presenter and this method works. the plain tag does not still work though
+<ul>
+<li>Same here :)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Do I need to accept a push request for my branch to be visible? Will that mean I commit? I cannot currently see the new branch I created.</p>
+<ul>
+<li>You will not need to do anything - yet - with pull requests.</li>
+<li>Can you see the branch in the list of branches?</li>
+<li>No.</li>
+<li>Then the branch creation was not successful, you might have to do that again?</li>
+<li>No.</li>
+<li>No, I can see the branch along side the main branch. I just can't see it in Network.</li>
+<li>The network view is notoriously problematic, unfortunately.</li>
+<li>Try to update the page maybe?</li>
+</ul>
+</li>
+<li>
+<p>How to merge new branch with the main one?</p>
+<ul>
+<li>good question. We will see this next.</li>
+</ul>
+</li>
+<li>
+<p>can you repeat the step for the compare again please?</p>
+<ul>
+<li>As written in the solution of the exercise:
+<ul>
+<li>to compare two branches, go to your repository (e.g. https://github.com/USER/recipe-book) and add <code>/compare</code> to the end of the URL</li>
+<li>https://github.com/USER/recipe-book/compare/branch1..branch2 for arbitrary commits</li>
+</ul>
+</li>
+<li>Seen. Thanks</li>
+</ul>
+</li>
+</ol>
+<p>:::success</p>
+<h1 id="break-until-xx-11">Break until xx:11</h1>
+<p>:::</p>
+<ol start="66">
+<li>
+<p>When making two thing separately (e.g. glasses and hat), who is making sure these two do not conflict in the end when moved back to main branch? Is there a way upfront to make sure this doesn't happen?</p>
+<ul>
+<li>Modifying different files, or different parts of the same file, should not result in a conflict. But the absence of conflicts is not enough to ensure correctness: a merge in a codebase can introduce easily bugs even if there are no conflicts.</li>
+</ul>
+</li>
+<li>
+<p>Why do make a change to a recipe on own fork, and then make a branch and add a new recipe.  Why not just add a recipe to our branch directly?</p>
+<ul>
+<li>Well, we are practicing making a branch. But the reason for using a branch usually would be so that others can make changes at the same time and we can later merge them. In a more complicated case this would be necessary.</li>
+</ul>
+</li>
+<li>
+<p>When doing Insights and Network; is there a way to filter so I only my own changes?</p>
+<ul>
+<li>Not exactly filtering, but if you click on a username the view changes by bringing that user on top of the graph https://github.com/cr-workshop-exercises/recipe-book-recorded/network (e.g. click Sabryr)</li>
+</ul>
+</li>
+<li>
+<p>Can we also have a brief introduction to a landing page of our Git account (all those icons, etc.)?</p>
+<ul>
+<li>Interesting consideration! Thanks for the suggestion.</li>
+</ul>
+</li>
+<li>
+<p>What is the history behind naming "pull request" (why not "merge request" instead because the direction seems make more sense)?</p>
+<ul>
+<li>the reason why it is named this way is that it does not need to be a proper "merge", in the git sense. It cannot be a "push" because we do not have write access to the remote repository. It must be a request to the owner of the remote repository to pull from our repository. So it's called "pull request".</li>
+<li>when instead we do have the privileges to write on the remote repository, then we can create a branch there, and then we can as the maintainers to "merge" (they could theoretically do other things to integrate our work).</li>
+<li>On GitHub these are called "pull request"s anyway because of the similarity. On GitLab insI tead the "merge request" term is used (at least when working on the same repository)</li>
+</ul>
+</li>
+<li>
+<p>When I try to merge, i got this: ""T IhisHI can't get to merge  branch has ct must be resolved""</p>
+<ul>
+<li>This means that both branches (your branch and the main branch), have modified the same file. Someone would need to manually decide which changes to keep.</li>
+<li>Check that the target branch in the pull request is correct.</li>
+</ul>
+</li>
+<li>
+<p>What happnes when we click close with comment?</p>
+<ul>
+<li>Closing a pull request means it will not be merged.</li>
+</ul>
+</li>
+<li>
+<p>What can be a reason to not delete a branch that you have merged with the main branch?</p>
+<ul>
+<li>You might want to keep developing on that branch. Not necessarily the best idea: while it is possible to create infinite branches with git, it is best to keep the number of branches to a minimum for clarity. In some situations it is unavoidable to have a number of independent branches in a repository</li>
+</ul>
+</li>
+<li>
+<p>Note: to check ssh is configured correctly, you should use <code>ssh -T git@github.com</code></p>
+</li>
+<li>
+<p>Can you comment on using GitHub desktop vs. command line?</p>
+<ul>
+<li>command line: more transparent and powerful</li>
+<li>github interface: less transparent, probably easier to use for the most common use cases</li>
+</ul>
+</li>
+</ol>
+<h2 id="feedback">Feedback</h2>
+<p>:::info</p>
+<h3 id="news-for-day-1-preparation-for-day-2">News for day 1 / preparation for day 2</h3>
+<ul>
+<li>Today, we covered everything in the schedule: the basics of git version control and various aspects of the GitHub user interface.</li>
+<li><strong>Day 2 moves to your local computer</strong>. If today was too boring or easy for you, don't worry!  Day 2 gets to the way we really work.</li>
+<li>For day 2, If you plan to do the exercises please make sure you have a <strong>working git installation in your computer</strong> (e.g. with VS Code or with the shell terminal, see instructions at https://coderefinery.github.io/installation/).o
+<ul>
+<li><strong>GitHub account</strong></li>
+<li>VSCode (recommended, if you don't know what to do) OR git from the command line</li>
+</ul>
+</li>
+<li>If you had/have issues with the installation, <strong>we will provide a 1h support zoom session tomorrow morning 9:00 CEST (Oslo/Rome)</strong>. More info in the email later today. Let us know if this is useful with some emojis :heart_eyes_cat: &lt;3</li>
+<li>Twitch will store this video for 7 days, and hopefully it will be on YouTube by the time that expires.o</li>
+<li><strong>Day 3 is when we will collaborate together</strong> and we will send you detailed instructions on how to do that via email later today.
+:::</li>
+</ul>
+<p>Today was (vote for all that apply):</p>
+<ul>
+<li>too fast:</li>
+<li>too slow:</li>
+<li>right speed: ooooooooooooooo</li>
+<li>too slow sometimes, too fast other times:ooo0o</li>
+<li>too advanced:</li>
+<li>too basic: oo</li>
+<li>right level: oooooooooooooo</li>
+<li>I will use what I learned today: oooooooooooooooo</li>
+<li>I would recommend today to others: oooooooooooooooo</li>
+<li>I would not recommend today to others:</li>
+</ul>
+<p>One good thing about today:</p>
+<ul>
+<li>Someone accidentally asked to merge their branch with mine, so i think i just made a new friend : ) :heart_eyes_cat:</li>
+<li>Always new things learnt :heart_eyes_cat:</li>
+<li>This collaborative document is really sweet! yes!yesss! +2</li>
+<li>the exercises walktroughs are helpful</li>
+<li>I really appreciate the professional stream, and how quickly you fixed all minor issues! Very cool to see. +2</li>
+<li>very interesting! i didn't know any of this stuff before :) - Me neither! +2</li>
+<li>I manage to follow and practice</li>
+<li>Interesting to participate!</li>
+</ul>
+<p>One thing to improve for next time:</p>
+<ul>
+<li>font size is sometimes a bit small, for example the github pages fonts were too small on big screens, but notes and course material were fine.
+<ul>
+<li>We'll try to raise this directly by voice in the future, so it doesn't go on so long.  Thanks for the feedback.</li>
+</ul>
+</li>
+<li>Materials used during lecture by teachers looked not clear (i.e. not prepared especially and only for lesson). Everything that is not related to lesson should not be present. It looked like they did some things prior and looked messy. Yeah, that's my feeling. It was good but quite messy.</li>
+<li>There was extra steps compare to the ones in the materials so sometimes it was hard to follow some exercises.</li>
+<li>Try not to hide the URL of the current web page with the presenters camera view</li>
+</ul>
+<p>Any other feedback?</p>
+<ul>
+<li>I like the platform you use for presenting :D +3
+<ul>
+<li>Thanks!  It's been developed over a long time.</li>
+</ul>
+</li>
+<li>We should have more time to discuess during excerises. Those real talks with lecturers were nice, better than passive listening.</li>
+<li>It's hard to follow the lecture and check the notes, the materials and the practice screen.
+<ul>
+<li>Yes, it's a lot!  Unfortunately it is.  I'd recommend strategically closing less important stuff depending on how much you are focusing on the main stream.  We have stuff for many different levels, you can adapt to what is right for you, don't worry.</li>
+</ul>
+</li>
+<li>Answering questions here on the spot was really good.</li>
+</ul>
+<p>General questions continued:</p>
+<ul>
+<li>I have VS code - is that okay?
+<ul>
+<li>Yes, you also need it linked to Github but that should be almost automatic tomorrow.  We should use VSCode for most examples tomorrow.</li>
+</ul>
+</li>
+<li>Our next session is the day after tommorow, right? I am asking because it is being said tommorow in the session..
+<ul>
+<li>It should be tomorrow (24 hours after today started).</li>
+</ul>
+</li>
+<li>I am not a university student, therefore I do not need the ECTS. However, may I still ask for a certificate after the course ends? +2 to this!
+<ul>
+<li>We do not provide certificates for non-university-affiliated individuals because our trainings are in support of academic activities of our partner organisations. We are happy that you find this useful of course, and if you want feedback on your activities we are always happy to provide it. Please get in touch if you want to clarify.</li>
+<li>Note that certificates are also available for postdocs, professors, IT support at university/research institutions, etc...</li>
+</ul>
+</li>
+<li>students can get ECTS?
+<ul>
+<li>https://coderefinery.github.io/2025-09-09-workshop/certificates/</li>
+</ul>
+</li>
+</ul>
+
+  
+
+      </div>
+
+      <div class="uk-margin-large-top">
+        <hr>
+        <div class="uk-child-width-expand@s" uk-grid>
+
+  <div>
+    <h4>Funding</h4>
+    <p>
+      CodeRefinery is a project within the
+      <a href="https://neic.no" target="_blank">Nordic e-Infrastructure Collaboration</a> (NeIC).
+    </p>
+  </div>
+
+  <div>
+    <h4>Privacy</h4>
+    <p>
+      <a href="https://coderefinery.org/privacy-policy/" target="_blank">Privacy policy</a>
+    </p>
+  </div>
+
+  <div>
+    <h4>Follow us</h4>
+    <ul class="uk-iconnav">
+      <li>
+        <a href="https://github.com/coderefinery" target="_blank" uk-icon="icon: github">GitHub</a>
+      </li>
+      <li>
+        <a rel="me" href="https://fosstodon.org/@coderefinery" target="_blank" uk-icon="icon: social">Mastodon</a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/company/coderefinery-research-software-development/?viewAsMember=true" target="_blank" uk-icon="icon: linkedin">LinkedIn</a>
+      </li>
+    </ul>
+  </div>
+
+  <div>
+    <h4>Contact</h4>
+    <p>
+      <a href="mailto:support@coderefinery.org">support@coderefinery.org</a>
+    </p>
+  </div>
+
+  <div>
+    <h4>Improve this page</h4>
+    <p>
+      <a href="https:&#x2F;&#x2F;github.com&#x2F;coderefinery&#x2F;2025-09-09-workshop&#x2F;">Source code</a>
+    </p>
+  </div>
+
+</div>
+
+      </div>
+
+    </div>
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+  <script>
+    anchors.add();
+  </script>
+</html>

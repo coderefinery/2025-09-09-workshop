@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Questions and notes from workshop day 8 - CodeRefinery workshop September&#x2F;October 2025</title>
+    <link rel="shortcut icon" href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;/img/favicon.ico">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- uikit -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.23.4/dist/css/uikit.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.4/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.4/dist/js/uikit-icons.min.js"></script>
+
+    <!-- time zone localization -->
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.7/dayjs.min.js" integrity="sha256-EfJOqCcshFS/2TxhArURu3Wn8b/XDA4fbPWKSwZ+1B8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.7/plugin/utc.js" integrity="sha256-qDfIIxqpRhYWa543p6AHZ323xT3B8O6iLZFUAWtEQJw=" crossorigin="anonymous"></script>
+
+    
+      <link rel="alternate" type="application/atom+xml" title="CodeRefinery" href="https://coderefinery.github.io/2025-09-09-workshop/atom.xml" />
+    
+
+        
+      <title>CodeRefinery - Questions and notes from workshop day 8</title>
+      <meta name="twitter:title" content="Questions and notes from workshop day 8" />
+      <meta property="og:title" content="Questions and notes from workshop day 8" />
+      <meta property="og:site_name" content="CodeRefinery workshop September&#x2F;October 2025" />
+    
+
+    
+      <meta name="description" content="Free workshop on git, testing, documentation, and more in a workshop - for researchers and scientists." />
+      <meta name="twitter:description" content="Free workshop on git, testing, documentation, and more in a workshop - for researchers and scientists." />
+      <meta property="og:description" content="Free workshop on git, testing, documentation, and more in a workshop - for researchers and scientists." />
+    
+
+    
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:image" content="https://raw.githubusercontent.com/coderefinery/coderefinery-artwork/main/socialshare/socialshare-workshop.png" />
+      <meta property="og:image" content="https://raw.githubusercontent.com/coderefinery/coderefinery-artwork/main/socialshare/socialshare-workshop.png" />
+    
+
+
+    
+
+    <link href="https://coderefinery.github.io/2025-09-09-workshop/style.css" rel="stylesheet">
+
+    
+    <script defer data-domain="coderefinery.github.io" src="https://plausible.cs.aalto.fi/js/script.js"></script>
+    
+
+
+  </head>
+
+  <body>
+    <div class="uk-container uk-margin-large-bottom">
+
+      <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+  <div class="uk-navbar-right">
+    <ul class="uk-navbar-nav uk-visible@s">
+      
+      
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop">
+      About
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;exercises">
+      List of exercises
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;audience">
+      Audience
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;certificates">
+      Certificates
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;join">
+      How to join
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;requirements">
+      Requirements
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;questions">
+      Q&amp;A
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;code-of-conduct">
+      Code of conduct
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;communication">
+      Communication
+      
+    </a>
+
+    
+
+  </li>
+
+
+    </ul>
+    <a href="#" class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon uk-toggle="target: #sidenav"></a>
+  </div>
+</nav>
+
+<div id="sidenav" uk-offcanvas="flip: true" class="uk-offcanvas">
+  <div class="uk-offcanvas-bar">
+    <ul class="uk-nav">
+      
+      
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop">
+      About
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;exercises">
+      List of exercises
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;audience">
+      Audience
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;certificates">
+      Certificates
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;join">
+      How to join
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;requirements">
+      Requirements
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;questions">
+      Q&amp;A
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;code-of-conduct">
+      Code of conduct
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;communication">
+      Communication
+      
+    </a>
+
+    
+
+  </li>
+
+
+    </ul>
+  </div>
+</div>
+
+
+      <div class="markdown">
+        
+  <h1>Questions and notes from workshop day 8</h1>
+
+  <ul>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day8/#icebreaker">Icebreaker</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day8/#automated-testing">Automated testing</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day8/#motivations">Motivations</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day8/#testing-locally">Testing locally</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day8/#exercise-until-xx-54">Exercise - Until xx:54</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day8/#automated-testing-1">Automated testing</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day8/#break-until-xx-38">Break until xx:38</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day8/#test-design">Test design</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day8/#exercise-until-xx-02">Exercise until xx:02</a>
+      
+        <ul>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day8/#catch2-example-see-https-coderefinery-github-io-testing-locally">Catch2 example, see https:&#x2F;&#x2F;coderefinery.github.io&#x2F;testing&#x2F;locally&#x2F;</a>
+              
+            </li>
+          
+        </ul>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day8/#feedback">Feedback</a>
+      
+        <ul>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day8/#outlook-for-the-next-lesson-modular-code-development">Outlook for the next lesson: Modular Code Development</a>
+              
+            </li>
+          
+        </ul>
+      
+    </li>
+  
+</ul>
+
+
+  
+  
+    <h2 id="icebreaker">Icebreaker</h2>
+<ul>
+<li>
+<p>What programming language(s) are you normally working with (add an o for your answer):</p>
+<ul>
+<li>Python: oooooooooooo</li>
+<li>R: ooo</li>
+<li>Julia: oo</li>
+<li>C++: oooo</li>
+<li>Fortran: ooo</li>
+<li>Bash: oooo</li>
+<li>CUDA: o</li>
+<li>HIP</li>
+<li>(add yours here)...</li>
+</ul>
+</li>
+<li>
+<p>What does testing your code mean for you? How do you test?</p>
+<ul>
+<li>Craft a dummy data set where i can easily follow what my code is doing to it and verify it is working well. +1</li>
+<li>Test = automatic test: manual test -&gt; too expensive -&gt; do it too rarely</li>
+<li>small tests are nicer to work with than big ones +1</li>
+<li>big ones tend to be more useful but a pain to work with</li>
+<li>Run &gt; fix error &gt; run &gt; fix error, etc. +1</li>
+<li>Test examples and small features using CI capabilities on github</li>
+<li>Test suite with Python unittest, and use a Github action to run it</li>
+<li>(add your comments here)...</li>
+</ul>
+</li>
+</ul>
+<h2 id="automated-testing">Automated testing</h2>
+<p>Material: https://coderefinery.github.io/testing/</p>
+<h2 id="motivations">Motivations</h2>
+<p>Material: https://coderefinery.github.io/testing/motivation/
+Your questions and comments here:</p>
+<ol>
+<li>
+<p>How to (approximately) measure code coverage? If you have a function, and a single test invoking that funciton, you compute it as +1 function tested?</p>
+<ul>
+<li>there are tools for that, that tell you "line" coverage and "function" coverage. "line" coverage is the ration between total code line of your program (excluded empty lines and comments) and lines that were executed during a run of the test suite. It's not a perfect metric of course (and be aware of Goodhart's law: https://en.wikipedia.org/wiki/Goodhart%27s_law).</li>
+<li>function coverage is - I think - the ratio between functions in your code and functions that were executed during a run of the test suite.</li>
+</ul>
+</li>
+<li>
+<p>After running pytest, i also got two directories, one called <code>__pycache__</code> and another called .pytest_cache. Could you comment a bit on their use and purpose?</p>
+<ul>
+<li><code>__pycache__</code> is a directory that contains files that python (not pytest in particular) produces during the execution, and might be reused later when python runs again, saving time (it can contain, e.g., bytecode-compiled python code and things like that). This is the general idea of a "cache"</li>
+<li><code>.pytest_cache</code>  is a cache directory specific to pytest</li>
+<li>caches are not necessary, you can delete them and everything will work as expected, albeit a little slower because all the stuff in the cache might need to be recreated.</li>
+</ul>
+</li>
+</ol>
+<h2 id="testing-locally">Testing locally</h2>
+<p>Material: https://coderefinery.github.io/testing/locally/</p>
+<p>:::info</p>
+<h2 id="exercise-until-xx-54">Exercise - Until xx:54</h2>
+<p>Instructions: https://coderefinery.github.io/testing/locally/#exercise</p>
+<p>Progress report... are you (mark with an 'o' or any letter):</p>
+<ul>
+<li>done: ooooo</li>
+<li>need more time:</li>
+<li>had major problems:</li>
+</ul>
+<p>If you have problems and / or want to talk, you might join the zoom help room (information on how to join it has been shared in emails sent in the past)
+:::</p>
+<ol start="3">
+<li>
+<p>In the excersise, when we change to "-", is there a way for pytest to test all asserts, i.e. not to stop at the first one that does not fulfill condition?</p>
+<ul>
+<li>You could put each assert in its own test function.</li>
+</ul>
+</li>
+<li>
+<p>Can this testing heavily influence complexity of code, when dealing with e.g. fancy ML/DL models? Is it demanding in processing?</p>
+<ul>
+<li>Not sure I understand the question.
+<ul>
+<li>Ideally test are lightweight enough, that you can work with them interactively. So you can, quickly iterate quickly, code -&gt; (compile) -&gt; test -&gt; fix resulting problems, repeat. That's not always possible, however. For ML models, you rarely run a full training that can take hours or days as a test as part of an automatic development pipeline. You do still evaluate your model of course, but not in the context of automated software testing</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>How the testing works? Does it simply runs all functions even when they aren't called?</p>
+<ul>
+<li>pytest - the framework we are using - inspects your files (even directories) and will find all the functions that start with <code>test_</code> or end with <code>_test</code>, and call them for you. If you tell pytest to "test a directory", then it will look for all files that start or end with "test". In this sense, we may say that "registering" a test just requires you to name a function appropriately.</li>
+<li>in other languages one has to explicitly "register" tests using macros (see Catch2/Google Test approaches), and then the testing framework does the work of calling all the registered tests.</li>
+</ul>
+</li>
+<li>
+<p>How it differs from "try"?</p>
+<ul>
+<li>"try", for catching exceptions, is something that you expect to be used at run time, when your software is doing actual work, and is encountering an error that you want to manage (and you expect it to happen sometimes). Here, we are creating test cases - when we run test cases, we verify assumptions about how our software works.</li>
+</ul>
+</li>
+</ol>
+<h2 id="automated-testing-1">Automated testing</h2>
+<p>Material: https://coderefinery.github.io/testing/continuous-integration/</p>
+<p>Will be done as a walkthrough: https://coderefinery.github.io/testing/continuous-integration/#continuous-integration</p>
+<p>Please post your questions and comments here:
+7. Bonus question: why is the job on Johan's github actions failing?
+8. Would it make sense to split the github action job between those parts who succeeded and the parts who failed? They do different things, right?
+- It can, but since creating the coverage report requires running the tests, you would be running some things multiple times.</p>
+<p>:::info</p>
+<h2 id="break-until-xx-38">Break until xx:38</h2>
+<p>:::</p>
+<h2 id="test-design">Test design</h2>
+<p>Material: https://coderefinery.github.io/testing/test-design/</p>
+<p>::: info</p>
+<h2 id="exercise-until-xx-02">Exercise until xx:02</h2>
+<p>Have a look at the list of exercises in this episode:
+https://coderefinery.github.io/testing/test-design/</p>
+<p>Suggestion: start with the initial ones, which are simpler
+(and fundamental).</p>
+<p>Progress report... are you (mark with an 'o' or any letter):</p>
+<ul>
+<li>done:</li>
+<li>need more time:</li>
+<li>had major problems:
+:::</li>
+</ul>
+<p>Questions, continued:</p>
+<ol start="9">
+<li>
+<p>Design 3 solution throws PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\Users\M\AppData\Local\Temp\tmpd6relgrg'.</p>
+<ul>
+<li>Could it be that the file is opened in an editor? Nope.</li>
+<li>From the file path, I think it's a temporary file created in the test. It's really weird that the test does not have access to it. Is the same filename used in multiple tests, maybe?</li>
+<li>I had the same issue, commenting the os.remove line worked for me, but I still don't understand the error.
+<ul>
+<li>I confirm this.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>How would I write a test to make sure the correct error is raised when an incorrect input is passed?</p>
+<ul>
+<li>depending on the language/testing framework, there are different tools to do that.</li>
+<li>In python you can do something like<pre style="background-color:#f5f5f5;color:#1f1f1f;"><code><span>try:
+</span><span>    your_code()
+</span><span>    assert False &quot;Exception not raised&quot;
+</span><span>except ExceptionYoureExpecting:
+</span><span>    pass
+</span><span>except Exception:
+</span><span>    assert False &quot;Wrong exception raised&quot;
+</span></code></pre>
+But for example in pytest there's a context manager (<code>with ....</code>)
+called "pytest.raises()", which does that job in a better way than reimplementing it yourself</li>
+<li>other languages/testing frameworks have similar facilities that do this for you, even if you could write out the logic yourself
+<ul>
+<li>Ok, many thanks! I had python (pytest) in mind, and raises() seems to be what I was looking for.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<p>:::info</p>
+<h3 id="catch2-example-see-https-coderefinery-github-io-testing-locally">Catch2 example, see https://coderefinery.github.io/testing/locally/</h3>
+<p>:::</p>
+<h2 id="feedback">Feedback</h2>
+<p>:::info
+We hope you got an impression what automated testing can be useful for and how it can be implemented for different programming languages. The lesson materials will continue to be available for reference.</p>
+<p>Join https://coderefinery.zulipchat.com/ to ask further questions and meet the instructors and rest of the team.</p>
+<h3 id="outlook-for-the-next-lesson-modular-code-development">Outlook for the next lesson: Modular Code Development</h3>
+<p>It will tie the whole workshop together and we will revisit almost all of the topics of the full workshop and apply them.
+- Great, looking forward.</p>
+<p>:::</p>
+<p>Today was (vote for all that apply):</p>
+<ul>
+<li>too fast:</li>
+<li>too slow:</li>
+<li>right speed: o</li>
+<li>too slow sometimes, too fast other times: o</li>
+<li>too advanced:</li>
+<li>too basic:</li>
+<li>right level: oo</li>
+<li>I will use what I learned today:oo</li>
+<li>I would recommend today to others:oo</li>
+<li>I would not recommend today to others:</li>
+</ul>
+<p>One good thing about today:</p>
+<ul>
+<li>Great overview of different types of testing, and hands on practicals very useful +1</li>
+<li>Presenters were good, yet Oscar could try to type a bit slower (to ease the following). :)</li>
+</ul>
+<p>One thing to improve for next time:</p>
+<ul>
+<li>Interesting topic, but I would recommend to devote more time, at least another hour or two, to go slowly and finish everything that is prepared.</li>
+</ul>
+<p>Any other feedback?</p>
+<ul>
+<li>Maybe stick to one programming language (e.g. python), and devote extra day to other languages.</li>
+<li>How about having a topic on debugging and best practices of debugging?! I somehow lack that and miss that in the workshop.</li>
+</ul>
+
+  
+
+      </div>
+
+      <div class="uk-margin-large-top">
+        <hr>
+        <div class="uk-child-width-expand@s" uk-grid>
+
+  <div>
+    <h4>Funding</h4>
+    <p>
+      CodeRefinery is a project within the
+      <a href="https://neic.no" target="_blank">Nordic e-Infrastructure Collaboration</a> (NeIC).
+    </p>
+  </div>
+
+  <div>
+    <h4>Privacy</h4>
+    <p>
+      <a href="https://coderefinery.org/privacy-policy/" target="_blank">Privacy policy</a>
+    </p>
+  </div>
+
+  <div>
+    <h4>Follow us</h4>
+    <ul class="uk-iconnav">
+      <li>
+        <a href="https://github.com/coderefinery" target="_blank" uk-icon="icon: github">GitHub</a>
+      </li>
+      <li>
+        <a rel="me" href="https://fosstodon.org/@coderefinery" target="_blank" uk-icon="icon: social">Mastodon</a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/company/coderefinery-research-software-development/?viewAsMember=true" target="_blank" uk-icon="icon: linkedin">LinkedIn</a>
+      </li>
+    </ul>
+  </div>
+
+  <div>
+    <h4>Contact</h4>
+    <p>
+      <a href="mailto:support@coderefinery.org">support@coderefinery.org</a>
+    </p>
+  </div>
+
+  <div>
+    <h4>Improve this page</h4>
+    <p>
+      <a href="https:&#x2F;&#x2F;github.com&#x2F;coderefinery&#x2F;2025-09-09-workshop&#x2F;">Source code</a>
+    </p>
+  </div>
+
+</div>
+
+      </div>
+
+    </div>
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+  <script>
+    anchors.add();
+  </script>
+</html>

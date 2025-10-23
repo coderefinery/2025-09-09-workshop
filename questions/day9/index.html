@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Questions and notes from workshop day 9 - CodeRefinery workshop September&#x2F;October 2025</title>
+    <link rel="shortcut icon" href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;/img/favicon.ico">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- uikit -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.23.4/dist/css/uikit.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.4/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.4/dist/js/uikit-icons.min.js"></script>
+
+    <!-- time zone localization -->
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.7/dayjs.min.js" integrity="sha256-EfJOqCcshFS/2TxhArURu3Wn8b/XDA4fbPWKSwZ+1B8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.7/plugin/utc.js" integrity="sha256-qDfIIxqpRhYWa543p6AHZ323xT3B8O6iLZFUAWtEQJw=" crossorigin="anonymous"></script>
+
+    
+      <link rel="alternate" type="application/atom+xml" title="CodeRefinery" href="https://coderefinery.github.io/2025-09-09-workshop/atom.xml" />
+    
+
+        
+      <title>CodeRefinery - Questions and notes from workshop day 9</title>
+      <meta name="twitter:title" content="Questions and notes from workshop day 9" />
+      <meta property="og:title" content="Questions and notes from workshop day 9" />
+      <meta property="og:site_name" content="CodeRefinery workshop September&#x2F;October 2025" />
+    
+
+    
+      <meta name="description" content="Free workshop on git, testing, documentation, and more in a workshop - for researchers and scientists." />
+      <meta name="twitter:description" content="Free workshop on git, testing, documentation, and more in a workshop - for researchers and scientists." />
+      <meta property="og:description" content="Free workshop on git, testing, documentation, and more in a workshop - for researchers and scientists." />
+    
+
+    
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:image" content="https://raw.githubusercontent.com/coderefinery/coderefinery-artwork/main/socialshare/socialshare-workshop.png" />
+      <meta property="og:image" content="https://raw.githubusercontent.com/coderefinery/coderefinery-artwork/main/socialshare/socialshare-workshop.png" />
+    
+
+
+    
+
+    <link href="https://coderefinery.github.io/2025-09-09-workshop/style.css" rel="stylesheet">
+
+    
+    <script defer data-domain="coderefinery.github.io" src="https://plausible.cs.aalto.fi/js/script.js"></script>
+    
+
+
+  </head>
+
+  <body>
+    <div class="uk-container uk-margin-large-bottom">
+
+      <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+  <div class="uk-navbar-right">
+    <ul class="uk-navbar-nav uk-visible@s">
+      
+      
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop">
+      About
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;exercises">
+      List of exercises
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;audience">
+      Audience
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;certificates">
+      Certificates
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;join">
+      How to join
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;requirements">
+      Requirements
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;questions">
+      Q&amp;A
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;code-of-conduct">
+      Code of conduct
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;communication">
+      Communication
+      
+    </a>
+
+    
+
+  </li>
+
+
+    </ul>
+    <a href="#" class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon uk-toggle="target: #sidenav"></a>
+  </div>
+</nav>
+
+<div id="sidenav" uk-offcanvas="flip: true" class="uk-offcanvas">
+  <div class="uk-offcanvas-bar">
+    <ul class="uk-nav">
+      
+      
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop">
+      About
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;exercises">
+      List of exercises
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;audience">
+      Audience
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;certificates">
+      Certificates
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;join">
+      How to join
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;requirements">
+      Requirements
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;questions">
+      Q&amp;A
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;code-of-conduct">
+      Code of conduct
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-09-09-workshop&#x2F;communication">
+      Communication
+      
+    </a>
+
+    
+
+  </li>
+
+
+    </ul>
+  </div>
+</div>
+
+
+      <div class="markdown">
+        
+  <h1>Questions and notes from workshop day 9</h1>
+
+  <ul>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day9/#icebreaker">Icebreaker</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day9/#modular-code-development">Modular code development</a>
+      
+        <ul>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day9/#exercise-two-tracks-below-until-xx-42">Exercise: two tracks (below), until xx:42</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day9/#discussion-track">Discussion track</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day9/#coding-track">Coding Track:</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day9/#break-until-xx-03">Break until xx:03</a>
+              
+            </li>
+          
+        </ul>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day9/#making-our-notebook-more-modular">Making our notebook more modular</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day9/#break-until-xx-08">Break until xx:08</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day9/#feedback">Feedback</a>
+      
+        <ul>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2025-09-09-workshop/questions/day9/#for-today">For Today</a>
+              
+            </li>
+          
+        </ul>
+      
+    </li>
+  
+</ul>
+
+
+  
+  
+    <h2 id="icebreaker">Icebreaker</h2>
+<ul>
+<li>What programming language(s) are you normally working with (add an o for your answer):
+<ul>
+<li>Python:oooooo</li>
+<li>R:</li>
+<li>Julia: o</li>
+<li>C++: o</li>
+<li>Fortran:o</li>
+<li>Bash:oo</li>
+<li>CUDA:o</li>
+<li>HIP</li>
+<li>(add yours here)...</li>
+</ul>
+</li>
+<li>What is one small habit or workflow that helps you stay organized while coding?
+<ul>
+<li>Start new .py whenever I complete one section. And try to put comments upfront to explain what it is for.</li>
+</ul>
+</li>
+</ul>
+<h2 id="modular-code-development">Modular code development</h2>
+<p>Materials:</p>
+<ul>
+<li>https://coderefinery.github.io/modular-type-along/</li>
+<li>https://github.com/coderefinery/modular-type-along-exercise</li>
+</ul>
+<p>Add your questions and comments here:</p>
+<ol>
+<li>...</li>
+<li>...</li>
+<li>...</li>
+<li></li>
+</ol>
+<p>:::info</p>
+<h3 id="exercise-two-tracks-below-until-xx-42">Exercise: two tracks (below), until xx:42</h3>
+<p>https://coderefinery.github.io/modular-type-along/exercise/
+You have twenty minutes to either do the discussions below, or try to modify and modularize the code yourself.  We'll return</p>
+<p>:::</p>
+<h3 id="discussion-track">Discussion track</h3>
+<p>A. What does "modular code development" mean for you?</p>
+<ul>
+<li>Build parts of code that are general enough, and be able to put them together later on. Like Lego blocks.</li>
+<li>Divide the code into modules, classes and functions that are either specific to a particular task or help avoid code duplication.</li>
+<li>.</li>
+<li>Divide code in blocks (whatever that blocks are), that are versatile enough but also easy to understand in separation</li>
+<li>Something about <a rel="noopener" target="_blank" href="https://en.wikipedia.org/wiki/Abstraction_layer">abstraction layers</a> and separating concerns so you can build more complex stuff more simply.  Abstraction layers are really everywhere in computing</li>
+</ul>
+<p>B. What best practices can you recommend to arrive at well structured,
+modular code in your favourite programming language?</p>
+<ul>
+<li>Use functions where appropriate.</li>
+<li>Split code into blocks (functions, classes, modules...). Block names should be easy to understand and descriptive, but each block should have only one reason to change (as a principle to guide how big the blocks should be)</li>
+<li>Use modules, functions, and classes that are relevant to each part of the workflow. Also, include comments, docstrings, and other forms of documentation.</li>
+<li>Though I am not practicing it TBH, I would say writing classes, functions, comments, splitting in files that are a meaningful whole. Also having diagram figures included for explanaiton would be nice. Also good instructions, preferrably as a video (something like "live coding example"). Then one can countionue in a same manner whether it's future you or someone new.</li>
+<li>Command line interfaces let you make bits that are easily testable</li>
+</ul>
+<p>C. What do you know now about programming that you wish somebody told you earlier?</p>
+<ul>
+<li>GIT not being scary and difficult. I wish intros/shorcuts/setups were explained earlier to me for some stuff, cause just starting off takes a lot of time,i.e. "a right moment" that is often prolonged.</li>
+<li>Have a main function instead of some free code at the end of a .py script +1</li>
+<li>It's not hard to make something that is 'pip install'-able, you don't have to put it on PyPI, and this makes it easy to reuse stuff.  (I spent too much manually downloading and extracting into a PYTHONPATH).</li>
+<li>PEP and good practices.</li>
+<li>Motivational things you guys were saying throughout, that it is ok to have a messy code and similar (like I was not using this, i was not using taht but i do now, e.g. GIT, sphinx, etc.), just work on it. I am always thinking I am the only one having these problems and only one writing code that bad. XD</li>
+<li>that there is no silver bullet. Things can get much better with proper practices and tools, but we are still fighting against our cognitive limits when developing software +1</li>
+</ul>
+<p>D. Do you design a new code project on paper before coding? Discuss pros
+and cons.</p>
+<ul>
+<li>Not usually, but when I do the outcome is usually much better!  (then why don't I do it more...?)</li>
+<li>Sometimes. If not at the beginning, usually there is a point in time where I take pen and a paper and draw diagram at least. Nothing without pen and paper. It stays longer in my mind definitely.</li>
+<li>Sometimes I just sketch a general workflow to guide me through what I need to do.</li>
+<li>I like to rush to write some code to have feedback, but it hits me in the head sometimes</li>
+</ul>
+<p>E. Do you build your code top-down (starting from the big picture) or bottom-up
+(starting from components)? Discuss pros and cons.</p>
+<ul>
+<li>Usually top-down. I never really went for modular development, but for "just make it work". And then I am looking to finish it, not to be beautiful.</li>
+<li>Whichever lets me get something I can run to see an output fastest, so I can start seeing if something is going wrong.  For example bottom-up if I can make a small bit I can run separately.</li>
+<li>Top-down, most of the times. It depends on the task.</li>
+<li>I need to go bottom up because otherwise I can't get things to work incrementally. If I think I know what I'm doing I do top-down, but then I don't get feedback until I have gone to the bottom</li>
+</ul>
+<p>F. Would you prefer your code to be 2x slower if it was easier to read and understand?</p>
+<ul>
+<li>Not always, but usually yes. I am not in an industry that will suffer if it isn't in "near real-time".</li>
+<li>Most of it yes.  Not the (usually very) small bit that is speed critical.</li>
+<li>No. 2x slower would be a nightmare handling billions of data.</li>
+<li>I would like to have two versions of the code and use the one easy to understand to validate the other. Maybe impractical?
+<ul>
+<li>I have done this too, once!  It gave me a lot more confidence in the accuracy.</li>
+</ul>
+</li>
+<li>Given the "Git" theme, I'd say it's very important to make the code more readable for the collaborators. Especially for the review!</li>
+</ul>
+<h3 id="coding-track">Coding Track:</h3>
+<p>https://coderefinery.github.io/modular-type-along/exercise/#coding-track</p>
+<p>What are you trying to do:</p>
+<ul>
+<li>Replace comments with function names, remove redundant comments</li>
+<li>Understand what I need to change in the future, so that I can decide how to best pack stuff together: if I do not have to change what the notebook does and it works, I think it's clear enough that it does not need changes...</li>
+</ul>
+<p>:::info</p>
+<h3 id="break-until-xx-03">Break until xx:03</h3>
+<p>Then live coding to make our example modular
+:::</p>
+<h2 id="making-our-notebook-more-modular">Making our notebook more modular</h2>
+<p>Example solution (we don't have to do what is here in this order, you can make other suggestions): https://coderefinery.github.io/modular-type-along/solution/</p>
+<p>Ideas to do (please give us suggestions):</p>
+<ul>
+<li>
+<p>Plot for multiple month</p>
+<ul>
+<li>using for loop, not copy/paste</li>
+<li>using a function for the body of the for loop</li>
+</ul>
+</li>
+<li>
+<p>Is there a way to replace all "january" with "month_data" at once?</p>
+<ul>
+<li>If you use a proper editor or IDE, definitely yes (something like right-click -&gt; refactor -&gt; rename)</li>
+</ul>
+</li>
+<li>
+<p>Tight view for images? Smaller ones? e.g. 3 rows 2 columns</p>
+</li>
+<li>
+<p>There is still quite a lof of repetition in the loop body, right?</p>
+<ul>
+<li>Also, we are doing <code>fix, ax = plt.subplots()</code> twice which scares me</li>
+<li>We could have as parameters:
+<ul>
+<li>the column of the df</li>
+<li>the string for the title of the plot/y axis</li>
+<li>the color
+In other words, the things that differ between the two "copies" of the code in the for loop</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>How would you tackle if atm you need just one month per figure, but later on you may want all three months in the same plot?</p>
+<ul>
+<li>Sometimes I will then also pass it an <code>ax</code> object to say "plot on this axis I have made" :+1:
+<ul>
+<li>to default as "None" and in that case a new axes object should be created</li>
+<li>I was thinking more of having three different colors for three months in single graphics, not using "ax" to have three one next to each other?</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>I would use keyword arguments for that function (when I call it)</p>
+<ul>
+<li>Good idea.</li>
+</ul>
+</li>
+<li>
+<p>month_data is a global, better to pass it as a parameter (for readability, I like to see what a function needs at the call site)</p>
+<ul>
+<li>Good idea.</li>
+<li>We left it off so that you can see the problem analyzed in vscode.</li>
+</ul>
+</li>
+<li>
+<p>Why do we need the 'arithmetic_mean'? (answered on stream: to separate plotting and statistics)</p>
+<ul>
+<li>if I want to separate plotting from statistics I would pass the "mean_value" to the plot function, or perhaps pass the "summary" function in as a parameter?</li>
+<li>Yeah, you can do it with a "summary" function.  I've done similar.</li>
+</ul>
+</li>
+<li>
+<p>.In your call to the plotfunction you have a "," after file name, why - there is no more parameters?</p>
+<ul>
+<li>I often do this so that if I add another parameter, I won't forget the comma, and the version control history won't show the previous line as being edited.  Can make stuff a bit more clear, but of course is optional.</li>
+</ul>
+</li>
+<li>
+<p>Can you refer once again to "main" fucntion, its behaviour and purpose. Just a recap.</p>
+<ul>
+<li>main() in python is not a special function. In this script, we call the "top level" function main().</li>
+<li>the special thing about python is that in any module, there is a variable called <code>__name__</code>. If we are running that "module" as a script, that <code>__name__</code> is equal to the string "<strong>main</strong>". So, in that case, we run the main function when we run the script, otherwise we do not.</li>
+</ul>
+</li>
+<li>
+<p>Can you put 'argparse' in context of 'click' and running in command line? How similar/different is it?</p>
+<ul>
+<li>argparse makes your script behave more like a typical unix application, where the behaviour can be modified with <code>--options</code>. Typically you create a parse object, add options to it, and get the values of the options that then you can process separately</li>
+<li>click makes your script behave more like git or docker, with subcommands (but it can also be used to add 'options', as done in this case). It relies more on function decorators (define a function as a sub command, and define options for that subcommand using decorators on that function)
+<ul>
+<li>Argparse can have subcommands but it is a <em>lot</em> more typing (to the point I hardly ever do it...)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>:::info</p>
+<h2 id="break-until-xx-08">Break until xx:08</h2>
+<p>Let us know what you would like to discuss:
+:::</p>
+<ul>
+<li>
+<p>How much of AI tools do you use when coding? How do you use it? Best one so far in your opinion?</p>
+<ul>
+<li>Ask AI to explain it line by line. :D</li>
+</ul>
+</li>
+<li>
+<p>What do lecturers find useful (general tips/tricks/libraries) for coding that have not been mentioned during workshops?</p>
+<ul>
+<li>debuggers</li>
+<li>was TDD mentioned? For sure!</li>
+</ul>
+</li>
+</ul>
+<h2 id="feedback">Feedback</h2>
+<p>:::info
+Today we have discussed how to make a simple script more modular and reusable.</p>
+<p>This is the last lesson of the workshop!</p>
+<p>So we ask you for feedback not only on this last lesson, but also on the whole workshop.</p>
+<p>Do not forget: you can ask more questions in https://coderefinery.zulipchat.com
+:::</p>
+<h3 id="for-today">For Today</h3>
+<p>Today was ... (vote for all that apply):
+Speed:</p>
+<ul>
+<li>..too fast:</li>
+<li>..too slow:</li>
+<li>..right speed:</li>
+<li>..too slow sometimes, too fast other times: o</li>
+</ul>
+<p>Level:</p>
+<ul>
+<li>..too advanced:</li>
+<li>..too basic: o</li>
+<li>..right level: o</li>
+</ul>
+<p>Usage and recommendation:</p>
+<ul>
+<li>..I will use what I learned today: o</li>
+<li>..I would recommend today to others: o</li>
+<li>..I would not recommend today to others:</li>
+</ul>
+<p>One good thing about today:</p>
+<ul>
+<li>Good topic, good lecturers.</li>
+<li>Clear in explaining.</li>
+</ul>
+<p>One thing to improve for next time:</p>
+<ul>
+<li>Maybe keep it more "coding" during live coding, avoid copy-pasting. While writing discuss what you are typing. With copy-past it gets overwhelming.</li>
+<li>TBH, I expected more. I expected full coding experience, both bad one first (as typical rookie example), and good one (as a solution how good RSE does it). Level of task complexity can remain. Yet, I mised combining everything from the workshop. That would be a BOOM. Have it all together, relatively simple task, with two people coding, using git, wiritng documentation, etc. It can be same repeated from workshop to workshop, just work on it to have a FINAL MEGA RECAP. :)</li>
+<li>Pity not that many people joined for the last session, both viewers and especially organizers.</li>
+</ul>
+
+  
+
+      </div>
+
+      <div class="uk-margin-large-top">
+        <hr>
+        <div class="uk-child-width-expand@s" uk-grid>
+
+  <div>
+    <h4>Funding</h4>
+    <p>
+      CodeRefinery is a project within the
+      <a href="https://neic.no" target="_blank">Nordic e-Infrastructure Collaboration</a> (NeIC).
+    </p>
+  </div>
+
+  <div>
+    <h4>Privacy</h4>
+    <p>
+      <a href="https://coderefinery.org/privacy-policy/" target="_blank">Privacy policy</a>
+    </p>
+  </div>
+
+  <div>
+    <h4>Follow us</h4>
+    <ul class="uk-iconnav">
+      <li>
+        <a href="https://github.com/coderefinery" target="_blank" uk-icon="icon: github">GitHub</a>
+      </li>
+      <li>
+        <a rel="me" href="https://fosstodon.org/@coderefinery" target="_blank" uk-icon="icon: social">Mastodon</a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/company/coderefinery-research-software-development/?viewAsMember=true" target="_blank" uk-icon="icon: linkedin">LinkedIn</a>
+      </li>
+    </ul>
+  </div>
+
+  <div>
+    <h4>Contact</h4>
+    <p>
+      <a href="mailto:support@coderefinery.org">support@coderefinery.org</a>
+    </p>
+  </div>
+
+  <div>
+    <h4>Improve this page</h4>
+    <p>
+      <a href="https:&#x2F;&#x2F;github.com&#x2F;coderefinery&#x2F;2025-09-09-workshop&#x2F;">Source code</a>
+    </p>
+  </div>
+
+</div>
+
+      </div>
+
+    </div>
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+  <script>
+    anchors.add();
+  </script>
+</html>
